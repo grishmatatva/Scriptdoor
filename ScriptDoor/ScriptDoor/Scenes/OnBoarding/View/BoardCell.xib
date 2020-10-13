@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="06d1b1518a180e5a9cca2c23401ec40a.ttf">
+            <string>CircularStd-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="255" id="KGk-i7-Jjw" customClass="BoardCell" customModule="ScriptDoor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="384" height="255"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="384" height="255"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hcd-19-K56">
+                        <rect key="frame" x="16" y="10" width="343" height="223"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Content" translatesAutoresizingMaskIntoConstraints="NO" id="ziw-KP-4oE">
+                                <rect key="frame" x="125.5" y="17" width="92" height="92"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="92" id="Zc3-o0-1CJ"/>
+                                    <constraint firstAttribute="height" constant="92" id="m3s-ET-dkl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create and Discover Content" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="var-EV-cqW">
+                                <rect key="frame" x="55" y="116" width="233.5" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="HsZ-T2-hyD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="18"/>
+                                <color key="textColor" name="AppBlack"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scriptdoor taps into the brains of writers, thinkers" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zas-HS-d7M">
+                                <rect key="frame" x="58.5" y="153" width="226" height="40.5"/>
+                                <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="16"/>
+                                <color key="textColor" name="AppGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="223" id="1tm-J3-iAI"/>
+                            <constraint firstItem="var-EV-cqW" firstAttribute="centerX" secondItem="Hcd-19-K56" secondAttribute="centerX" id="8zr-K9-7EW"/>
+                            <constraint firstItem="Zas-HS-d7M" firstAttribute="top" secondItem="var-EV-cqW" secondAttribute="bottom" constant="3" id="H8h-Gy-DqU"/>
+                            <constraint firstItem="ziw-KP-4oE" firstAttribute="centerX" secondItem="Hcd-19-K56" secondAttribute="centerX" id="LuG-Px-PPt"/>
+                            <constraint firstItem="var-EV-cqW" firstAttribute="top" secondItem="ziw-KP-4oE" secondAttribute="bottom" constant="7" id="Wvu-eU-eVV"/>
+                            <constraint firstItem="ziw-KP-4oE" firstAttribute="top" secondItem="Hcd-19-K56" secondAttribute="top" constant="17" id="aMF-gZ-a0X"/>
+                            <constraint firstAttribute="bottom" secondItem="Zas-HS-d7M" secondAttribute="bottom" constant="29.5" id="cam-j5-axf"/>
+                            <constraint firstAttribute="width" constant="343" id="f4U-zH-JPs"/>
+                            <constraint firstItem="Zas-HS-d7M" firstAttribute="leading" secondItem="Hcd-19-K56" secondAttribute="leading" constant="58.5" id="iy8-cu-mzV"/>
+                            <constraint firstAttribute="trailing" secondItem="Zas-HS-d7M" secondAttribute="trailing" constant="58.5" id="kOd-82-Yli"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" name="AppBlack"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                <point key="value" x="2" y="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="AppGray"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.20000000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Hcd-19-K56" secondAttribute="bottom" constant="10" id="EeR-9F-s7h"/>
+                    <constraint firstItem="Hcd-19-K56" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="q7T-3M-3br"/>
+                    <constraint firstAttribute="trailing" secondItem="Hcd-19-K56" secondAttribute="trailing" constant="16" id="tiI-Oy-5Gw"/>
+                    <constraint firstItem="Hcd-19-K56" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="vkG-02-acZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="boardImage" destination="ziw-KP-4oE" id="MTD-Zq-OW7"/>
+                <outlet property="labelSubTitle" destination="Zas-HS-d7M" id="1Tg-5Q-qAj"/>
+                <outlet property="labelTitle" destination="var-EV-cqW" id="eM1-VN-ZKh"/>
+            </connections>
+            <point key="canvasLocation" x="-1706" y="82"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Content" width="90" height="90"/>
+        <namedColor name="AppBlack">
+            <color red="0.10599999874830246" green="0.10999999940395355" blue="0.13699999451637268" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppGray">
+            <color red="0.3529999852180481" green="0.3529999852180481" blue="0.3529999852180481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
