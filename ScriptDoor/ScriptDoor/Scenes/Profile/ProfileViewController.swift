@@ -143,7 +143,7 @@ class ProfileViewController: UIViewController {
     }
     
     @IBAction func AddImageButton(sender : AnyObject) {
-        self.funcActionImage(title: "OPTION", message: "PROFILE CLICK HERE")
+        self.funcActionImage(title: "OPTION", message: "")
     }
 }
 

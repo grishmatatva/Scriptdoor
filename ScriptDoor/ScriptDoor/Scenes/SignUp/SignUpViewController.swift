@@ -58,9 +58,9 @@ class SignUpViewController: UIViewController {
     }
     
     private func signUpUser() {
-        if validation() {
+       // if validation() {
             viewNavigation.moveToSignUpAs()
-        }
+      ///  }
     }
     
     private func validation() -> Bool {
