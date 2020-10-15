@@ -17,8 +17,8 @@ final class EmailViewNavigation {
     init(_ controller: EmailViewController) { viewController = controller  }
     
     // MARK: - Navigations
-    func moveToProfile() {
-        if let signUpVc = UIStoryboard.authontication.getViewController(type: ProfileViewController.self ) {
+    func moveToInterast() {
+        if let signUpVc = UIStoryboard.authontication.getViewController(type: InterestViewController.self ) {
             viewController.navigationController?.pushViewController(signUpVc, animated: true)
         }
     }

@@ -20,4 +20,10 @@ final class WelcomeViewNavigator {
             viewController.navigationController?.pushViewController(signUpAsVc, animated: true)
         }
     }
+    
+    func moveToSignIn() {
+        if let signUpAsVc = UIStoryboard.authontication.getViewController(type: SignInViewController.self ) {
+            viewController.navigationController?.pushViewController(signUpAsVc, animated: true)
+        }
+    }
 }

@@ -22,4 +22,6 @@ class WelcomeViewController: UIViewController {
     
     // MARK: - Action Methods
     @IBAction private func didTapOnSignUp() { viewNavigator.moveToSignUp() }
+
+    @IBAction private func didTapOnSignIn() { viewNavigator.moveToSignIn() }
 }

@@ -31,6 +31,10 @@ class SignUpViewController: UIViewController {
         signUpUser()
     }
     
+    @IBAction private func didTapOnSignIn() {
+        viewNavigation.moveToSignIn()
+    }
+    
     @IBAction func didtapOnPasswordEye(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
         textPassword.isSecureTextEntry = !textPassword.isSecureTextEntry
@@ -58,9 +62,9 @@ class SignUpViewController: UIViewController {
     }
     
     private func signUpUser() {
-       // if validation() {
+        if validation() {
             viewNavigation.moveToSignUpAs()
-      ///  }
+        }
     }
     
     private func validation() -> Bool {

@@ -23,9 +23,9 @@ class EmailViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5){ // change your delay here
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5){ // change your delay here wo knha se ayy ga ? wo to ese hi rakh tha na
           // redirect to next vc
-            self.viewNavigator.moveToProfile()
+            self.viewNavigator.moveToInterast()
         }
     }
      
