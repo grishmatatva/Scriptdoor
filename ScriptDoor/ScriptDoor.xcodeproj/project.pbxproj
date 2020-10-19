@@ -20,6 +20,7 @@
 		12512D36252F64C500DD97F1 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12512D35252F64C500DD97F1 /* String+Extensions.swift */; };
 		12512D39252F66D100DD97F1 /* Alertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12512D38252F66D100DD97F1 /* Alertable.swift */; };
 		12512D3C253037DA00DD97F1 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12512D3B253037DA00DD97F1 /* EmailViewController.swift */; };
+		12B72D39253D98F900B88A1E /* SaveAsAnViewNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B72D38253D98F900B88A1E /* SaveAsAnViewNavigation.swift */; };
 		12D518B3252D8FDC00289859 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D518B2252D8FDC00289859 /* AppDelegate.swift */; };
 		12D518B5252D8FDC00289859 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D518B4252D8FDC00289859 /* SceneDelegate.swift */; };
 		12D518B7252D8FDC00289859 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D518B6252D8FDC00289859 /* OnBoardingViewController.swift */; };
@@ -40,6 +41,8 @@
 		12DCA12425387F9400FE9931 /* IntrestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DCA12325387F9400FE9931 /* IntrestCell.swift */; };
 		12DCA127253887B400FE9931 /* Interates.json in Resources */ = {isa = PBXBuildFile; fileRef = 12DCA126253887B400FE9931 /* Interates.json */; };
 		12DCA129253893A100FE9931 /* InterestNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DCA128253893A100FE9931 /* InterestNavigation.swift */; };
+		12DCA12C2539C74D00FE9931 /* BusinessProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DCA12B2539C74D00FE9931 /* BusinessProfileViewController.swift */; };
+		12DCA12E253D5B0D00FE9931 /* Landing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12DCA12D253D5B0D00FE9931 /* Landing.storyboard */; };
 		12FE679225343BE70073D36E /* DateFormate + extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FE679125343BE70073D36E /* DateFormate + extensions.swift */; };
 		12FE679425345AB30073D36E /* SDPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FE679325345AB30073D36E /* SDPicker.swift */; };
 		12FE679625345B680073D36E /* SDPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12FE679525345B680073D36E /* SDPicker.xib */; };
@@ -63,6 +66,7 @@
 		12512D35252F64C500DD97F1 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		12512D38252F66D100DD97F1 /* Alertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alertable.swift; sourceTree = "<group>"; };
 		12512D3B253037DA00DD97F1 /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
+		12B72D38253D98F900B88A1E /* SaveAsAnViewNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveAsAnViewNavigation.swift; sourceTree = "<group>"; };
 		12D518AF252D8FDC00289859 /* ScriptDoor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScriptDoor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12D518B2252D8FDC00289859 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12D518B4252D8FDC00289859 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +89,8 @@
 		12DCA12325387F9400FE9931 /* IntrestCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntrestCell.swift; sourceTree = "<group>"; };
 		12DCA126253887B400FE9931 /* Interates.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Interates.json; sourceTree = "<group>"; };
 		12DCA128253893A100FE9931 /* InterestNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestNavigation.swift; sourceTree = "<group>"; };
+		12DCA12B2539C74D00FE9931 /* BusinessProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessProfileViewController.swift; sourceTree = "<group>"; };
+		12DCA12D253D5B0D00FE9931 /* Landing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Landing.storyboard; sourceTree = "<group>"; };
 		12FE679125343BE70073D36E /* DateFormate + extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormate + extensions.swift"; sourceTree = "<group>"; };
 		12FE679325345AB30073D36E /* SDPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDPicker.swift; sourceTree = "<group>"; };
 		12FE679525345B680073D36E /* SDPicker.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDPicker.xib; sourceTree = "<group>"; };
@@ -209,6 +215,7 @@
 			children = (
 				12D518B8252D8FDC00289859 /* Authontication.storyboard */,
 				12D518C0252D8FE000289859 /* LaunchScreen.storyboard */,
+				12DCA12D253D5B0D00FE9931 /* Landing.storyboard */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -216,6 +223,7 @@
 		12D518E4252DE75B00289859 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				12DCA12A2539C70300FE9931 /* BusinessProfile */,
 				12DCA11E2536D24600FE9931 /* SignIn */,
 				673B60E925319F3A00716E13 /* Profile */,
 				673B60E825319F2A00716E13 /* Interest */,
@@ -308,6 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				12D518F2252EEF8E00289859 /* SignUpAsAnViewController.swift */,
+				12B72D38253D98F900B88A1E /* SaveAsAnViewNavigation.swift */,
 			);
 			path = SignUpAsAn;
 			sourceTree = "<group>";
@@ -352,6 +361,14 @@
 				12DCA126253887B400FE9931 /* Interates.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		12DCA12A2539C70300FE9931 /* BusinessProfile */ = {
+			isa = PBXGroup;
+			children = (
+				12DCA12B2539C74D00FE9931 /* BusinessProfileViewController.swift */,
+			);
+			path = BusinessProfile;
 			sourceTree = "<group>";
 		};
 		673B60E825319F2A00716E13 /* Interest */ = {
@@ -456,6 +473,7 @@
 				12D51903252F134500289859 /* Circular Std Medium.ttf in Resources */,
 				12512D2B252F41D400DD97F1 /* Circular Std Bold.ttf in Resources */,
 				12D518C2252D8FE000289859 /* LaunchScreen.storyboard in Resources */,
+				12DCA12E253D5B0D00FE9931 /* Landing.storyboard in Resources */,
 				12D518BF252D8FE000289859 /* Assets.xcassets in Resources */,
 				12512D23252F37CF00DD97F1 /* Circular Std Book.ttf in Resources */,
 				12D518CC252D9EA500289859 /* BoardCell.xib in Resources */,
@@ -523,6 +541,7 @@
 				12D518ED252DE87C00289859 /* UIView+Extensions.swift in Sources */,
 				67BD2021253312A800E539DC /* InterestViewController.swift in Sources */,
 				12DCA1202536D26400FE9931 /* SignInViewController.swift in Sources */,
+				12B72D39253D98F900B88A1E /* SaveAsAnViewNavigation.swift in Sources */,
 				12512D27252F3A8100DD97F1 /* UIStoryboard+Extentions.swift in Sources */,
 				12D518F3252EEF8E00289859 /* SignUpAsAnViewController.swift in Sources */,
 				12512D34252F647900DD97F1 /* Validation.swift in Sources */,
@@ -535,6 +554,7 @@
 				12DCA12425387F9400FE9931 /* IntrestCell.swift in Sources */,
 				12D518B7252D8FDC00289859 /* OnBoardingViewController.swift in Sources */,
 				12512D3C253037DA00DD97F1 /* EmailViewController.swift in Sources */,
+				12DCA12C2539C74D00FE9931 /* BusinessProfileViewController.swift in Sources */,
 				12512D36252F64C500DD97F1 /* String+Extensions.swift in Sources */,
 				12D518B3252D8FDC00289859 /* AppDelegate.swift in Sources */,
 				673B60ED25319FFE00716E13 /* EmailViewNavigation.swift in Sources */,

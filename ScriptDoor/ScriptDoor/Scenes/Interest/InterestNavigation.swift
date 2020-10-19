@@ -20,4 +20,10 @@ class InterestNavigation {
             viewController.navigationController?.pushViewController(signUpVc, animated: true)
         }
     }
+    
+    func moveToBusinessProfile() {
+        if let signUpVc = UIStoryboard.authontication.getViewController(type: BusinessProfileViewController.self ) {
+            viewController.navigationController?.pushViewController(signUpVc, animated: true)
+        }
+    }
 }

@@ -19,6 +19,7 @@ final class EmailViewNavigation {
     // MARK: - Navigations
     func moveToInterast() {
         if let signUpVc = UIStoryboard.authontication.getViewController(type: InterestViewController.self ) {
+            signUpVc.accountType = viewController.accountType
             viewController.navigationController?.pushViewController(signUpVc, animated: true)
         }
     }

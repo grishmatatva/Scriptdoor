@@ -16,7 +16,10 @@ enum SDPickerType {
     case none
     case selectRole
     case ProfileType
-   // case hours
+    case SelectYourIndustry
+    case Country
+    case AccountType
+    // case hours
 }
 class SDPicker: UIView {
     // MARK: - Outlets
@@ -31,30 +34,30 @@ class SDPicker: UIView {
     override func didMoveToWindow() {
         super.didMoveToWindow()
         pickerMethods()
-//        if pickerType == .hours {
-//            let hours = pickerView.selectedRow(inComponent: 0)
-//            let amPm = pickerView.selectedRow(inComponent: 1)
-//            didSelectedTime?(arrayPickerValue[0][hours],arrayPickerValue[1][amPm])
-//        } else {
-           
+        //        if pickerType == .hours {
+        //            let hours = pickerView.selectedRow(inComponent: 0)
+        //            let amPm = pickerView.selectedRow(inComponent: 1)
+        //            didSelectedTime?(arrayPickerValue[0][hours],arrayPickerValue[1][amPm])
+        //        } else {
         
-//        }
+        
+        //        }
     }
-     @objc func onDoneButtonTapped() {
-    //        textYourType.text = [self.selectedIndex]
-    //        textYourType?.resignFirstResponder()
-            toolBar.removeFromSuperview()
-          //  picker.removeFromSuperview()
-        }
+    @objc func onDoneButtonTapped() {
+        //        textYourType.text = [self.selectedIndex]
+        //        textYourType?.resignFirstResponder()
+        toolBar.removeFromSuperview()
+        //  picker.removeFromSuperview()
+    }
     func pickerMethods() {
-
-          toolBar = UIToolbar.init(frame: CGRect.init(x: 0.0, y: UIScreen.main.bounds.size.height - 300, width: UIScreen.main.bounds.size.width, height: 50))
-          toolBar.barStyle = .default
-          toolBar.items = [UIBarButtonItem.init(title: "Done", style: .done, target: self, action: #selector(onDoneButtonTapped))]
-          self.addSubview(toolBar)
+        
+        toolBar = UIToolbar.init(frame: CGRect.init(x: 0.0, y: UIScreen.main.bounds.size.height - 300, width: UIScreen.main.bounds.size.width, height: 50))
+        toolBar.barStyle = .default
+        toolBar.items = [UIBarButtonItem.init(title: "Done", style: .done, target: self, action: #selector(onDoneButtonTapped))]
+        self.addSubview(toolBar)
     }
     static var shared: SDPicker {
-         return (UINib(nibName: "SDPicker", bundle: nil).instantiate(withOwner: self, options: nil)[0] as? SDPicker)!
+        return (UINib(nibName: "SDPicker", bundle: nil).instantiate(withOwner: self, options: nil)[0] as? SDPicker)!
     }
     
     // MARK: - Picker Show Methods
@@ -74,12 +77,33 @@ class SDPicker: UIView {
             }
             arrayPickerValue.append(arrayRole)
         case .ProfileType:
-        var arrayType: [SDPickerData] = [SDPickerData]()
-        let arrayProfileType:[String] = [ "ProfileType1", "ProfileType2", "ProfileType3"]
-        for i in arrayProfileType {
-            arrayType.append(SDPickerData(rowValue: i ))
-        }
-        arrayPickerValue.append(arrayType)
+            var arrayType: [SDPickerData] = [SDPickerData]()
+            let arrayProfileType:[String] = [ "ProfileType1", "ProfileType2", "ProfileType3"]
+            for i in arrayProfileType {
+                arrayType.append(SDPickerData(rowValue: i ))
+            }
+            arrayPickerValue.append(arrayType)
+        case .SelectYourIndustry:
+            var arrayIndu: [SDPickerData] = [SDPickerData]()
+            let arrayInduType:[String] = [ "Industry1", "Industry2", "Industry3"]
+            for i in arrayInduType {
+                arrayIndu.append(SDPickerData(rowValue: i ))
+            }
+            arrayPickerValue.append(arrayIndu)
+        case .AccountType:
+                var arrayAccType: [SDPickerData] = [SDPickerData]()
+                let arrayAccountType:[String] = [ "AccountType1", "AccountType2", "AccountType3"]
+                for i in arrayAccountType {
+                    arrayAccType.append(SDPickerData(rowValue: i ))
+                }
+                arrayPickerValue.append(arrayAccType)
+        case .Country:
+            var arrayCountry: [SDPickerData] = [SDPickerData]()
+            let arrayCountryType:[String] = [ "Country1", "Country2", "Country3"]
+            for i in arrayCountryType {
+                arrayCountry.append(SDPickerData(rowValue: i ))
+            }
+            arrayPickerValue.append(arrayCountry)
         case .none: break
         }
         pickerView.reloadAllComponents()

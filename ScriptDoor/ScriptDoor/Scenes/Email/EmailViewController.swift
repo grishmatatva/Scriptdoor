@@ -15,6 +15,8 @@ class EmailViewController: UIViewController {
     
     // MARK: - Variable
     lazy var viewNavigator: EmailViewNavigation = EmailViewNavigation(self)
+    var accountType: SignUpAs?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareView()

@@ -16,7 +16,7 @@ class InterestViewController: UIViewController {
     // MARK: - Variable
     var arrayInterates: [IntrestModel] = [IntrestModel]()
     lazy var viewNavigation: InterestNavigation = InterestNavigation(self)
-    
+    var accountType: SignUpAs?
     let names = ["Action","Comedy","Horror","Adventure","Horror","Action","Horror","Adventure","Action","Comedy","Horror","Adventure","Horror"]
     
     let directions:[BubbleDirection] = [.up,.topleft,.topRight,.down,.down,.down,.up,.up,.up,.up,.up,.up,.down,.down,.down]
@@ -40,9 +40,12 @@ class InterestViewController: UIViewController {
     
     // MARK: - Action Methods
     @IBAction private func didTapOnNext() {
-        viewNavigation.moveToProfile()
+        if accountType == SignUpAs.invidual  {
+            viewNavigation.moveToProfile()
+        } else {
+            viewNavigation.moveToBusinessProfile()
+        }
     }
-    
 }
 
 // MARK: - Extension Collection View
@@ -57,7 +60,7 @@ extension InterestViewController: UICollectionViewDataSource {
         cell.direction = directions[indexPath.item]
         cell.text = names[indexPath.item]
         cell.didSelecte = { selected in
-
+            
         }
         return cell
     }

@@ -16,6 +16,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet private weak var textYourCity: UITextField!
     @IBOutlet private weak var textYourType: UITextField!
     @IBOutlet private weak var imageProfile : UIImageView!
+    @IBOutlet private weak var progressView : NSLayoutConstraint!
     
     var datePickerView = UIDatePicker()
     var selectedIndex :Int = 0
@@ -33,6 +34,10 @@ class ProfileViewController: UIViewController {
         inActiveTextField()
         textDateOfBirth.inputView = datePickerView
         dateFormate()
+        UIView.animate(withDuration: 1.00) {
+                  self.progressView.constant = UIScreen.main.bounds.width
+                  self.view.layoutIfNeeded()
+              }
     }
     
     private func updateDateToFields() {
