@@ -24,6 +24,7 @@ class InterestViewController: UIViewController {
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         prepareView()
         // Do any additional setup after loading the view.
     }
@@ -45,6 +46,10 @@ class InterestViewController: UIViewController {
         } else {
             viewNavigation.moveToBusinessProfile()
         }
+    }
+    
+    @IBAction func didTapOnBack() {
+        viewNavigation.backToSignUpAsAn()
     }
 }
 

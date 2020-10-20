@@ -22,6 +22,7 @@ class ProfileViewController: UIViewController {
     var selectedIndex :Int = 0
     var selectedDate : Date? = nil
     let picker = SDPicker.shared
+    lazy var viewNavigation: ProfileViewNavigation = ProfileViewNavigation(viewController: self)
     
     // MARK: - Life cycle method
     override func viewDidLoad() {
@@ -35,9 +36,8 @@ class ProfileViewController: UIViewController {
         textDateOfBirth.inputView = datePickerView
         dateFormate()
         UIView.animate(withDuration: 1.00) {
-                  self.progressView.constant = UIScreen.main.bounds.width
-                  self.view.layoutIfNeeded()
-              }
+            self.progressView.constant = UIScreen.main.bounds.width
+        }
     }
     
     private func updateDateToFields() {
@@ -100,7 +100,7 @@ class ProfileViewController: UIViewController {
         
         imagePicker.preferredContentSize = CGSize(width: 1, height: 5)
         imagePicker.delegate = self
-       self.present(imagePicker, animated: true, completion: nil)
+        self.present(imagePicker, animated: true, completion: nil)
     }
     
     func showMyCamera() {
@@ -112,6 +112,14 @@ class ProfileViewController: UIViewController {
         } else {
             Utility.shared.showAlert(title: "Camera Can't Open", message: "Camera not supported in simulator", controller: self)
         }
+    }
+    
+    private func validation() -> Bool {
+        if textSelectYourRole.text?.trimmedLength == 0 || textYourCity.text?.trimmedLength == 0 || textYourType.text?.trimmedLength == 0 || textDateOfBirth.text?.trimmedLength == 0  {
+            Utility.shared.showAlert(title: "", message: "Please enter all Fields", controller: self)
+            return false
+        }
+        return true
     }
     
     // MARK: - CUSTOM ACTION METHODS
@@ -147,11 +155,21 @@ class ProfileViewController: UIViewController {
         profilePicker.showPickerWith(view: view)
     }
     
-    @IBAction func AddImageButton(sender : AnyObject) {
+    @IBAction func addImageButton(sender : AnyObject) {
         self.funcActionImage(title: "OPTION", message: "")
     }
+    
+    @IBAction func didTapOnBack() {
+        viewNavigation.backToInterest()
+    }
+    
+    @IBAction func didTapOnNext() {
+        if validation() {
+            viewNavigation.moveToExplore()
+            
+        }
+    }
 }
-
 // MARK: - Extension Textfield
 extension ProfileViewController: UITextFieldDelegate {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {

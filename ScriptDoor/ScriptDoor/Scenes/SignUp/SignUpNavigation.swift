@@ -15,15 +15,24 @@ final class SignUpNavigation {
     init(_ controller: SignUpViewController) { viewController = controller }
     
     // MARK: - Navigations
-    func moveToSignUpAs() {
-        if let signUpAsVc = UIStoryboard.authontication.getViewController(type: SignUpAsAnViewController.self ) {
+    func moveToEmail() {
+        if let signUpAsVc = UIStoryboard.authontication.getViewController(type: EmailViewController.self ) {
             viewController.navigationController?.pushViewController(signUpAsVc, animated: true)
         }
     }
     
     func moveToSignIn() {
-        if let signUpAsVc = UIStoryboard.authontication.getViewController(type: SignInViewController.self ) {
-            viewController.navigationController?.pushViewController(signUpAsVc, animated: true)
-        }
+            if viewController.navigationController?.viewController(ofClass: SignInViewController.self) ?? false{
+                viewController.navigationController?.pop(transitionType: .push)
+            } else {
+                if  let signUpVc = UIStoryboard.authontication.getViewController(type: SignInViewController.self) {
+                    
+                    viewController.navigationController?.pushViewController(signUpVc, animated: true)
+                }
+            }
+    }
+    
+    func backToWelcome() {
+        viewController.navigationController?.popToViewController(viewController: WelcomeViewController.self)
     }
 }

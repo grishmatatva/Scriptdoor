@@ -16,7 +16,9 @@ class WelcomeViewController: UIViewController {
     // MARK: - Lyfe Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.isHidden = true
+        //navigationController?.navigationBar.isHidden = true
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
         // Do any additional setup after loading the view.
     }
     
@@ -24,4 +26,12 @@ class WelcomeViewController: UIViewController {
     @IBAction private func didTapOnSignUp() { viewNavigator.moveToSignUp() }
 
     @IBAction private func didTapOnSignIn() { viewNavigator.moveToSignIn() }
+    
+    @IBAction private func didTapOnExplore() { viewNavigator.moveToExplore() }
+}
+
+extension WelcomeViewController: UIGestureRecognizerDelegate {
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldBeRequiredToFailBy otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
+    }
 }

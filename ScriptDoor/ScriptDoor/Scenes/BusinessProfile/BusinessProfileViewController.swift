@@ -16,8 +16,10 @@ class BusinessProfileViewController: UIViewController {
     @IBOutlet private weak var textCountry: UITextField!
     @IBOutlet private weak var textAccountType: UITextField!
     @IBOutlet private weak var imageProfile : UIImageView!
+    @IBOutlet private weak var progressView : NSLayoutConstraint!
     
     let picker = SDPicker.shared
+    lazy var viewNavigation: BusinessProfileViewNavigator = BusinessProfileViewNavigator(viewController: self)
     
     // MARK: - Life cycle method
     override func viewDidLoad() {
@@ -28,6 +30,9 @@ class BusinessProfileViewController: UIViewController {
     // MARK: - Helper Method
     func prepareView() {
         inActiveTextField()
+        UIView.animate(withDuration: 1.00) {
+            self.progressView.constant = UIScreen.main.bounds.width
+        }
     }
     
     private func inActiveTextField() {
@@ -57,6 +62,7 @@ class BusinessProfileViewController: UIViewController {
         alertControl.addAction(cancelAction)
         self.present(alertControl, animated: true, completion: nil)
     }
+    
     func showGallery() {
         let imagePicker = UIImagePickerController()
         imagePicker.modalPresentationStyle = UIModalPresentationStyle.currentContext;
@@ -77,6 +83,14 @@ class BusinessProfileViewController: UIViewController {
         } else {
             Utility.shared.showAlert(title: "Camera Can't Open", message: "Camera not supported in simulator", controller: self)
         }
+    }
+    
+    private func validation() -> Bool {
+        if textAccountType.text?.trimmedLength == 0 || textCountry.text?.trimmedLength == 0 || textYourIndustry.text?.trimmedLength == 0 || textBusinessname.text?.trimmedLength == 0  {
+            Utility.shared.showAlert(title: "", message: "Please enter all Fields", controller: self)
+            return false
+        }
+        return true
     }
     
     // MARK: - Action Methods
@@ -109,8 +123,18 @@ class BusinessProfileViewController: UIViewController {
         profilePicker.showPickerWith(view: view)
     }
     
-    @IBAction func AddImageButton(sender : AnyObject) {
+    @IBAction func addImageButton(sender : AnyObject) {
         self.funcActionImage(title: "OPTION", message: "")
+    }
+    
+    @IBAction func didTapOnBack() {
+        viewNavigation.backToInterest()
+    }
+    
+    @IBAction func didTapOnNext() {
+        if validation() {
+            viewNavigation.moveToExplore()
+        }
     }
 }
 

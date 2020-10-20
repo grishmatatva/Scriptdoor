@@ -23,12 +23,16 @@ class SignUpAsAnViewController: UIViewController {
     // MARK: - Action Methods
     @IBAction private func didTapOnSignUpAsIndividual() {
         accountType = .invidual
-        viewNavigation.moveToEmail()
+        viewNavigation.moveToInterest()
     }
     
     @IBAction private func didTapOnSignUpAsBusiness() {
         accountType = .business
-        viewNavigation.moveToEmail()
+        viewNavigation.moveToInterest()
     }
     
+    @IBAction private func didTapOnExplore() {
+        viewNavigation.moveToExplore()
+    }
+
 }

@@ -15,7 +15,6 @@ class EmailViewController: UIViewController {
     
     // MARK: - Variable
     lazy var viewNavigator: EmailViewNavigation = EmailViewNavigation(self)
-    var accountType: SignUpAs?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +26,7 @@ class EmailViewController: UIViewController {
     
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5){ // change your delay here wo knha se ayy ga ? wo to ese hi rakh tha na
           // redirect to next vc
-            self.viewNavigator.moveToInterast()
+            self.viewNavigator.moveToSignUpAsAn()
         }
     }
      

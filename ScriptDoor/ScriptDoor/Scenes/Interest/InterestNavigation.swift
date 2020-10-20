@@ -26,4 +26,8 @@ class InterestNavigation {
             viewController.navigationController?.pushViewController(signUpVc, animated: true)
         }
     }
+    
+    func backToSignUpAsAn() {
+        viewController.navigationController?.popViewController(animated: true)
+    }
 }

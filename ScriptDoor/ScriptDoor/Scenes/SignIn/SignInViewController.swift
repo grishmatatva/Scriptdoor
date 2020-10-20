@@ -31,12 +31,12 @@ class SignInViewController: UIViewController {
     }
     
     @IBAction private func didTapOnSignUp() {
-        viewNavigator.MoveToSignUp()
+        viewNavigator.moveToSignUp()
     }
     
     @IBAction private func didTapOnSignIn() {
         if validation() {
-            
+            viewNavigator.moveToExplore()
         }
     }
     

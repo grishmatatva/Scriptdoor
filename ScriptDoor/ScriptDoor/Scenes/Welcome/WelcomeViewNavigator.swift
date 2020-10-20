@@ -26,4 +26,10 @@ final class WelcomeViewNavigator {
             viewController.navigationController?.pushViewController(signUpAsVc, animated: true)
         }
     }
+    
+    func moveToExplore() {
+        if let explore = UIStoryboard.landing.getViewController(type: LandingViewController.self) {
+            viewController.navigationController?.pushViewController(explore, animated: true)
+        }
+    }
 }

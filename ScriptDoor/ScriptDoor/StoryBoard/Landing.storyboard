@@ -1,7 +1,72 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Landing View Controller-->
+        <scene sceneID="Qlh-Wr-pqN">
+            <objects>
+                <viewController storyboardIdentifier="LandingViewController" id="cYf-bH-HaY" customClass="LandingViewController" customModule="ScriptDoor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yvn-gg-F7v">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLogo" translatesAutoresizingMaskIntoConstraints="NO" id="HgC-7n-qJR">
+                                <rect key="frame" x="24" y="50" width="127" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="c5G-sg-0TX"/>
+                                    <constraint firstAttribute="width" constant="127" id="tZp-gj-Bcj"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Notification" translatesAutoresizingMaskIntoConstraints="NO" id="l8n-Xz-N9N">
+                                <rect key="frame" x="368" y="39" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="Uz2-tn-GQK"/>
+                                    <constraint firstAttribute="height" constant="22" id="bRa-52-4nD"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="l8n-Xz-N9N" firstAttribute="top" secondItem="Yvn-gg-F7v" secondAttribute="top" constant="39" id="8gG-8r-XfE"/>
+                            <constraint firstItem="HgC-7n-qJR" firstAttribute="leading" secondItem="fi4-X0-rgg" secondAttribute="leading" constant="24" id="OeC-du-HJx"/>
+                            <constraint firstItem="fi4-X0-rgg" firstAttribute="trailing" secondItem="l8n-Xz-N9N" secondAttribute="trailing" constant="24" id="juE-iD-36J"/>
+                            <constraint firstItem="HgC-7n-qJR" firstAttribute="top" secondItem="Yvn-gg-F7v" secondAttribute="top" constant="50" id="q0o-4G-blE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fi4-X0-rgg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="g3L-t8-dsY"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w68-OU-4BM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="789.85507246376812" y="80.357142857142847"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4R5-pI-njZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Gsl-nu-DcM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5sp-3J-5lm">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cYf-bH-HaY" kind="relationship" relationship="rootViewController" id="AW6-Ar-8fa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ou4-uL-ZrG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-120.28985507246378" y="80.357142857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AppLogo" width="256" height="53"/>
+        <image name="Notification" width="20" height="23"/>
+    </resources>
 </document>

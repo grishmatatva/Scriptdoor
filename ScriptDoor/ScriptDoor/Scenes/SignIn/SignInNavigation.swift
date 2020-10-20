@@ -10,7 +10,7 @@ import UIKit
 
 class SignInNavigation {
     
-     // MARK: - Variables
+    // MARK: - Variables
     let viewController: SignInViewController
     
     init(viewController: SignInViewController) {
@@ -20,10 +20,22 @@ class SignInNavigation {
 
 extension SignInNavigation {
     
-     // MARK: - Method
-    func MoveToSignUp() {
-        if let signUp = UIStoryboard.authontication.getViewController(type: SignUpViewController.self) {
-        viewController.navigationController?.pushViewController(signUp, animated: true)
+    // MARK: - Method
+    func moveToSignUp() {
+        if viewController.navigationController?.viewController(ofClass: SignUpViewController.self) ?? false{
+            viewController.navigationController?.pop(transitionType: .push)
+        } else {
+            if  let signUpVc = UIStoryboard.authontication.getViewController(type: SignUpViewController.self) {
+                
+                viewController.navigationController?.pushViewController(signUpVc, animated: true)
+            }
+        }
+    }
+    
+    func moveToExplore() {
+        if let signUp = UIStoryboard.landing.getViewController(type: LandingViewController.self) {
+            viewController.navigationController?.pushViewController(signUp, animated: true)
         }
     }
 }
+

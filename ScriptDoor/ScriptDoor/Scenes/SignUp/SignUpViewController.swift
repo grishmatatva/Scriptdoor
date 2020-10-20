@@ -45,6 +45,10 @@ class SignUpViewController: UIViewController {
         textConfirmPassword.isSecureTextEntry = !textConfirmPassword.isSecureTextEntry
     }
     
+    @IBAction private func didTapOnBack() {
+        viewNavigation.backToWelcome()
+    }
+    
     // MARK: - Helper Method
     func prepareView() {
         inActiveTextField()
@@ -63,7 +67,7 @@ class SignUpViewController: UIViewController {
     
     private func signUpUser() {
         if validation() {
-            viewNavigation.moveToSignUpAs()
+            viewNavigation.moveToEmail()
         }
     }
     
@@ -81,7 +85,7 @@ class SignUpViewController: UIViewController {
             Utility.shared.showAlert(title: "", message: "Password must be 8 character long", controller: self)
             return false
         } else if textPassword.validate(validationType: .password) == .invalid || textPassword.validate(validationType: .password) == .blank {
-            Utility.shared.showAlert(title: "", message: "Invalid password", controller: self)
+            Utility.shared.showAlert(title: "", message: "Password must contain 1 special character , 1 alphabet and special character", controller: self)
             return false
         } else if textPassword.validate(validationType: .spacialCharacter) == .notContainsSpacialCharacter {
             Utility.shared.showAlert(title: "", message: "Enter special character", controller: self)
@@ -102,5 +106,4 @@ extension SignUpViewController: UITextFieldDelegate {
         textField.borderColor = UIColor.black
         return true
     }
-    
 }

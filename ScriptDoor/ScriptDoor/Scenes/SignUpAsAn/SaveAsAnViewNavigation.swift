@@ -20,10 +20,17 @@ class SignUpAsAnViewNavigation {
         self.viewController = viewController
     }
     
-    func moveToEmail() {
-        if let email = UIStoryboard.authontication.getViewController(type: EmailViewController.self)  {
-            email.accountType = viewController.accountType
-            viewController.navigationController?.pushViewController(email, animated: true)
+    func moveToInterest() {
+        if let interest = UIStoryboard.authontication.getViewController(type: InterestViewController.self)  {
+            interest.accountType = viewController.accountType
+            viewController.navigationController?.pushViewController(interest, animated: true)
         }
     }
+    
+    func moveToExplore() {
+        if let explore = UIStoryboard.landing.getViewController(type: LandingViewController.self) {
+            viewController.navigationController?.pushViewController(explore, animated: true)
+        }
+    }
+
 }

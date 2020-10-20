@@ -170,6 +170,9 @@
                                                         <real key="value" value="25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="didTapOnExplore" destination="F0r-gA-AOG" eventType="touchUpInside" id="8gA-St-HNn"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -256,6 +259,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="337" id="yrG-UL-XER"/>
                                                 </constraints>
+                                                <viewLayoutGuide key="safeArea" id="UeB-1Q-T39"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Scriptdoor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFx-ML-R4R">
                                                 <rect key="frame" x="64" y="352" width="247.5" height="64"/>
@@ -288,7 +292,6 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="didTapOnSignUpAsIndividual" destination="hCu-UX-aDV" eventType="touchUpInside" id="uvx-am-a75"/>
-                                                    <segue destination="oY7-Mx-b8O" kind="show" id="Ij2-UL-es8"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgc-4P-wEt">
@@ -336,6 +339,9 @@
                                                         <real key="value" value="25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="didTapOnExplore" destination="hCu-UX-aDV" eventType="touchUpInside" id="mgB-56-wwl"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -353,8 +359,8 @@
                                             <constraint firstItem="Idm-aG-CLL" firstAttribute="centerX" secondItem="UXQ-A1-HIm" secondAttribute="centerX" id="gkV-ma-WkU"/>
                                             <constraint firstItem="Idm-aG-CLL" firstAttribute="top" secondItem="mgc-4P-wEt" secondAttribute="bottom" constant="11" id="oVg-tx-Ne3"/>
                                             <constraint firstItem="mgc-4P-wEt" firstAttribute="top" secondItem="rCo-fY-KFz" secondAttribute="bottom" constant="20" id="pNT-5W-Jcp"/>
-                                            <constraint firstItem="3h1-Gm-sbD" firstAttribute="top" secondItem="UXQ-A1-HIm" secondAttribute="top" id="rBA-ap-7bd"/>
                                             <constraint firstAttribute="trailing" secondItem="rCo-fY-KFz" secondAttribute="trailing" constant="63" id="t6F-JX-wCh"/>
+                                            <constraint firstItem="3h1-Gm-sbD" firstAttribute="top" secondItem="UXQ-A1-HIm" secondAttribute="top" id="wTB-cU-IIs"/>
                                             <constraint firstItem="3h1-Gm-sbD" firstAttribute="leading" secondItem="UXQ-A1-HIm" secondAttribute="leading" id="xJF-Gh-W1O"/>
                                         </constraints>
                                     </view>
@@ -382,7 +388,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5mB-H7-X6l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3513" y="115"/>
+            <point key="canvasLocation" x="4330" y="153"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="49j-Nn-atk">
@@ -396,10 +402,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="87e-kh-kBe">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="681"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="731"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join Scriptdoor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kg1-Ul-cWP">
-                                                <rect key="frame" x="105" y="155" width="165" height="64"/>
+                                                <rect key="frame" x="105" y="205" width="165" height="64"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="64" id="WQn-Zw-DjS"/>
                                                 </constraints>
@@ -408,21 +414,22 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mvw-wZ-ODr">
-                                                <rect key="frame" x="16" y="227" width="343" height="31"/>
+                                                <rect key="frame" x="16" y="277" width="343" height="31"/>
                                                 <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="16"/>
                                                 <state key="normal" title="Create an account to explore Scriptdoor">
                                                     <color key="titleColor" name="LightGray"/>
                                                 </state>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group7" translatesAutoresizingMaskIntoConstraints="NO" id="LwD-y9-Clr">
-                                                <rect key="frame" x="75" y="0.0" width="225" height="154"/>
+                                                <rect key="frame" x="75" y="50" width="225" height="154"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="225" id="2qu-Wt-0zO"/>
                                                     <constraint firstAttribute="height" constant="154" id="IEU-OD-s0F"/>
                                                 </constraints>
+                                                <viewLayoutGuide key="safeArea" id="G5F-2E-h3k"/>
                                             </imageView>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MXq-JZ-mZ3" customClass="SDTextField" customModule="ScriptDoor" customModuleProvider="target">
-                                                <rect key="frame" x="48" y="279" width="279" height="44"/>
+                                                <rect key="frame" x="48" y="329" width="279" height="44"/>
                                                 <color key="backgroundColor" name="disableTextField"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="NCj-Xx-tfq"/>
@@ -450,7 +457,7 @@
                                                 </connections>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1X-QD-SGR">
-                                                <rect key="frame" x="60.5" y="562" width="254" height="50"/>
+                                                <rect key="frame" x="60.5" y="612" width="254" height="50"/>
                                                 <color key="backgroundColor" name="AppBlue"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="254" id="mi6-J5-ul8"/>
@@ -470,14 +477,14 @@
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zfH-aW-G7Z" customClass="SDTextField" customModule="ScriptDoor" customModuleProvider="target">
-                                                <rect key="frame" x="48" y="413" width="279" height="44"/>
+                                                <rect key="frame" x="48" y="463" width="279" height="44"/>
                                                 <color key="backgroundColor" name="disableTextField"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="sB2-4X-LcX"/>
                                                 </constraints>
                                                 <color key="textColor" name="AppBlack"/>
                                                 <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="15"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="22"/>
@@ -498,13 +505,13 @@
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Pasword" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6RS-54-nQJ" customClass="SDTextField" customModule="ScriptDoor" customModuleProvider="target">
-                                                <rect key="frame" x="48" y="486" width="279" height="44"/>
+                                                <rect key="frame" x="48" y="536" width="279" height="44"/>
                                                 <color key="backgroundColor" name="disableTextField"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="9zF-Yf-e0W"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="15"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="22"/>
@@ -525,7 +532,7 @@
                                                 </connections>
                                             </textField>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="tu5-fK-3jD">
-                                                <rect key="frame" x="56" y="639" width="263" height="26"/>
+                                                <rect key="frame" x="56" y="689" width="263" height="26"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKs-1k-Jmr">
                                                         <rect key="frame" x="0.0" y="0.0" width="145.5" height="26"/>
@@ -549,13 +556,13 @@
                                                 </constraints>
                                             </stackView>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email-id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V4y-m1-ERA" customClass="SDTextField" customModule="ScriptDoor" customModuleProvider="target">
-                                                <rect key="frame" x="48" y="344" width="279" height="44"/>
+                                                <rect key="frame" x="48" y="394" width="279" height="44"/>
                                                 <color key="backgroundColor" name="disableTextField"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="Tk2-iZ-j8N"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="15"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="22"/>
@@ -579,23 +586,34 @@
                                                 </connections>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3sF-Ur-VlR">
-                                                <rect key="frame" x="282" y="418" width="59" height="30"/>
+                                                <rect key="frame" x="282" y="468" width="59" height="30"/>
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" image="eye">
+                                                <state key="normal" image="eyelock">
                                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
-                                                <state key="selected" image="eyelock"/>
+                                                <state key="selected" image="eye"/>
                                                 <connections>
                                                     <action selector="didtapOnPasswordEye:" destination="RGr-sb-Eqa" eventType="touchUpInside" id="rBh-vp-vSA"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1N8-PO-lYT">
-                                                <rect key="frame" x="282" y="493" width="59" height="30"/>
+                                                <rect key="frame" x="282" y="543" width="59" height="30"/>
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" image="eye"/>
-                                                <state key="selected" image="eyelock"/>
+                                                <state key="normal" image="eyelock"/>
+                                                <state key="selected" image="eye"/>
                                                 <connections>
                                                     <action selector="didtapOnConfPasswordEyeWithSender:" destination="RGr-sb-Eqa" eventType="touchUpInside" id="aNw-NJ-VhE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHB-6z-Q2f">
+                                                <rect key="frame" x="10" y="33" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="daZ-mU-iPk"/>
+                                                    <constraint firstAttribute="width" constant="30" id="u17-Pg-9cI"/>
+                                                </constraints>
+                                                <state key="normal" image="BackArrow"/>
+                                                <connections>
+                                                    <action selector="didTapOnBack" destination="RGr-sb-Eqa" eventType="touchUpInside" id="mkx-tF-dpE"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -605,12 +623,15 @@
                                             <constraint firstItem="zfH-aW-G7Z" firstAttribute="leading" secondItem="V4y-m1-ERA" secondAttribute="leading" id="2R7-XL-Jps"/>
                                             <constraint firstItem="3sF-Ur-VlR" firstAttribute="leading" secondItem="zfH-aW-G7Z" secondAttribute="trailing" constant="-45" id="4Xa-7s-uty"/>
                                             <constraint firstAttribute="bottom" secondItem="tu5-fK-3jD" secondAttribute="bottom" constant="16" id="7WV-Ts-X0f"/>
+                                            <constraint firstItem="LwD-y9-Clr" firstAttribute="top" secondItem="87e-kh-kBe" secondAttribute="top" constant="50" id="CIR-64-Xf3"/>
                                             <constraint firstItem="l1X-QD-SGR" firstAttribute="top" secondItem="1N8-PO-lYT" secondAttribute="bottom" constant="39" id="CSj-id-LwI"/>
                                             <constraint firstItem="6RS-54-nQJ" firstAttribute="trailing" secondItem="zfH-aW-G7Z" secondAttribute="trailing" id="EtW-oM-0AR"/>
                                             <constraint firstItem="1N8-PO-lYT" firstAttribute="leading" secondItem="6RS-54-nQJ" secondAttribute="trailing" constant="-45" id="Eu1-mO-4uV"/>
                                             <constraint firstItem="6RS-54-nQJ" firstAttribute="top" secondItem="zfH-aW-G7Z" secondAttribute="bottom" constant="29" id="ExI-4X-6ue"/>
+                                            <constraint firstItem="qHB-6z-Q2f" firstAttribute="leading" secondItem="87e-kh-kBe" secondAttribute="leading" constant="10" id="ILc-2S-167"/>
                                             <constraint firstAttribute="trailing" secondItem="1N8-PO-lYT" secondAttribute="trailing" constant="34" id="KxT-xE-9cn"/>
                                             <constraint firstItem="V4y-m1-ERA" firstAttribute="trailing" secondItem="MXq-JZ-mZ3" secondAttribute="trailing" id="LSw-r6-V0b"/>
+                                            <constraint firstItem="qHB-6z-Q2f" firstAttribute="top" secondItem="87e-kh-kBe" secondAttribute="top" constant="33" id="LVI-W9-XOV"/>
                                             <constraint firstItem="V4y-m1-ERA" firstAttribute="leading" secondItem="MXq-JZ-mZ3" secondAttribute="leading" id="NSk-zZ-x6c"/>
                                             <constraint firstItem="zfH-aW-G7Z" firstAttribute="top" secondItem="V4y-m1-ERA" secondAttribute="bottom" constant="25" id="Qw4-5U-smf"/>
                                             <constraint firstItem="Mvw-wZ-ODr" firstAttribute="leading" secondItem="87e-kh-kBe" secondAttribute="leading" constant="16" id="T0M-Pl-gvf"/>
@@ -621,7 +642,6 @@
                                             <constraint firstItem="LwD-y9-Clr" firstAttribute="centerX" secondItem="87e-kh-kBe" secondAttribute="centerX" id="Y82-NN-ao8"/>
                                             <constraint firstItem="l1X-QD-SGR" firstAttribute="centerX" secondItem="87e-kh-kBe" secondAttribute="centerX" id="Ycu-c6-RK9"/>
                                             <constraint firstItem="MXq-JZ-mZ3" firstAttribute="leading" secondItem="87e-kh-kBe" secondAttribute="leading" constant="48" id="aR2-Ph-sst"/>
-                                            <constraint firstItem="LwD-y9-Clr" firstAttribute="top" secondItem="87e-kh-kBe" secondAttribute="top" id="bmF-UQ-Aou"/>
                                             <constraint firstItem="kg1-Ul-cWP" firstAttribute="centerX" secondItem="87e-kh-kBe" secondAttribute="centerX" id="fhT-E2-1Jc"/>
                                             <constraint firstItem="l1X-QD-SGR" firstAttribute="top" secondItem="6RS-54-nQJ" secondAttribute="bottom" constant="32" id="fvy-nS-itg"/>
                                             <constraint firstItem="zfH-aW-G7Z" firstAttribute="trailing" secondItem="V4y-m1-ERA" secondAttribute="trailing" id="hSe-zI-SVr"/>
@@ -664,18 +684,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mh9-q0-qCy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2715.9420289855075" y="120.53571428571428"/>
+            <point key="canvasLocation" x="2714.4000000000001" y="120.08995502248877"/>
         </scene>
         <!--Email View Controller-->
         <scene sceneID="lcG-hP-sAT">
             <objects>
                 <viewController storyboardIdentifier="EmailViewController" id="oY7-Mx-b8O" customClass="EmailViewController" customModule="ScriptDoor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MTk-Vl-OL2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9T2-sn-iF0">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fCh-cP-JYX">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="647.5"/>
@@ -772,7 +792,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qIh-MA-Tqm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4284" y="170"/>
+            <point key="canvasLocation" x="3572" y="143"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="QCH-WB-RPe">
@@ -814,7 +834,7 @@
                                                 </constraints>
                                                 <color key="textColor" name="AppBlack"/>
                                                 <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="22"/>
@@ -951,8 +971,8 @@
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FdW-wV-Xk3">
                                                 <rect key="frame" x="290" y="377.5" width="34" height="44"/>
-                                                <state key="normal" image="eye"/>
-                                                <state key="selected" image="eyelock"/>
+                                                <state key="normal" image="eyelock"/>
+                                                <state key="selected" image="eye"/>
                                                 <connections>
                                                     <action selector="didTapOnHidePasswordWithSender:" destination="6SS-9j-o9m" eventType="touchUpInside" id="Q3w-0o-Mbz"/>
                                                 </connections>
@@ -1049,6 +1069,9 @@
                                                         <real key="value" value="25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="didTapOnNext" destination="Uy0-A4-Sjp" eventType="touchUpInside" id="wKj-sH-eDy"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your Country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eYC-c9-CXg" customClass="SDTextField" customModule="ScriptDoor" customModuleProvider="target">
                                                 <rect key="frame" x="48" y="380" width="279" height="44"/>
@@ -1185,7 +1208,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="AddImageButtonWithSender:" destination="Uy0-A4-Sjp" eventType="touchUpInside" id="a6r-xp-EP8"/>
+                                                    <action selector="addImageButtonWithSender:" destination="Uy0-A4-Sjp" eventType="touchUpInside" id="n80-Vo-MDf"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tell us about your business" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSf-RF-aea">
@@ -1244,6 +1267,25 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zVu-mn-mCp">
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="6"/>
+                                                <color key="backgroundColor" name="AppYellow"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="6" id="cu0-PC-oZe"/>
+                                                    <constraint firstAttribute="width" constant="187.5" id="vB7-1g-Rc7"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FhG-4u-Gfo">
+                                                <rect key="frame" x="10" y="39" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="4f5-hU-9Pa"/>
+                                                    <constraint firstAttribute="height" constant="30" id="Bla-b4-WZB"/>
+                                                </constraints>
+                                                <state key="normal" image="BackArrow"/>
+                                                <connections>
+                                                    <action selector="didTapOnBack" destination="Uy0-A4-Sjp" eventType="touchUpInside" id="45Q-ft-2af"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
@@ -1251,6 +1293,7 @@
                                             <constraint firstItem="kYt-MW-TWY" firstAttribute="bottom" secondItem="2qx-3p-5D5" secondAttribute="bottom" id="6ZE-p4-5cl"/>
                                             <constraint firstAttribute="bottom" secondItem="khr-kr-oLT" secondAttribute="bottom" constant="58.5" id="7Jn-FO-jk6"/>
                                             <constraint firstItem="kYt-MW-TWY" firstAttribute="top" secondItem="2qx-3p-5D5" secondAttribute="top" id="8S8-ZS-RN0"/>
+                                            <constraint firstItem="zVu-mn-mCp" firstAttribute="top" secondItem="YnP-wO-ZHO" secondAttribute="top" id="8cJ-Je-bXp"/>
                                             <constraint firstItem="lWj-mG-EZA" firstAttribute="top" secondItem="86J-u2-m9V" secondAttribute="bottom" constant="49" id="9i6-ip-60S"/>
                                             <constraint firstItem="iYS-ay-lSz" firstAttribute="trailing" secondItem="86J-u2-m9V" secondAttribute="trailing" constant="-16" id="9nh-j8-cXW"/>
                                             <constraint firstItem="2Dg-1A-WXT" firstAttribute="leading" secondItem="eYC-c9-CXg" secondAttribute="trailing" constant="-45" id="Aii-O9-x47"/>
@@ -1258,8 +1301,10 @@
                                             <constraint firstItem="lWj-mG-EZA" firstAttribute="leading" secondItem="YnP-wO-ZHO" secondAttribute="leading" constant="48" id="BEH-lF-Po8"/>
                                             <constraint firstItem="86J-u2-m9V" firstAttribute="top" secondItem="nSf-RF-aea" secondAttribute="bottom" constant="17" id="DHy-G2-NX3"/>
                                             <constraint firstItem="khr-kr-oLT" firstAttribute="centerX" secondItem="YnP-wO-ZHO" secondAttribute="centerX" id="G2s-Gg-B5e"/>
+                                            <constraint firstItem="FhG-4u-Gfo" firstAttribute="leading" secondItem="YnP-wO-ZHO" secondAttribute="leading" constant="10" id="ISc-Ia-cnm"/>
                                             <constraint firstItem="hy7-SQ-ahf" firstAttribute="top" secondItem="2Dg-1A-WXT" secondAttribute="bottom" constant="38" id="KE6-TG-1iP"/>
                                             <constraint firstItem="2qx-3p-5D5" firstAttribute="trailing" secondItem="lWj-mG-EZA" secondAttribute="trailing" id="L9w-ZC-LA0"/>
+                                            <constraint firstItem="FhG-4u-Gfo" firstAttribute="top" secondItem="zVu-mn-mCp" secondAttribute="bottom" constant="33" id="M0i-BP-ApB"/>
                                             <constraint firstItem="2Dg-1A-WXT" firstAttribute="top" secondItem="2qx-3p-5D5" secondAttribute="bottom" constant="30" id="Mob-S9-gGo"/>
                                             <constraint firstItem="7Hc-Om-xJz" firstAttribute="bottom" secondItem="hy7-SQ-ahf" secondAttribute="bottom" id="Mt2-gt-ftH"/>
                                             <constraint firstItem="2Lo-Ht-JfH" firstAttribute="top" secondItem="eYC-c9-CXg" secondAttribute="top" id="Nxd-Ix-1w1"/>
@@ -1273,6 +1318,7 @@
                                             <constraint firstItem="2Lo-Ht-JfH" firstAttribute="bottom" secondItem="eYC-c9-CXg" secondAttribute="bottom" id="X88-i9-pq9"/>
                                             <constraint firstItem="7Hc-Om-xJz" firstAttribute="top" secondItem="hy7-SQ-ahf" secondAttribute="top" id="XYY-Fy-S7h"/>
                                             <constraint firstItem="2qx-3p-5D5" firstAttribute="leading" secondItem="lWj-mG-EZA" secondAttribute="leading" id="dQl-h8-Ghj"/>
+                                            <constraint firstItem="zVu-mn-mCp" firstAttribute="leading" secondItem="YnP-wO-ZHO" secondAttribute="leading" id="fYu-Tx-7gI"/>
                                             <constraint firstAttribute="trailing" secondItem="2Dg-1A-WXT" secondAttribute="trailing" constant="34" id="icz-uL-qkN"/>
                                             <constraint firstItem="hy7-SQ-ahf" firstAttribute="leading" secondItem="eYC-c9-CXg" secondAttribute="leading" id="iuS-4a-gwj"/>
                                             <constraint firstItem="2qx-3p-5D5" firstAttribute="top" secondItem="lWj-mG-EZA" secondAttribute="bottom" constant="12" id="pYe-HF-Nnb"/>
@@ -1308,6 +1354,7 @@
                     <navigationItem key="navigationItem" id="djj-mL-Mbb"/>
                     <connections>
                         <outlet property="imageProfile" destination="3Sf-NH-9De" id="nMY-gp-a6O"/>
+                        <outlet property="progressView" destination="vB7-1g-Rc7" id="Aff-dQ-iUi"/>
                         <outlet property="textAccountType" destination="hy7-SQ-ahf" id="POU-Na-B7e"/>
                         <outlet property="textBusinessname" destination="lWj-mG-EZA" id="ZOo-Af-hcZ"/>
                         <outlet property="textCountry" destination="eYC-c9-CXg" id="tLd-yR-t3c"/>
@@ -1441,6 +1488,17 @@
                                     </view>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6CE-PF-Bxk">
+                                <rect key="frame" x="10" y="36" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="kOp-PU-Rtv"/>
+                                    <constraint firstAttribute="width" constant="30" id="yST-ds-hzb"/>
+                                </constraints>
+                                <state key="normal" image="BackArrow"/>
+                                <connections>
+                                    <action selector="didTapOnBack" destination="IDy-ij-Swz" eventType="touchUpInside" id="0o2-gI-6oF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -1450,10 +1508,12 @@
                             <constraint firstItem="rfU-Th-tJd" firstAttribute="centerX" secondItem="5O3-PY-sFX" secondAttribute="centerX" id="C07-VC-m6e"/>
                             <constraint firstItem="5O3-PY-sFX" firstAttribute="trailing" secondItem="MQp-hB-Xdh" secondAttribute="trailing" id="FgB-5b-fmm"/>
                             <constraint firstItem="rfU-Th-tJd" firstAttribute="top" secondItem="5O3-PY-sFX" secondAttribute="top" constant="48" id="SLu-yZ-Wge"/>
+                            <constraint firstItem="6CE-PF-Bxk" firstAttribute="leading" secondItem="5O3-PY-sFX" secondAttribute="leading" constant="10" id="Z1b-6b-VPC"/>
                             <constraint firstItem="5O3-PY-sFX" firstAttribute="bottom" secondItem="HW6-WW-AYo" secondAttribute="bottom" constant="50" id="k5G-8n-rBF"/>
                             <constraint firstItem="5O3-PY-sFX" firstAttribute="trailing" secondItem="l29-V7-scu" secondAttribute="trailing" id="m7S-dc-5jp"/>
                             <constraint firstItem="l29-V7-scu" firstAttribute="top" secondItem="rfU-Th-tJd" secondAttribute="bottom" constant="60" id="nIZ-Q7-ZlP"/>
                             <constraint firstItem="MQp-hB-Xdh" firstAttribute="top" secondItem="5O3-PY-sFX" secondAttribute="top" id="pgf-ha-Cb4"/>
+                            <constraint firstItem="6CE-PF-Bxk" firstAttribute="top" secondItem="MQp-hB-Xdh" secondAttribute="bottom" constant="30" id="xMw-u4-qoJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5O3-PY-sFX"/>
                     </view>
@@ -1496,6 +1556,9 @@
                                                         <real key="value" value="25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="didTapOnNext" destination="Kjx-vo-gU9" eventType="touchUpInside" id="OmS-z1-kVz"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select your role" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="td4-bV-qsw" customClass="SDTextField" customModule="ScriptDoor" customModuleProvider="target">
                                                 <rect key="frame" x="48" y="268" width="279" height="44"/>
@@ -1668,7 +1731,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="AddImageButtonWithSender:" destination="Kjx-vo-gU9" eventType="touchUpInside" id="7pM-fc-pvC"/>
+                                                    <action selector="addImageButtonWithSender:" destination="Kjx-vo-gU9" eventType="touchUpInside" id="7pM-fc-pvC"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tell us about yourself" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9KN-Ad-sL4">
@@ -1686,6 +1749,17 @@
                                                     <action selector="didTapOnButtonYourType:" destination="Kjx-vo-gU9" eventType="touchUpInside" id="7bu-tf-8Ps"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UxJ-iJ-7xg">
+                                                <rect key="frame" x="10" y="33" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="EQx-Y9-6BG"/>
+                                                    <constraint firstAttribute="height" constant="30" id="cKt-Pb-ugB"/>
+                                                </constraints>
+                                                <state key="normal" image="BackArrow"/>
+                                                <connections>
+                                                    <action selector="didTapOnBack" destination="Kjx-vo-gU9" eventType="touchUpInside" id="SwW-Bz-vFO"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
@@ -1693,6 +1767,7 @@
                                             <constraint firstItem="06O-af-9Bw" firstAttribute="trailing" secondItem="td4-bV-qsw" secondAttribute="trailing" id="5Kt-lD-efj"/>
                                             <constraint firstItem="kRf-v9-sLg" firstAttribute="top" secondItem="578-Pc-at5" secondAttribute="bottom" constant="12" id="66J-v9-ejZ"/>
                                             <constraint firstItem="If3-eQ-uIV" firstAttribute="top" secondItem="rfQ-Dg-x9i" secondAttribute="bottom" constant="52" id="7oE-Fl-NaS"/>
+                                            <constraint firstItem="UxJ-iJ-7xg" firstAttribute="leading" secondItem="R5y-76-7ga" secondAttribute="leading" constant="10" id="AUg-gw-1uk"/>
                                             <constraint firstItem="06O-af-9Bw" firstAttribute="bottom" secondItem="td4-bV-qsw" secondAttribute="bottom" id="Aqq-GS-uA2"/>
                                             <constraint firstItem="If3-eQ-uIV" firstAttribute="centerX" secondItem="R5y-76-7ga" secondAttribute="centerX" id="FCh-n5-j1e"/>
                                             <constraint firstItem="td4-bV-qsw" firstAttribute="leading" secondItem="R5y-76-7ga" secondAttribute="leading" constant="48" id="FNJ-VZ-pe4"/>
@@ -1710,6 +1785,7 @@
                                             <constraint firstItem="kRf-v9-sLg" firstAttribute="trailing" secondItem="578-Pc-at5" secondAttribute="trailing" id="amE-ub-2cE"/>
                                             <constraint firstItem="td4-bV-qsw" firstAttribute="top" secondItem="Fpc-qK-aHt" secondAttribute="bottom" constant="49" id="bl5-Rr-m6j"/>
                                             <constraint firstItem="06O-af-9Bw" firstAttribute="leading" secondItem="td4-bV-qsw" secondAttribute="leading" id="d39-yr-oEb"/>
+                                            <constraint firstItem="UxJ-iJ-7xg" firstAttribute="top" secondItem="R5y-76-7ga" secondAttribute="top" constant="33" id="eCh-cJ-pRd"/>
                                             <constraint firstItem="rfQ-Dg-x9i" firstAttribute="top" secondItem="kRf-v9-sLg" secondAttribute="bottom" constant="12" id="hLK-Xo-7wK"/>
                                             <constraint firstAttribute="bottom" secondItem="If3-eQ-uIV" secondAttribute="bottom" constant="58.5" id="hNV-gH-m2v"/>
                                             <constraint firstItem="06O-af-9Bw" firstAttribute="width" secondItem="td4-bV-qsw" secondAttribute="width" id="hWV-uh-d5P"/>
@@ -1772,6 +1848,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BackArrow" width="7" height="15"/>
         <image name="Bitmap" width="375" height="337"/>
         <image name="Cake" width="12" height="14"/>
         <image name="CheckBox" width="19" height="19"/>
