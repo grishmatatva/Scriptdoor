@@ -6,6 +6,7 @@ target 'ScriptDoor' do
   use_frameworks!
 
 pod 'IQKeyboardManagerSwift'
+pod 'FSPagerView'
   # Pods for ScriptDoor
 
 end

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Circular Std Book.ttf">
+            <string>CircularStd-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="R04-HH-sMr" customClass="FSPagerViewCell" customModule="FSPagerView">
+            <rect key="frame" x="0.0" y="0.0" width="294" height="172"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XfV-uK-VHp">
+                    <rect key="frame" x="0.0" y="0.0" width="294" height="172"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zVB-Sj-lWa">
+                            <rect key="frame" x="0.0" y="0.0" width="294" height="172"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyq-dh-pk8">
+                            <rect key="frame" x="18" y="18" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="Bac-Yg-uku"/>
+                                <constraint firstAttribute="height" constant="44" id="oyK-Ub-Czu"/>
+                            </constraints>
+                            <state key="normal" image="play"/>
+                        </button>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ikv-5Z-4lB">
+                            <rect key="frame" x="156" y="18" width="120" height="25"/>
+                            <color key="backgroundColor" name="AppWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="kVv-g1-3Dq"/>
+                                <constraint firstAttribute="height" constant="25" id="mM3-Wl-QSF"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="12"/>
+                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Editor’s Choice" image="stars">
+                                <color key="titleColor" name="AppGray"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="n7C-vT-T4j">
+                            <rect key="frame" x="18" y="94.5" width="258" height="59.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title of the video" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1KA-kl-cLC">
+                                    <rect key="frame" x="0.0" y="0.0" width="258" height="15"/>
+                                    <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="12.600000381469727"/>
+                                    <color key="textColor" name="AppWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In Featured" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jib-5J-on6">
+                                    <rect key="frame" x="0.0" y="18" width="258" height="13"/>
+                                    <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="10.800000190734863"/>
+                                    <color key="textColor" name="AppWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7b-le-uEC">
+                                    <rect key="frame" x="0.0" y="34" width="258" height="25.5"/>
+                                    <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="10.800000190734863"/>
+                                    <color key="textColor" name="AppWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="zVB-Sj-lWa" firstAttribute="leading" secondItem="XfV-uK-VHp" secondAttribute="leading" id="EaW-NT-WVI"/>
+                        <constraint firstAttribute="trailing" secondItem="zVB-Sj-lWa" secondAttribute="trailing" id="IeB-kb-Zb2"/>
+                        <constraint firstItem="fyq-dh-pk8" firstAttribute="top" secondItem="XfV-uK-VHp" secondAttribute="top" constant="18" id="KZB-fh-esI"/>
+                        <constraint firstAttribute="bottom" secondItem="n7C-vT-T4j" secondAttribute="bottom" constant="18" id="NKY-Ke-4nX"/>
+                        <constraint firstAttribute="bottom" secondItem="zVB-Sj-lWa" secondAttribute="bottom" id="X2H-bg-P7r"/>
+                        <constraint firstAttribute="trailing" secondItem="Ikv-5Z-4lB" secondAttribute="trailing" constant="18" id="bEL-TX-Af1"/>
+                        <constraint firstItem="fyq-dh-pk8" firstAttribute="leading" secondItem="XfV-uK-VHp" secondAttribute="leading" constant="18" id="je6-N8-KrV"/>
+                        <constraint firstAttribute="trailing" secondItem="n7C-vT-T4j" secondAttribute="trailing" constant="18" id="nSQ-Oa-Nl1"/>
+                        <constraint firstItem="n7C-vT-T4j" firstAttribute="top" relation="greaterThanOrEqual" secondItem="fyq-dh-pk8" secondAttribute="bottom" constant="18" id="ssX-kV-ddk"/>
+                        <constraint firstItem="zVB-Sj-lWa" firstAttribute="top" secondItem="XfV-uK-VHp" secondAttribute="top" id="tIk-H1-pAR"/>
+                        <constraint firstItem="Ikv-5Z-4lB" firstAttribute="top" secondItem="XfV-uK-VHp" secondAttribute="top" constant="18" id="uhl-NH-Fwn"/>
+                        <constraint firstItem="n7C-vT-T4j" firstAttribute="leading" secondItem="XfV-uK-VHp" secondAttribute="leading" constant="18" id="y1A-oc-qTf"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="14.4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="XfV-uK-VHp" secondAttribute="trailing" id="Ab9-cq-LQZ"/>
+                <constraint firstAttribute="bottom" secondItem="XfV-uK-VHp" secondAttribute="bottom" id="gEc-up-y9I"/>
+                <constraint firstItem="XfV-uK-VHp" firstAttribute="leading" secondItem="R04-HH-sMr" secondAttribute="leading" id="ksY-1o-ub8"/>
+                <constraint firstItem="XfV-uK-VHp" firstAttribute="top" secondItem="R04-HH-sMr" secondAttribute="top" id="qqF-Pm-7sG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="181.15942028985509" y="-59.598214285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="play" width="46" height="46"/>
+        <image name="stars" width="13" height="13"/>
+        <namedColor name="AppGray">
+            <color red="0.3529999852180481" green="0.3529999852180481" blue="0.3529999852180481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppWhite">
+            <color red="0.94499999284744263" green="0.94499999284744263" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -25,6 +25,16 @@
 		12B72D3F253DABE100B88A1E /* ProfileViewNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B72D3E253DABE100B88A1E /* ProfileViewNavigation.swift */; };
 		12B72D41253DAEFD00B88A1E /* BusinessProfileViewNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B72D40253DAEFD00B88A1E /* BusinessProfileViewNavigator.swift */; };
 		12B72D44253F172800B88A1E /* IntrestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B72D43253F172700B88A1E /* IntrestCell.swift */; };
+		12B72D502541767400B88A1E /* ChoosePlansView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B72D462541767300B88A1E /* ChoosePlansView.swift */; };
+		12B72D512541767400B88A1E /* ConnectionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B72D472541767300B88A1E /* ConnectionsCell.swift */; };
+		12B72D522541767400B88A1E /* FeaturedVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B72D482541767300B88A1E /* FeaturedVideoCell.swift */; };
+		12B72D532541767400B88A1E /* LibraryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B72D492541767300B88A1E /* LibraryCell.swift */; };
+		12B72D542541767400B88A1E /* ViewHorizontalSection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12B72D4A2541767300B88A1E /* ViewHorizontalSection.xib */; };
+		12B72D552541767400B88A1E /* FeaturedVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12B72D4B2541767300B88A1E /* FeaturedVideoCell.xib */; };
+		12B72D562541767400B88A1E /* ConnectionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12B72D4C2541767400B88A1E /* ConnectionsCell.xib */; };
+		12B72D572541767400B88A1E /* ChoosePlansView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12B72D4D2541767400B88A1E /* ChoosePlansView.xib */; };
+		12B72D582541767400B88A1E /* LibraryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12B72D4E2541767400B88A1E /* LibraryCell.xib */; };
+		12B72D592541767400B88A1E /* ViewHorizontalSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B72D4F2541767400B88A1E /* ViewHorizontalSection.swift */; };
 		12D518B3252D8FDC00289859 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D518B2252D8FDC00289859 /* AppDelegate.swift */; };
 		12D518B5252D8FDC00289859 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D518B4252D8FDC00289859 /* SceneDelegate.swift */; };
 		12D518B7252D8FDC00289859 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D518B6252D8FDC00289859 /* OnBoardingViewController.swift */; };
@@ -74,6 +84,16 @@
 		12B72D3E253DABE100B88A1E /* ProfileViewNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewNavigation.swift; sourceTree = "<group>"; };
 		12B72D40253DAEFD00B88A1E /* BusinessProfileViewNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessProfileViewNavigator.swift; sourceTree = "<group>"; };
 		12B72D43253F172700B88A1E /* IntrestCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntrestCell.swift; sourceTree = "<group>"; };
+		12B72D462541767300B88A1E /* ChoosePlansView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoosePlansView.swift; sourceTree = "<group>"; };
+		12B72D472541767300B88A1E /* ConnectionsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionsCell.swift; sourceTree = "<group>"; };
+		12B72D482541767300B88A1E /* FeaturedVideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedVideoCell.swift; sourceTree = "<group>"; };
+		12B72D492541767300B88A1E /* LibraryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryCell.swift; sourceTree = "<group>"; };
+		12B72D4A2541767300B88A1E /* ViewHorizontalSection.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewHorizontalSection.xib; sourceTree = "<group>"; };
+		12B72D4B2541767300B88A1E /* FeaturedVideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeaturedVideoCell.xib; sourceTree = "<group>"; };
+		12B72D4C2541767400B88A1E /* ConnectionsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnectionsCell.xib; sourceTree = "<group>"; };
+		12B72D4D2541767400B88A1E /* ChoosePlansView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChoosePlansView.xib; sourceTree = "<group>"; };
+		12B72D4E2541767400B88A1E /* LibraryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LibraryCell.xib; sourceTree = "<group>"; };
+		12B72D4F2541767400B88A1E /* ViewHorizontalSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewHorizontalSection.swift; sourceTree = "<group>"; };
 		12D518AF252D8FDC00289859 /* ScriptDoor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScriptDoor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12D518B2252D8FDC00289859 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12D518B4252D8FDC00289859 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +179,7 @@
 		12B72D3B253DA97E00B88A1E /* Landing */ = {
 			isa = PBXGroup;
 			children = (
+				12B72D452541757800B88A1E /* View */,
 				12B72D3C253DA9AE00B88A1E /* LandingViewController.swift */,
 			);
 			path = Landing;
@@ -168,6 +189,23 @@
 			isa = PBXGroup;
 			children = (
 				12B72D43253F172700B88A1E /* IntrestCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		12B72D452541757800B88A1E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12B72D462541767300B88A1E /* ChoosePlansView.swift */,
+				12B72D4D2541767400B88A1E /* ChoosePlansView.xib */,
+				12B72D472541767300B88A1E /* ConnectionsCell.swift */,
+				12B72D4C2541767400B88A1E /* ConnectionsCell.xib */,
+				12B72D482541767300B88A1E /* FeaturedVideoCell.swift */,
+				12B72D4B2541767300B88A1E /* FeaturedVideoCell.xib */,
+				12B72D492541767300B88A1E /* LibraryCell.swift */,
+				12B72D4E2541767400B88A1E /* LibraryCell.xib */,
+				12B72D4F2541767400B88A1E /* ViewHorizontalSection.swift */,
+				12B72D4A2541767300B88A1E /* ViewHorizontalSection.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -500,10 +538,15 @@
 				12D518C2252D8FE000289859 /* LaunchScreen.storyboard in Resources */,
 				12DCA12E253D5B0D00FE9931 /* Landing.storyboard in Resources */,
 				12D518BF252D8FE000289859 /* Assets.xcassets in Resources */,
+				12B72D542541767400B88A1E /* ViewHorizontalSection.xib in Resources */,
 				12512D23252F37CF00DD97F1 /* Circular Std Book.ttf in Resources */,
 				12D518CC252D9EA500289859 /* BoardCell.xib in Resources */,
+				12B72D552541767400B88A1E /* FeaturedVideoCell.xib in Resources */,
 				12512D2D252F425700DD97F1 /* Circular Std Black.ttf in Resources */,
 				12D518BA252D8FDC00289859 /* Authontication.storyboard in Resources */,
+				12B72D572541767400B88A1E /* ChoosePlansView.xib in Resources */,
+				12B72D562541767400B88A1E /* ConnectionsCell.xib in Resources */,
+				12B72D582541767400B88A1E /* LibraryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,8 +602,10 @@
 				12512D39252F66D100DD97F1 /* Alertable.swift in Sources */,
 				12DCA129253893A100FE9931 /* InterestNavigation.swift in Sources */,
 				12512D25252F39A600DD97F1 /* OnBoardingViewNavigator.swift in Sources */,
+				12B72D512541767400B88A1E /* ConnectionsCell.swift in Sources */,
 				673B60EB25319F6600716E13 /* ProfileViewController.swift in Sources */,
 				12512D2F252F43E200DD97F1 /* WelcomeViewNavigator.swift in Sources */,
+				12B72D592541767400B88A1E /* ViewHorizontalSection.swift in Sources */,
 				12FE679225343BE70073D36E /* DateFormate + extensions.swift in Sources */,
 				12512D21252F2C0600DD97F1 /* SDTextField.swift in Sources */,
 				12B72D41253DAEFD00B88A1E /* BusinessProfileViewNavigator.swift in Sources */,
@@ -576,9 +621,11 @@
 				12DCA1222538340800FE9931 /* SignInNavigation.swift in Sources */,
 				12D518BD252D8FDC00289859 /* ScriptDoor.xcdatamodeld in Sources */,
 				12512D31252F463F00DD97F1 /* UIColor+Extentions.swift in Sources */,
+				12B72D522541767400B88A1E /* FeaturedVideoCell.swift in Sources */,
 				12B72D3F253DABE100B88A1E /* ProfileViewNavigation.swift in Sources */,
 				12FE679425345AB30073D36E /* SDPicker.swift in Sources */,
 				12B72D3D253DA9AE00B88A1E /* LandingViewController.swift in Sources */,
+				12B72D532541767400B88A1E /* LibraryCell.swift in Sources */,
 				12512D29252F3D8F00DD97F1 /* SignUpNavigation.swift in Sources */,
 				12D518B7252D8FDC00289859 /* OnBoardingViewController.swift in Sources */,
 				12512D3C253037DA00DD97F1 /* EmailViewController.swift in Sources */,
@@ -586,6 +633,7 @@
 				12512D36252F64C500DD97F1 /* String+Extensions.swift in Sources */,
 				12D518B3252D8FDC00289859 /* AppDelegate.swift in Sources */,
 				673B60ED25319FFE00716E13 /* EmailViewNavigation.swift in Sources */,
+				12B72D502541767400B88A1E /* ChoosePlansView.swift in Sources */,
 				12D518F6252EF08400289859 /* SignUpViewController.swift in Sources */,
 				12D518B5252D8FDC00289859 /* SceneDelegate.swift in Sources */,
 				12D518F0252E074400289859 /* WelcomeViewController.swift in Sources */,
