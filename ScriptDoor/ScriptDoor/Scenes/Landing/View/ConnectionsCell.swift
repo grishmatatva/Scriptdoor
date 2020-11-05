@@ -8,8 +8,21 @@
 
 import UIKit
 import FSPagerView
+
+struct InfoConnection {
+    var image: UIImage
+}
+
 class ConnectionsCell: FSPagerViewCell {
     
-    
+    // MARK: - Outlets
+       @IBOutlet private weak var imageFeature: UIImageView!
+       
+       // MARK: - Variable
+       var detailConnection: InfoConnection? {
+           didSet {
+               imageFeature.image = detailConnection?.image ?? UIImage()
+           }
+       }
     
 }

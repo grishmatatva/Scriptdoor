@@ -8,8 +8,19 @@
 
 import FSPagerView
 
+struct InfoFeature {
+    var image: UIImage
+}
+
 class FeaturedVideoCell: FSPagerViewCell {
-
     
-
+    // MARK: - Outlets
+    @IBOutlet private weak var imageFeature: UIImageView!
+    
+    // MARK: - Variable
+    var detailFeature: InfoFeature? {
+        didSet {
+            imageFeature.image = detailFeature?.image ?? UIImage()
+        }
+    }
 }

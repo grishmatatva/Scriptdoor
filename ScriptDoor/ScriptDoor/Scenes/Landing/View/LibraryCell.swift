@@ -8,11 +8,18 @@
 
 import FSPagerView
 
+struct InfoLibrary {
+    var image: UIImage
+}
 class LibraryCell: FSPagerViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    // MARK: - Outlet
+    @IBOutlet private weak var imageLibrary: UIImageView!
+     
+    // MARK: - Variable
+    var detailLibrary: InfoLibrary? {
+        didSet {
+            imageLibrary.image = detailLibrary?.image
+        }
     }
-
 }

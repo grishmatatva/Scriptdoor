@@ -102,7 +102,6 @@
 		12D518BC252D8FDC00289859 /* ScriptDoor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ScriptDoor.xcdatamodel; sourceTree = "<group>"; };
 		12D518BE252D8FE000289859 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12D518C1252D8FE000289859 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		12D518C3252D8FE000289859 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		12D518C9252D9EA500289859 /* BoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardCell.swift; sourceTree = "<group>"; };
 		12D518CA252D9EA500289859 /* BoardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BoardCell.xib; sourceTree = "<group>"; };
 		12D518CF252DE33E00289859 /* CircularStd-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Bold.ttf"; sourceTree = "<group>"; };
@@ -124,6 +123,7 @@
 		673B60EC25319FFE00716E13 /* EmailViewNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewNavigation.swift; sourceTree = "<group>"; };
 		67AC1A8167E03033582F9718 /* Pods-ScriptDoor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScriptDoor.debug.xcconfig"; path = "Target Support Files/Pods-ScriptDoor/Pods-ScriptDoor.debug.xcconfig"; sourceTree = "<group>"; };
 		67BD2020253312A800E539DC /* InterestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestViewController.swift; sourceTree = "<group>"; };
+		6B1000012551579A00448999 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E84B0EACB06119AC47C94F3B /* Pods_ScriptDoor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScriptDoor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEDFFDBC8B711AA3016963A5 /* Pods-ScriptDoor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScriptDoor.release.xcconfig"; path = "Target Support Files/Pods-ScriptDoor/Pods-ScriptDoor.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -240,6 +240,7 @@
 				12D518E7252DE7C400289859 /* Assets */,
 				12D518E4252DE75B00289859 /* Scenes */,
 				12D518E3252DE74300289859 /* StoryBoard */,
+				6B1000012551579A00448999 /* Info.plist */,
 				12D518E2252DE72B00289859 /* AppRelatives */,
 			);
 			path = ScriptDoor;
@@ -327,7 +328,6 @@
 		12D518E8252DE7DC00289859 /* Files */ = {
 			isa = PBXGroup;
 			children = (
-				12D518C3252D8FE000289859 /* Info.plist */,
 				12D518BB252D8FDC00289859 /* ScriptDoor.xcdatamodeld */,
 			);
 			path = Files;

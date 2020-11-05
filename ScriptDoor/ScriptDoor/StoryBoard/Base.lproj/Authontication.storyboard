@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MFo-iR-Shp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MFo-iR-Shp">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -12,14 +12,14 @@
         <array key="Circular Std Black.ttf">
             <string>CircularStd-Black</string>
         </array>
-        <array key="Circular Std Bold.ttf">
-            <string>CircularStd-Bold</string>
-        </array>
         <array key="Circular Std Book.ttf">
             <string>CircularStd-Book</string>
         </array>
         <array key="Circular Std Medium.ttf">
             <string>CircularStd-Medium</string>
+        </array>
+        <array key="CircularStd-Bold.ttf">
+            <string>CircularStd-Bold</string>
         </array>
     </customFonts>
     <scenes>
