@@ -23,7 +23,10 @@ class LandingViewController: UIViewController {
     // MARK: - Variables
     var arrayFeature: [InfoFeature] = []
     var arrayConnection: [InfoConnection] = []
-        
+    var arrayLibrary: [InfoLibrary] = []
+    var arrayvideo: [InfoLibrary] = []
+    var arrayAudio: [InfoLibrary] = []
+    
     // MARK: - Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,10 +52,22 @@ class LandingViewController: UIViewController {
         arrayConnection.append(InfoConnection(image: UIImage(named: "bg-10") ?? UIImage()))
         arrayConnection.append(InfoConnection(image: UIImage(named: "bg-11") ?? UIImage()))
         arrayConnection.append(InfoConnection(image: UIImage(named: "bg-12") ?? UIImage()))
+        arrayLibrary.append(InfoLibrary(image: UIImage(named: "bg-13") ?? UIImage(), videoImage:  UIImage()))
+        arrayLibrary.append(InfoLibrary(image: UIImage(named: "bg-14") ?? UIImage(), videoImage:  UIImage()))
+        arrayLibrary.append(InfoLibrary(image: UIImage(named: "bg-15") ?? UIImage(), videoImage:  UIImage()))
+        arrayLibrary.append(InfoLibrary(image: UIImage(named: "bg-16") ?? UIImage(), videoImage:  UIImage()))
+        arrayvideo.append(InfoLibrary(image: UIImage(named: "bg-17") ?? UIImage(), videoImage:  UIImage(named: "videoPlay") ?? UIImage()))
+        arrayvideo.append(InfoLibrary(image: UIImage(named: "bg-18") ?? UIImage(), videoImage:  UIImage(named: "videoPlay") ?? UIImage()))
+        arrayvideo.append(InfoLibrary(image: UIImage(named: "bg-19") ?? UIImage(), videoImage:  UIImage(named: "videoPlay") ?? UIImage()))
+        arrayvideo.append(InfoLibrary(image: UIImage(named: "bg-10") ?? UIImage(), videoImage:  UIImage(named: "videoPlay") ?? UIImage()))
+        arrayAudio.append(InfoLibrary(image: UIImage(named: "bg") ?? UIImage(), videoImage:  UIImage()))
+        arrayAudio.append(InfoLibrary(image: UIImage(named: "bg-4") ?? UIImage(), videoImage:  UIImage()))
+        arrayAudio.append(InfoLibrary(image: UIImage(named: "bg-2") ?? UIImage(), videoImage:  UIImage()))
+        arrayAudio.append(InfoLibrary(image: UIImage(named: "bg-3") ?? UIImage(), videoImage:  UIImage()))
         var landings:[LandingSections] = [LandingSections]()
-        landings.append(LandingSections(title: "Libraries"))
-        landings.append(LandingSections(title: "Videos"))
-        landings.append(LandingSections(title: "Audios"))
+        landings.append(LandingSections(title: "Libraries",arrayLibrary: arrayLibrary))
+        landings.append(LandingSections(title: "Videos",arrayLibrary: arrayvideo))
+        landings.append(LandingSections(title: "Audios",arrayLibrary: arrayAudio))
         
         for item in landings {
             let landingView = ViewHorizontalSection.shared
@@ -86,12 +101,12 @@ extension LandingViewController: FSPagerViewDataSource {
         if pagerView == viewConnectionsPager {
             if let cell = pagerView.dequeueReusableCell(withReuseIdentifier: "connectionsCell", at: index) as? ConnectionsCell {
                 cell.detailConnection = arrayConnection[index]
-            return cell
+                return cell
             }
         } else {
             if let cell = pagerView.dequeueReusableCell(withReuseIdentifier: "featuredCell", at: index) as? FeaturedVideoCell {
                 cell.detailFeature = arrayFeature[index]
-            return cell
+                return cell
             }
         }
         return FSPagerViewCell()

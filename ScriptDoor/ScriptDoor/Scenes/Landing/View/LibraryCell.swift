@@ -10,16 +10,19 @@ import FSPagerView
 
 struct InfoLibrary {
     var image: UIImage
+    var videoImage: UIImage
 }
 class LibraryCell: FSPagerViewCell {
 
     // MARK: - Outlet
     @IBOutlet private weak var imageLibrary: UIImageView!
+    @IBOutlet private weak var imgVideo: UIImageView!
      
     // MARK: - Variable
     var detailLibrary: InfoLibrary? {
         didSet {
             imageLibrary.image = detailLibrary?.image
+            imgVideo.image = detailLibrary?.videoImage
         }
     }
 }

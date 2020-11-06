@@ -29,6 +29,7 @@ class ViewHorizontalSection: UIView {
             viewPager.reloadData()
         }
     }
+    
     static var shared: ViewHorizontalSection {
         return (UINib(nibName: "ViewHorizontalSection", bundle: nil).instantiate(withOwner: self, options: nil)[0] as? ViewHorizontalSection)!
     }
@@ -39,10 +40,12 @@ class ViewHorizontalSection: UIView {
 extension ViewHorizontalSection: FSPagerViewDataSource {
     
     func numberOfItems(in pagerView: FSPagerView) -> Int {
-        return 10
+        return landing?.arrayLibrary.count ?? 0
     }
+    
     func pagerView(_ pagerView: FSPagerView, cellForItemAt index: Int) -> FSPagerViewCell {
         let cell = pagerView.dequeueReusableCell(withReuseIdentifier: "LibraryCell", at: index) as? LibraryCell
+        cell?.detailLibrary = landing?.arrayLibrary[index]
         return cell ?? FSPagerViewCell()
     }
 }

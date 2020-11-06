@@ -27,6 +27,7 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="244" id="UkA-br-wtF"/>
                             </constraints>
+                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Romantic Literature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4A-ca-weV">
                             <rect key="frame" x="12" y="256" width="192" height="17.5"/>
@@ -40,11 +41,22 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="videoPlay" translatesAutoresizingMaskIntoConstraints="NO" id="H0p-el-gmV">
+                            <rect key="frame" x="71" y="141" width="74" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="74" id="AHC-Rw-LsK"/>
+                                <constraint firstAttribute="height" constant="75" id="fEg-LD-oPi"/>
+                            </constraints>
+                        </imageView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="H0p-el-gmV" firstAttribute="leading" secondItem="qO8-iU-XCd" secondAttribute="leading" constant="71" id="4ZU-qY-9kX"/>
+                        <constraint firstItem="H0p-el-gmV" firstAttribute="top" secondItem="qO8-iU-XCd" secondAttribute="top" constant="141" id="62E-2C-i5X"/>
                         <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Ipa-Fv-71h" secondAttribute="bottom" id="AOn-DA-rTK"/>
+                        <constraint firstItem="f4A-ca-weV" firstAttribute="top" secondItem="H0p-el-gmV" secondAttribute="bottom" constant="40" id="BU7-vx-gIB"/>
                         <constraint firstItem="f4A-ca-weV" firstAttribute="top" secondItem="s76-jc-Rg5" secondAttribute="bottom" constant="12" id="E0v-AT-mzN"/>
+                        <constraint firstAttribute="trailing" secondItem="H0p-el-gmV" secondAttribute="trailing" constant="71" id="EMq-6h-7Dx"/>
                         <constraint firstAttribute="trailing" secondItem="f4A-ca-weV" secondAttribute="trailing" constant="12" id="Uxp-bu-Jyd"/>
                         <constraint firstItem="Ipa-Fv-71h" firstAttribute="top" secondItem="f4A-ca-weV" secondAttribute="bottom" constant="3" id="fPn-2Q-qxr"/>
                         <constraint firstItem="s76-jc-Rg5" firstAttribute="top" secondItem="qO8-iU-XCd" secondAttribute="top" id="hMw-MP-49N"/>
@@ -76,12 +88,14 @@
             </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="imageLibrary" destination="s76-jc-Rg5" id="QmN-nG-X1U"/>
+                <outlet property="imgVideo" destination="H0p-el-gmV" id="Aw8-ot-LVk"/>
             </connections>
             <point key="canvasLocation" x="56.521739130434788" y="148.66071428571428"/>
         </view>
     </objects>
     <resources>
         <image name="bg-18" width="250" height="166.5"/>
+        <image name="videoPlay" width="74" height="75"/>
         <namedColor name="AppBlack">
             <color red="0.10599999874830246" green="0.10999999940395355" blue="0.13699999451637268" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
