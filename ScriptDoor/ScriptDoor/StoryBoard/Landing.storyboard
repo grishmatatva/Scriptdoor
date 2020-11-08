@@ -8,14 +8,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Circular Std Bold.ttf">
-            <string>CircularStd-Bold</string>
-        </array>
         <array key="Circular Std Book.ttf">
             <string>CircularStd-Book</string>
         </array>
         <array key="Circular Std Medium.ttf">
             <string>CircularStd-Medium</string>
+        </array>
+        <array key="CircularStd-Bold.ttf">
+            <string>CircularStd-Bold</string>
         </array>
     </customFonts>
     <scenes>
@@ -430,20 +430,20 @@
                                                         <rect key="frame" x="0.0" y="891" width="414" height="2000"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See what’s trending" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZ2-S1-9Sk">
-                                                                <rect key="frame" x="26" y="26" width="176.5" height="1515.5"/>
+                                                                <rect key="frame" x="26" y="26" width="176.5" height="23.5"/>
                                                                 <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JIR-nF-A8b">
-                                                                <rect key="frame" x="26" y="1548.5" width="362" height="45.5"/>
+                                                                <rect key="frame" x="26" y="56.5" width="362" height="45.5"/>
                                                                 <string key="text">Scriptdoor taps into the brains of  writers, thinkers, and storytellers to bring you a variety of content across categories of books, music and videos</string>
                                                                 <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="13"/>
                                                                 <color key="textColor" name="AppGray"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jGN-fj-lON">
-                                                                <rect key="frame" x="0.0" y="1616" width="414" height="0.0"/>
+                                                                <rect key="frame" x="0.0" y="124" width="414" height="0.0"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ohn-DN-ggW">
                                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
@@ -455,23 +455,23 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7cI-Xr-D93">
-                                                                <rect key="frame" x="0.0" y="1616" width="414" height="384"/>
+                                                                <rect key="frame" x="0.0" y="124" width="414" height="1876"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See what’s trending" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNQ-OC-Tya">
-                                                                        <rect key="frame" x="24" y="23" width="366" height="23.5"/>
+                                                                        <rect key="frame" x="24" y="23" width="366" height="1515.5"/>
                                                                         <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="20"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hxa-JA-SwY">
-                                                                        <rect key="frame" x="24" y="51.5" width="366" height="45.5"/>
+                                                                        <rect key="frame" x="24" y="1543.5" width="366" height="45.5"/>
                                                                         <string key="text">Scriptdoor taps into the brains of  writers, thinkers, and storytellers to bring you a variety of content across categories of books, music and videos</string>
                                                                         <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="13"/>
                                                                         <color key="textColor" name="AppGray"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kLX-0n-HqQ">
-                                                                        <rect key="frame" x="0.0" y="117" width="414" height="0.0"/>
+                                                                        <rect key="frame" x="0.0" y="1609" width="414" height="0.0"/>
                                                                         <subviews>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dqr-y2-Ih0">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
@@ -483,7 +483,7 @@
                                                                         </subviews>
                                                                     </stackView>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gpi-2O-HY5">
-                                                                        <rect key="frame" x="0.0" y="147" width="414" height="237"/>
+                                                                        <rect key="frame" x="0.0" y="1639" width="414" height="237"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Want to Advertise?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7z-kh-BPd">
                                                                                 <rect key="frame" x="28" y="34" width="362" height="25.5"/>
@@ -629,6 +629,87 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F58-RP-Hbm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2492.8000000000002" y="102.54872563718142"/>
+        </scene>
+        <!--Audio View Controller-->
+        <scene sceneID="5mu-EH-5dS">
+            <objects>
+                <viewController storyboardIdentifier="AudioViewController" id="koN-Ey-Ju5" customClass="AudioViewController" customModule="ScriptDoor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1zm-aK-q8j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AUDIO " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cae-cB-8MX">
+                                <rect key="frame" x="159.5" y="323" width="56.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Cae-cB-8MX" firstAttribute="centerY" secondItem="1zm-aK-q8j" secondAttribute="centerY" id="7lZ-Gf-RQm"/>
+                            <constraint firstItem="Cae-cB-8MX" firstAttribute="centerX" secondItem="1zm-aK-q8j" secondAttribute="centerX" id="Ke9-HD-VR2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7pO-QR-5Cw"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CBE-4Z-9qz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4091" y="32"/>
+        </scene>
+        <!--Video View Controller-->
+        <scene sceneID="9nl-TA-LSk">
+            <objects>
+                <viewController storyboardIdentifier="VideoViewController" id="NxJ-b0-6Il" customClass="VideoViewController" customModule="ScriptDoor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aaJ-Ji-qr7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRM-DJ-62P">
+                                <rect key="frame" x="165.5" y="323" width="44" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="uRM-DJ-62P" firstAttribute="centerX" secondItem="aaJ-Ji-qr7" secondAttribute="centerX" id="fi1-RN-kbU"/>
+                            <constraint firstItem="uRM-DJ-62P" firstAttribute="centerY" secondItem="aaJ-Ji-qr7" secondAttribute="centerY" id="zb5-Uw-MF5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fai-Tr-fLD"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HdR-yH-3O0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4818" y="28"/>
+        </scene>
+        <!--Library View Controller-->
+        <scene sceneID="L3u-uT-l8s">
+            <objects>
+                <viewController storyboardIdentifier="LibraryViewController" id="Do7-bJ-dr0" customClass="LibraryViewController" customModule="ScriptDoor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ugh-y9-Bbm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Library" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIK-wf-7nj">
+                                <rect key="frame" x="161" y="323" width="53.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dIK-wf-7nj" firstAttribute="centerX" secondItem="ugh-y9-Bbm" secondAttribute="centerX" id="MYk-jG-3ex"/>
+                            <constraint firstItem="dIK-wf-7nj" firstAttribute="centerY" secondItem="ugh-y9-Bbm" secondAttribute="centerY" id="Tkz-HO-YzF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7lO-Sn-ibL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DDA-U0-FxM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5503" y="32"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EKX-xR-LVI">

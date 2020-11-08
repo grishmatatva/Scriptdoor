@@ -26,7 +26,8 @@ class LandingViewController: UIViewController {
     var arrayLibrary: [InfoLibrary] = []
     var arrayvideo: [InfoLibrary] = []
     var arrayAudio: [InfoLibrary] = []
-    
+    lazy var landingViewNavigator: LandingViewNavigation = LandingViewNavigation(self)
+   
     // MARK: - Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,6 +73,7 @@ class LandingViewController: UIViewController {
         for item in landings {
             let landingView = ViewHorizontalSection.shared
             landingView.landing = item
+            landingView.landingViewNavigator = self.landingViewNavigator
             stackViewLandings.addArrangedSubview(landingView)
         }
         let plan1 = ChoosePlansView.shared

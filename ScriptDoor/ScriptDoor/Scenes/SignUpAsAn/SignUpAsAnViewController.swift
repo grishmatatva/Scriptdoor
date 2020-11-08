@@ -13,6 +13,7 @@ class SignUpAsAnViewController: UIViewController {
     // MARK: - Variables
     lazy var viewNavigation: SignUpAsAnViewNavigation = SignUpAsAnViewNavigation(viewController: self)
     var accountType: SignUpAs?
+    
     // MARK: - LifeCycle Method
     override func viewDidLoad() {
         super.viewDidLoad()

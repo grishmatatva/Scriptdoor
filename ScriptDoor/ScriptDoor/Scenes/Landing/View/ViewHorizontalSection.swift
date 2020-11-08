@@ -19,11 +19,12 @@ class ViewHorizontalSection: UIView {
     @IBOutlet private weak var viewPager: FSPagerView!
     
     // MARK: - variables
-    
+    var landingViewNavigator: LandingViewNavigation?
     var landing: LandingSections? {
         didSet {
             labelTitle.text = landing?.title ?? ""
             viewPager.dataSource = self
+            viewPager.delegate = self 
             viewPager.register(UINib(nibName: "LibraryCell", bundle: nil), forCellWithReuseIdentifier: "LibraryCell")
             viewPager.itemSize = CGSize(width: 180, height: 416)
             viewPager.reloadData()
@@ -37,7 +38,7 @@ class ViewHorizontalSection: UIView {
 }
 
 // MARK: - FSPagerView Extension
-extension ViewHorizontalSection: FSPagerViewDataSource {
+extension ViewHorizontalSection: FSPagerViewDataSource,FSPagerViewDelegate {
     
     func numberOfItems(in pagerView: FSPagerView) -> Int {
         return landing?.arrayLibrary.count ?? 0
@@ -47,5 +48,15 @@ extension ViewHorizontalSection: FSPagerViewDataSource {
         let cell = pagerView.dequeueReusableCell(withReuseIdentifier: "LibraryCell", at: index) as? LibraryCell
         cell?.detailLibrary = landing?.arrayLibrary[index]
         return cell ?? FSPagerViewCell()
+    }
+    
+    func pagerView(_ pagerView: FSPagerView, didSelectItemAt index: Int) {
+        if landing?.title == "Libraries"{
+            landingViewNavigator?.moveToLibrary()
+        } else if landing?.title == "Videos" {
+            landingViewNavigator?.moveToVideo()
+        } else {
+            landingViewNavigator?.moveToAudio()
+        }
     }
 }
