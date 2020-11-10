@@ -18,6 +18,10 @@ extension UIStoryboard {
         return UIStoryboard(name: "Landing", bundle: nil)
     }
     
+    static var detailsTest: UIStoryboard {
+        return UIStoryboard(name: "DetailTestimoials", bundle: nil)
+    }
+    
     func getViewController<T: UIViewController>(type: T.Type) -> T? {
         let id = String(describing: type)
         return instantiateViewController(withIdentifier: id) as? T

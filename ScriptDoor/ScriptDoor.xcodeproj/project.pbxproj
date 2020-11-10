@@ -67,6 +67,11 @@
 		6B2EF94E25558B6E00E3E0A0 /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2EF94D25558B6E00E3E0A0 /* AudioViewController.swift */; };
 		6BACE0392555AFC200CCCC1D /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BACE0382555AFC200CCCC1D /* LibraryViewController.swift */; };
 		6BACE03B2555AFD200CCCC1D /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BACE03A2555AFD200CCCC1D /* VideoViewController.swift */; };
+		6BD82815255AF0E900CC1B7C /* DetailTestimoials.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BD82814255AF0E900CC1B7C /* DetailTestimoials.storyboard */; };
+		6BD8281B255B039D00CC1B7C /* DetailsTestimoniolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD82817255B039D00CC1B7C /* DetailsTestimoniolsViewController.swift */; };
+		6BD8281C255B039D00CC1B7C /* RelatedBooksCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BD82819255B039D00CC1B7C /* RelatedBooksCell.xib */; };
+		6BD8281D255B039D00CC1B7C /* RelatedBooksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD8281A255B039D00CC1B7C /* RelatedBooksCell.swift */; };
+		6BD8281F255B052700CC1B7C /* DetailsTestimoniolsViewNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD8281E255B052700CC1B7C /* DetailsTestimoniolsViewNavigation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -132,6 +137,11 @@
 		6B2EF94D25558B6E00E3E0A0 /* AudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
 		6BACE0382555AFC200CCCC1D /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		6BACE03A2555AFD200CCCC1D /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		6BD82814255AF0E900CC1B7C /* DetailTestimoials.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetailTestimoials.storyboard; sourceTree = "<group>"; };
+		6BD82817255B039D00CC1B7C /* DetailsTestimoniolsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsTestimoniolsViewController.swift; sourceTree = "<group>"; };
+		6BD82819255B039D00CC1B7C /* RelatedBooksCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RelatedBooksCell.xib; sourceTree = "<group>"; };
+		6BD8281A255B039D00CC1B7C /* RelatedBooksCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelatedBooksCell.swift; sourceTree = "<group>"; };
+		6BD8281E255B052700CC1B7C /* DetailsTestimoniolsViewNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTestimoniolsViewNavigation.swift; sourceTree = "<group>"; };
 		E84B0EACB06119AC47C94F3B /* Pods_ScriptDoor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScriptDoor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEDFFDBC8B711AA3016963A5 /* Pods-ScriptDoor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScriptDoor.release.xcconfig"; path = "Target Support Files/Pods-ScriptDoor/Pods-ScriptDoor.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -285,6 +295,7 @@
 			children = (
 				12D518B8252D8FDC00289859 /* Authontication.storyboard */,
 				12D518C0252D8FE000289859 /* LaunchScreen.storyboard */,
+				6BD82814255AF0E900CC1B7C /* DetailTestimoials.storyboard */,
 				12DCA12D253D5B0D00FE9931 /* Landing.storyboard */,
 			);
 			path = StoryBoard;
@@ -298,6 +309,7 @@
 				6B2EF94C25558B5700E3E0A0 /* Audio */,
 				12B72D3B253DA97E00B88A1E /* Landing */,
 				12DCA12A2539C70300FE9931 /* BusinessProfile */,
+				6BD82816255B039D00CC1B7C /* Details */,
 				12DCA11E2536D24600FE9931 /* SignIn */,
 				673B60E925319F3A00716E13 /* Profile */,
 				673B60E825319F2A00716E13 /* Interest */,
@@ -489,6 +501,26 @@
 			path = Library;
 			sourceTree = "<group>";
 		};
+		6BD82816255B039D00CC1B7C /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				6BD82817255B039D00CC1B7C /* DetailsTestimoniolsViewController.swift */,
+				6BD8281E255B052700CC1B7C /* DetailsTestimoniolsViewNavigation.swift */,
+				6BD82818255B039D00CC1B7C /* View */,
+			);
+			name = Details;
+			path = ScriptDoor/Scenes/Details;
+			sourceTree = SOURCE_ROOT;
+		};
+		6BD82818255B039D00CC1B7C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BD82819255B039D00CC1B7C /* RelatedBooksCell.xib */,
+				6BD8281A255B039D00CC1B7C /* RelatedBooksCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C92B90F37BF10CCE9FD75699 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -566,6 +598,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BD8281C255B039D00CC1B7C /* RelatedBooksCell.xib in Resources */,
 				12FE679625345B680073D36E /* SDPicker.xib in Resources */,
 				12D518D9252DE33E00289859 /* CircularStd-Bold.ttf in Resources */,
 				12DCA127253887B400FE9931 /* Interates.json in Resources */,
@@ -578,6 +611,7 @@
 				12512D23252F37CF00DD97F1 /* Circular Std Book.ttf in Resources */,
 				12D518CC252D9EA500289859 /* BoardCell.xib in Resources */,
 				12B72D552541767400B88A1E /* FeaturedVideoCell.xib in Resources */,
+				6BD82815255AF0E900CC1B7C /* DetailTestimoials.storyboard in Resources */,
 				12512D2D252F425700DD97F1 /* Circular Std Black.ttf in Resources */,
 				12D518BA252D8FDC00289859 /* Authontication.storyboard in Resources */,
 				12B72D572541767400B88A1E /* ChoosePlansView.xib in Resources */,
@@ -667,9 +701,12 @@
 				12B72D532541767400B88A1E /* LibraryCell.swift in Sources */,
 				12512D29252F3D8F00DD97F1 /* SignUpNavigation.swift in Sources */,
 				6B2EF94E25558B6E00E3E0A0 /* AudioViewController.swift in Sources */,
+				6BD8281D255B039D00CC1B7C /* RelatedBooksCell.swift in Sources */,
 				12D518B7252D8FDC00289859 /* OnBoardingViewController.swift in Sources */,
 				12512D3C253037DA00DD97F1 /* EmailViewController.swift in Sources */,
+				6BD8281F255B052700CC1B7C /* DetailsTestimoniolsViewNavigation.swift in Sources */,
 				12DCA12C2539C74D00FE9931 /* BusinessProfileViewController.swift in Sources */,
+				6BD8281B255B039D00CC1B7C /* DetailsTestimoniolsViewController.swift in Sources */,
 				12512D36252F64C500DD97F1 /* String+Extensions.swift in Sources */,
 				12D518B3252D8FDC00289859 /* AppDelegate.swift in Sources */,
 				673B60ED25319FFE00716E13 /* EmailViewNavigation.swift in Sources */,

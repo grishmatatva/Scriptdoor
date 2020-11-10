@@ -15,21 +15,9 @@ class LandingViewNavigation {
     init(_ controller: LandingViewController) { viewController = controller }
     
     // MARK: - Navigations
-    func moveToAudio() {
-        if let audioVc = UIStoryboard.landing.getViewController(type: AudioViewController.self ) {
-            viewController.navigationController?.pushViewController(audioVc, animated: true)
+   func moveToDetailTest() {
+        if let detailVc = UIStoryboard.detailsTest.getViewController(type: DetailsTestimoniolsViewController.self ) {
+            viewController.present(detailVc, animated: true, completion: nil)
         }
     }
-    
-    func moveToVideo() {
-           if let audioVc = UIStoryboard.landing.getViewController(type: VideoViewController.self ) {
-               viewController.navigationController?.pushViewController(audioVc, animated: true)
-           }
-       }
-    
-    func moveToLibrary() {
-           if let audioVc = UIStoryboard.landing.getViewController(type: LibraryViewController.self ) {
-               viewController.navigationController?.pushViewController(audioVc, animated: true)
-           }
-       }
 }

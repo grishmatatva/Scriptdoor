@@ -51,12 +51,6 @@ extension ViewHorizontalSection: FSPagerViewDataSource,FSPagerViewDelegate {
     }
     
     func pagerView(_ pagerView: FSPagerView, didSelectItemAt index: Int) {
-        if landing?.title == "Libraries"{
-            landingViewNavigator?.moveToLibrary()
-        } else if landing?.title == "Videos" {
-            landingViewNavigator?.moveToVideo()
-        } else {
-            landingViewNavigator?.moveToAudio()
-        }
+        landingViewNavigator?.moveToDetailTest()
     }
 }
