@@ -73,7 +73,11 @@ class LandingViewController: UIViewController {
         for item in landings {
             let landingView = ViewHorizontalSection.shared
             landingView.landing = item
-            landingView.landingViewNavigator = self.landingViewNavigator
+            landingView.didSelectedDetailsTestimonios = {
+                self.landingViewNavigator.moveToDetailTest {
+                    self.landingViewNavigator.moveToAddToCart()
+                }
+            }
             stackViewLandings.addArrangedSubview(landingView)
         }
         let plan1 = ChoosePlansView.shared

@@ -17,7 +17,7 @@ class DetailsTestimoniolsViewController: UIViewController {
     
     // MARK: - Variable
     lazy var viewNavigator: DetailsTestimoniolsViewNavigation = DetailsTestimoniolsViewNavigation(self)
-    
+    var didAddToCard:(() -> ())?
     // MARK: - LifeCycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +34,13 @@ class DetailsTestimoniolsViewController: UIViewController {
     @IBAction private func didTapOnClear() {
         viewNavigator.backToLanding()
     }
+    
+    @IBAction private func didTapOnAddToCart() {
+        viewNavigator.moveToCart {
+            self.didAddToCard?()
+        }
+    }
+    
 }
 // MARK: - PagerViewExtension
 extension DetailsTestimoniolsViewController: FSPagerViewDataSource {

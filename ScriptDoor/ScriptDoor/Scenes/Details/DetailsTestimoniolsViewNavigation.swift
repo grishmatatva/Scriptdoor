@@ -18,4 +18,10 @@ class DetailsTestimoniolsViewNavigation {
     func backToLanding() {
             viewController.dismiss(animated: true, completion: nil)
     }
+    
+    func moveToCart(complition: @escaping(() -> Void)) {
+        viewController.dismiss(animated: true) {
+            complition()
+        }
+    }
 }

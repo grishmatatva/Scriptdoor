@@ -28,7 +28,7 @@ final class WelcomeViewNavigator {
     }
     
     func moveToExplore() {
-        if let explore = UIStoryboard.landing.getViewController(type: LandingViewController.self) {
+        if let explore = UIStoryboard.landing.getViewController(type: TabbarViewController.self) {
             viewController.navigationController?.pushViewController(explore, animated: true)
         }
     }

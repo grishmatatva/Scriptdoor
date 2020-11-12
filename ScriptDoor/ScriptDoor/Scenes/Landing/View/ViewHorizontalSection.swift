@@ -19,7 +19,7 @@ class ViewHorizontalSection: UIView {
     @IBOutlet private weak var viewPager: FSPagerView!
     
     // MARK: - variables
-    var landingViewNavigator: LandingViewNavigation?
+    var didSelectedDetailsTestimonios: (() -> ())?
     var landing: LandingSections? {
         didSet {
             labelTitle.text = landing?.title ?? ""
@@ -51,6 +51,6 @@ extension ViewHorizontalSection: FSPagerViewDataSource,FSPagerViewDelegate {
     }
     
     func pagerView(_ pagerView: FSPagerView, didSelectItemAt index: Int) {
-        landingViewNavigator?.moveToDetailTest()
+        didSelectedDetailsTestimonios?()
     }
 }

@@ -15,9 +15,14 @@ class LandingViewNavigation {
     init(_ controller: LandingViewController) { viewController = controller }
     
     // MARK: - Navigations
-   func moveToDetailTest() {
+    func moveToDetailTest(didAddedToCard: @escaping(() -> Void)) {
         if let detailVc = UIStoryboard.detailsTest.getViewController(type: DetailsTestimoniolsViewController.self ) {
+            detailVc.didAddToCard = didAddedToCard
             viewController.present(detailVc, animated: true, completion: nil)
         }
+    }
+    
+    func moveToAddToCart() {
+        (viewController.parent as? UITabBarController)?.selectedIndex = 4
     }
 }

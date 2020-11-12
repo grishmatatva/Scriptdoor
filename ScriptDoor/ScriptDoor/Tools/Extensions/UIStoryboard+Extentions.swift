@@ -21,7 +21,9 @@ extension UIStoryboard {
     static var detailsTest: UIStoryboard {
         return UIStoryboard(name: "DetailTestimoials", bundle: nil)
     }
-    
+    static var cart: UIStoryboard {
+        return UIStoryboard(name: "Cart", bundle: nil)
+    }
     func getViewController<T: UIViewController>(type: T.Type) -> T? {
         let id = String(describing: type)
         return instantiateViewController(withIdentifier: id) as? T
