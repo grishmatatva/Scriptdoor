@@ -18,6 +18,8 @@ class DetailsTestimoniolsViewController: UIViewController {
     // MARK: - Variable
     lazy var viewNavigator: DetailsTestimoniolsViewNavigation = DetailsTestimoniolsViewNavigation(self)
     var didAddToCard:(() -> ())?
+    var didAddToGift:(() -> ())?
+    
     // MARK: - LifeCycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +43,15 @@ class DetailsTestimoniolsViewController: UIViewController {
         }
     }
     
+    @IBAction private func didTapOnGift() {
+        viewNavigator.moveToGift {
+            self.didAddToGift?()
+        }
+    }
+    
+    @IBAction private func didTapOnReport() {
+        viewNavigator.moveToReport()
+    }
 }
 // MARK: - PagerViewExtension
 extension DetailsTestimoniolsViewController: FSPagerViewDataSource {

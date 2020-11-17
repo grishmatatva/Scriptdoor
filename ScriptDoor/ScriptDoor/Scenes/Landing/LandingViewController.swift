@@ -8,7 +8,10 @@
 
 import UIKit
 import FSPagerView
-
+enum NavigationDetail {
+    case cart
+    case gift
+}
 class LandingViewController: UIViewController {
     
     // MARK: - Outlet
@@ -26,8 +29,9 @@ class LandingViewController: UIViewController {
     var arrayLibrary: [InfoLibrary] = []
     var arrayvideo: [InfoLibrary] = []
     var arrayAudio: [InfoLibrary] = []
+    var navigation: NavigationDetail?
     lazy var landingViewNavigator: LandingViewNavigation = LandingViewNavigation(self)
-   
+    
     // MARK: - Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,8 +78,10 @@ class LandingViewController: UIViewController {
             let landingView = ViewHorizontalSection.shared
             landingView.landing = item
             landingView.didSelectedDetailsTestimonios = {
-                self.landingViewNavigator.moveToDetailTest {
+                self.landingViewNavigator.moveToDetailTest(didAddedToCard: {
                     self.landingViewNavigator.moveToAddToCart()
+                }) {
+                    self.landingViewNavigator.moveToGift()
                 }
             }
             stackViewLandings.addArrangedSubview(landingView)

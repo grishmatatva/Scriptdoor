@@ -24,4 +24,16 @@ class DetailsTestimoniolsViewNavigation {
             complition()
         }
     }
+    
+    func moveToGift(complition: @escaping(() -> Void)) {
+        viewController.dismiss(animated: true) {
+            complition()
+        }
+    }
+    
+    func moveToReport() {
+        if let report = UIStoryboard.detailsTest.getViewController(type: ReportViewController.self ) {
+            viewController.present(report, animated: true, completion: nil)
+        }
+    }
 }

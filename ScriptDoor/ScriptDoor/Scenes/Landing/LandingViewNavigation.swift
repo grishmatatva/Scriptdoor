@@ -15,14 +15,21 @@ class LandingViewNavigation {
     init(_ controller: LandingViewController) { viewController = controller }
     
     // MARK: - Navigations
-    func moveToDetailTest(didAddedToCard: @escaping(() -> Void)) {
+    func moveToDetailTest(didAddedToCard: @escaping(() -> Void),didSelectedGift: @escaping(() -> Void)) {
         if let detailVc = UIStoryboard.detailsTest.getViewController(type: DetailsTestimoniolsViewController.self ) {
             detailVc.didAddToCard = didAddedToCard
+            detailVc.didAddToGift = didSelectedGift
             viewController.present(detailVc, animated: true, completion: nil)
         }
     }
     
     func moveToAddToCart() {
         (viewController.parent as? UITabBarController)?.selectedIndex = 4
+    }
+    
+    func moveToGift() {
+        if let gift = UIStoryboard.detailsTest.getViewController(type: GiftPublicationViewController.self) {
+            viewController.navigationController?.pushViewController(gift, animated: true)
+        }
     }
 }

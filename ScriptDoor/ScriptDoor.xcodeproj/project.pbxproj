@@ -79,6 +79,10 @@
 		6BD8281C255B039D00CC1B7C /* RelatedBooksCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BD82819255B039D00CC1B7C /* RelatedBooksCell.xib */; };
 		6BD8281D255B039D00CC1B7C /* RelatedBooksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD8281A255B039D00CC1B7C /* RelatedBooksCell.swift */; };
 		6BD8281F255B052700CC1B7C /* DetailsTestimoniolsViewNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD8281E255B052700CC1B7C /* DetailsTestimoniolsViewNavigation.swift */; };
+		6BFEDABE2563E98C00141761 /* GiftPublicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFEDABD2563E98C00141761 /* GiftPublicationViewController.swift */; };
+		6BFEDAC02563E9B100141761 /* GiftPublicationNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFEDABF2563E9B100141761 /* GiftPublicationNavigator.swift */; };
+		6BFEDAC325643C3A00141761 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFEDAC225643C3A00141761 /* ReportViewController.swift */; };
+		6BFEDAC52564439F00141761 /* ReportViewNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFEDAC42564439F00141761 /* ReportViewNavigation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -156,6 +160,10 @@
 		6BD82819255B039D00CC1B7C /* RelatedBooksCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RelatedBooksCell.xib; sourceTree = "<group>"; };
 		6BD8281A255B039D00CC1B7C /* RelatedBooksCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelatedBooksCell.swift; sourceTree = "<group>"; };
 		6BD8281E255B052700CC1B7C /* DetailsTestimoniolsViewNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTestimoniolsViewNavigation.swift; sourceTree = "<group>"; };
+		6BFEDABD2563E98C00141761 /* GiftPublicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftPublicationViewController.swift; sourceTree = "<group>"; };
+		6BFEDABF2563E9B100141761 /* GiftPublicationNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftPublicationNavigator.swift; sourceTree = "<group>"; };
+		6BFEDAC225643C3A00141761 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		6BFEDAC42564439F00141761 /* ReportViewNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewNavigation.swift; sourceTree = "<group>"; };
 		E84B0EACB06119AC47C94F3B /* Pods_ScriptDoor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScriptDoor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEDFFDBC8B711AA3016963A5 /* Pods-ScriptDoor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScriptDoor.release.xcconfig"; path = "Target Support Files/Pods-ScriptDoor/Pods-ScriptDoor.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -319,6 +327,8 @@
 		12D518E4252DE75B00289859 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				6BFEDAC125643C1C00141761 /* Report */,
+				6BFEDABC2563E95A00141761 /* Gift Publication */,
 				6B53A6E0255C372400541D4F /* AddToCart */,
 				6B53A6D9255BF2C100541D4F /* Tabbar */,
 				6BACE0372555AFAE00CCCC1D /* Library */,
@@ -566,6 +576,24 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		6BFEDABC2563E95A00141761 /* Gift Publication */ = {
+			isa = PBXGroup;
+			children = (
+				6BFEDABD2563E98C00141761 /* GiftPublicationViewController.swift */,
+				6BFEDABF2563E9B100141761 /* GiftPublicationNavigator.swift */,
+			);
+			path = "Gift Publication";
+			sourceTree = "<group>";
+		};
+		6BFEDAC125643C1C00141761 /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				6BFEDAC225643C3A00141761 /* ReportViewController.swift */,
+				6BFEDAC42564439F00141761 /* ReportViewNavigation.swift */,
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
 		C92B90F37BF10CCE9FD75699 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -734,11 +762,13 @@
 				67BD2021253312A800E539DC /* InterestViewController.swift in Sources */,
 				12DCA1202536D26400FE9931 /* SignInViewController.swift in Sources */,
 				12B72D39253D98F900B88A1E /* SaveAsAnViewNavigation.swift in Sources */,
+				6BFEDABE2563E98C00141761 /* GiftPublicationViewController.swift in Sources */,
 				12512D27252F3A8100DD97F1 /* UIStoryboard+Extentions.swift in Sources */,
 				12D518F3252EEF8E00289859 /* SignUpAsAnViewController.swift in Sources */,
 				6BB20C3F255D6071009953A9 /* CartView.swift in Sources */,
 				12512D34252F647900DD97F1 /* Validation.swift in Sources */,
 				12B72D44253F172800B88A1E /* IntrestCell.swift in Sources */,
+				6BFEDAC52564439F00141761 /* ReportViewNavigation.swift in Sources */,
 				6B53A6DF255BF34100541D4F /* TabbarViewController.swift in Sources */,
 				12D518CB252D9EA500289859 /* BoardCell.swift in Sources */,
 				12DCA1222538340800FE9931 /* SignInNavigation.swift in Sources */,
@@ -755,6 +785,7 @@
 				6BD8281D255B039D00CC1B7C /* RelatedBooksCell.swift in Sources */,
 				12D518B7252D8FDC00289859 /* OnBoardingViewController.swift in Sources */,
 				12512D3C253037DA00DD97F1 /* EmailViewController.swift in Sources */,
+				6BFEDAC02563E9B100141761 /* GiftPublicationNavigator.swift in Sources */,
 				6BD8281F255B052700CC1B7C /* DetailsTestimoniolsViewNavigation.swift in Sources */,
 				12DCA12C2539C74D00FE9931 /* BusinessProfileViewController.swift in Sources */,
 				6BD8281B255B039D00CC1B7C /* DetailsTestimoniolsViewController.swift in Sources */,
@@ -765,6 +796,7 @@
 				12D518F6252EF08400289859 /* SignUpViewController.swift in Sources */,
 				6B53A6E2255C374F00541D4F /* AddToCartViewController.swift in Sources */,
 				12D518B5252D8FDC00289859 /* SceneDelegate.swift in Sources */,
+				6BFEDAC325643C3A00141761 /* ReportViewController.swift in Sources */,
 				12D518F0252E074400289859 /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

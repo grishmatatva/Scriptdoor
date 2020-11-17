@@ -23,7 +23,7 @@ class CartView: UIView {
         }
     }
 
-   static var shared: CartView? {
+   static var shared: CartView {
         return (UINib(nibName: "CartView", bundle: nil).instantiate(withOwner: self, options: nil)[0] as? CartView)!
     }
 }

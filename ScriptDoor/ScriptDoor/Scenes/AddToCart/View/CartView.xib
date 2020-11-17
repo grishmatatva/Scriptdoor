@@ -7,14 +7,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Circular Std Bold.ttf">
-            <string>CircularStd-Bold</string>
-        </array>
         <array key="Circular Std Book.ttf">
             <string>CircularStd-Book</string>
         </array>
         <array key="Circular Std Medium.ttf">
             <string>CircularStd-Medium</string>
+        </array>
+        <array key="CircularStd-Bold.ttf">
+            <string>CircularStd-Bold</string>
         </array>
     </customFonts>
     <objects>
@@ -36,7 +36,7 @@
                     <state key="normal" image="Cross"/>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="expires on 3 Dec’19" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIZ-Re-hjX">
-                    <rect key="frame" x="163" y="42" width="98.5" height="13"/>
+                    <rect key="frame" x="163" y="42" width="98.5" height="21"/>
                     <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="11"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -101,7 +101,7 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="Pfx-Rh-8pi" secondAttribute="bottom" constant="5" id="2rt-XT-eQ3"/>
-                <constraint firstItem="Lbj-1C-vS5" firstAttribute="top" relation="greaterThanOrEqual" secondItem="GIZ-Re-hjX" secondAttribute="bottom" constant="31" id="8rD-ER-aEL"/>
+                <constraint firstItem="Lbj-1C-vS5" firstAttribute="top" secondItem="GIZ-Re-hjX" secondAttribute="bottom" constant="31" id="8rD-ER-aEL"/>
                 <constraint firstAttribute="bottom" secondItem="Lbj-1C-vS5" secondAttribute="bottom" constant="10" id="FTj-uW-G8o"/>
                 <constraint firstAttribute="trailing" secondItem="Pfx-Rh-8pi" secondAttribute="trailing" constant="20" id="IbE-7X-giJ"/>
                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="wno-kb-rrv" secondAttribute="bottom" constant="10" id="Iis-NN-6Ga"/>
