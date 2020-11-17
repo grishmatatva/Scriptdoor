@@ -22,6 +22,10 @@ class GiftPublicationViewController: UIViewController {
     
     // MARK: - LifeCycle Methods
     @IBAction private func didTapOnBack() {
-        viewNavigator.backToAddToCart()
+        viewNavigator.backToAddToLanding()
+    }
+    
+    @IBAction private func didTapGift() {
+        viewNavigator.moveToAddToCart()
     }
 }

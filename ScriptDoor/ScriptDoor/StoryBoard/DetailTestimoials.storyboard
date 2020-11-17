@@ -34,7 +34,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="2077"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D5O-UE-yHR">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="2057.6666666666665"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="2067"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detailsBg" translatesAutoresizingMaskIntoConstraints="NO" id="ydR-iM-eNu">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="324"/>
@@ -43,19 +43,19 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title of Book" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnT-f4-OFF">
-                                                <rect key="frame" x="23" y="347" width="138.66666666666666" height="30.666666666666686"/>
+                                                <rect key="frame" x="23" y="347" width="135.66666666666666" height="28"/>
                                                 <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Jane Doe" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmI-Z8-kbk">
-                                                <rect key="frame" x="23.000000000000007" y="393.66666666666669" width="89.666666666666686" height="20.333333333333314"/>
+                                                <rect key="frame" x="23" y="391" width="90" height="18.666666666666686"/>
                                                 <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Priyanshi Tater’s Public Library" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWU-6W-2o8">
-                                                <rect key="frame" x="64.999999999999986" y="430" width="224.66666666666663" height="20.333333333333314"/>
+                                                <rect key="frame" x="64.999999999999986" y="426.33333333333331" width="218.66666666666663" height="18.666666666666686"/>
                                                 <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -69,7 +69,7 @@
                                                 </constraints>
                                             </view>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="aBZ-2g-qwH">
-                                                <rect key="frame" x="23" y="424" width="32" height="32"/>
+                                                <rect key="frame" x="23" y="419.66666666666669" width="32" height="32"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="32" id="dU4-Uh-Apc"/>
                                                     <constraint firstAttribute="height" constant="32" id="mOG-lG-Jkj"/>
@@ -81,7 +81,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WJb-fk-Oqm">
-                                                <rect key="frame" x="23" y="484" width="216" height="44"/>
+                                                <rect key="frame" x="23" y="479.66666666666669" width="216" height="44.000000000000057"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hr7-ks-iWM">
                                                         <rect key="frame" x="0.0" y="0.0" width="96" height="44"/>
@@ -130,23 +130,23 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pb-h2-f4g">
-                                                <rect key="frame" x="23" y="545" width="329" height="121.66666666666663"/>
+                                                <rect key="frame" x="23" y="540.66666666666663" width="329" height="112"/>
                                                 <string key="text">Scriptdoor taps into the brains of  writers, thinkers, and storytellers to bring you a variety of content across categories of books, music and videos. So whatever your interest is, you can always find fresh thinking and unique perspectives all in one place.</string>
                                                 <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="16"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="X4j-3t-45V">
-                                                <rect key="frame" x="23" y="696.66666666666663" width="329" height="23"/>
+                                                <rect key="frame" x="23" y="682.66666666666663" width="329" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Written By" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lhf-Hy-eTY">
-                                                        <rect key="frame" x="0.0" y="0.0" width="153" height="23"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="153" height="21"/>
                                                         <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="18"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soumya Mittal " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bor-9p-ugR">
-                                                        <rect key="frame" x="176" y="0.0" width="153" height="23"/>
+                                                        <rect key="frame" x="176" y="0.0" width="153" height="21"/>
                                                         <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="18"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -154,16 +154,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="oNl-5z-JwJ">
-                                                <rect key="frame" x="23" y="723.66666666666663" width="329" height="23"/>
+                                                <rect key="frame" x="23" y="707.66666666666663" width="329" height="42"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Published On" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZg-2V-730">
-                                                        <rect key="frame" x="0.0" y="0.0" width="153" height="23"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="153" height="42"/>
                                                         <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="18"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="03 December 2018" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgK-d7-YBY">
-                                                        <rect key="frame" x="176" y="0.0" width="153" height="23"/>
+                                                        <rect key="frame" x="176" y="0.0" width="153" height="42"/>
                                                         <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="18"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -171,16 +171,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="p36-ye-5rS">
-                                                <rect key="frame" x="23" y="750.66666666666663" width="329" height="23"/>
+                                                <rect key="frame" x="23" y="753.66666666666663" width="329" height="42"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expiry date" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Il8-8z-uiL">
-                                                        <rect key="frame" x="0.0" y="0.0" width="153" height="23"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="153" height="42"/>
                                                         <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="18"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="03 December 2019" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JbE-CX-vdA">
-                                                        <rect key="frame" x="176" y="0.0" width="153" height="23"/>
+                                                        <rect key="frame" x="176" y="0.0" width="153" height="42"/>
                                                         <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="18"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -188,16 +188,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="ZHZ-pm-Xr3">
-                                                <rect key="frame" x="23" y="777.66666666666663" width="329" height="23"/>
+                                                <rect key="frame" x="23" y="799.66666666666663" width="329" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qyo-DA-Mbg">
-                                                        <rect key="frame" x="0.0" y="0.0" width="153" height="23"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="153" height="21"/>
                                                         <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="18"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="French" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dN-52-GDQ">
-                                                        <rect key="frame" x="176" y="0.0" width="153" height="23"/>
+                                                        <rect key="frame" x="176" y="0.0" width="153" height="21"/>
                                                         <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="18"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -205,16 +205,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="DqO-IH-Nx3">
-                                                <rect key="frame" x="23" y="804.66666666666663" width="329" height="23"/>
+                                                <rect key="frame" x="23" y="824.66666666666663" width="329" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pages" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c57-hu-MNM">
-                                                        <rect key="frame" x="0.0" y="0.0" width="153" height="23"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="153" height="21"/>
                                                         <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="18"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2000 Pages" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ble-KN-tq5">
-                                                        <rect key="frame" x="176" y="0.0" width="153" height="23"/>
+                                                        <rect key="frame" x="176" y="0.0" width="153" height="21"/>
                                                         <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="18"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -222,7 +222,7 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzw-uK-t7s">
-                                                <rect key="frame" x="23" y="863.66666666666663" width="329" height="50"/>
+                                                <rect key="frame" x="23" y="881.66666666666663" width="329" height="50"/>
                                                 <color key="backgroundColor" name="AppBlue"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="jhr-xl-Y9E"/>
@@ -245,7 +245,7 @@
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="U62-AG-4Do">
-                                                <rect key="frame" x="23" y="927.66666666666663" width="329" height="50"/>
+                                                <rect key="frame" x="23" y="945.66666666666663" width="329" height="50"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhk-h4-Q9K">
                                                         <rect key="frame" x="0.0" y="0.0" width="161" height="50"/>
@@ -292,20 +292,20 @@
                                                 </subviews>
                                             </stackView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pageCancel" translatesAutoresizingMaskIntoConstraints="NO" id="OuS-bH-CUr">
-                                                <rect key="frame" x="23" y="1000.6666666666666" width="16" height="19"/>
+                                                <rect key="frame" x="23" y="1018.6666666666665" width="16" height="19"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="19" id="6kg-6s-4iH"/>
                                                     <constraint firstAttribute="width" constant="16" id="N7p-uQ-gPY"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Write a testimonial" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZm-JF-IJU">
-                                                <rect key="frame" x="23" y="1054.6666666666667" width="329" height="23"/>
+                                                <rect key="frame" x="23" y="1072.6666666666667" width="329" height="21"/>
                                                 <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vai-dd-MiM">
-                                                <rect key="frame" x="23" y="1100.6666666666667" width="329" height="50"/>
+                                                <rect key="frame" x="23" y="1116.6666666666667" width="329" height="50"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gHt-oS-dTv">
                                                         <rect key="frame" x="60" y="0.0" width="269" height="50"/>
@@ -344,7 +344,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3I3-d7-iB3">
-                                                <rect key="frame" x="23" y="1165.6666666666667" width="140" height="20"/>
+                                                <rect key="frame" x="23" y="1181.6666666666667" width="140" height="20"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="140" id="S9K-an-CJe"/>
@@ -352,7 +352,7 @@
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4x-Kj-vg0">
-                                                <rect key="frame" x="192" y="1194.6666666666667" width="160" height="50"/>
+                                                <rect key="frame" x="192" y="1210.6666666666667" width="160" height="50"/>
                                                 <color key="backgroundColor" name="AppBlue"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="6d7-IT-N2w"/>
@@ -373,31 +373,31 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noTestimonioals" translatesAutoresizingMaskIntoConstraints="NO" id="ud6-Xd-XcK">
-                                                <rect key="frame" x="23" y="1308.6666666666667" width="329" height="200"/>
+                                                <rect key="frame" x="23" y="1324.6666666666667" width="329" height="200"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="200" id="vLm-La-8d2"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Testimonials yet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pL-Hm-Efb">
-                                                <rect key="frame" x="23" y="1546.6666666666667" width="329" height="30.666666666666742"/>
+                                                <rect key="frame" x="23" y="1562.6666666666667" width="329" height="28"/>
                                                 <fontDescription key="fontDescription" name="CircularStd-Black" family="Circular Std" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There are no reviews for this content" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wd-u4-QqB">
-                                                <rect key="frame" x="23" y="1583.3333333333333" width="329" height="25.333333333333258"/>
+                                                <rect key="frame" x="23" y="1596.6666666666667" width="329" height="23.333333333333258"/>
                                                 <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="20"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Related Books" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRW-g4-hhh">
-                                                <rect key="frame" x="23.000000000000007" y="1676.6666666666667" width="116.66666666666669" height="23"/>
+                                                <rect key="frame" x="22.999999999999993" y="1688" width="118.33333333333331" height="21"/>
                                                 <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="18"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7XX-Xe-K8C" customClass="FSPagerView" customModule="FSPagerView">
-                                                <rect key="frame" x="23" y="1721.6666666666667" width="329" height="316"/>
+                                                <rect key="frame" x="23" y="1731" width="329" height="316"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="316" id="a9a-fI-z5I"/>
@@ -444,14 +444,14 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYp-UE-GEy">
-                                                <rect key="frame" x="335" y="42" width="24" height="25"/>
+                                                <rect key="frame" x="311" y="42" width="48" height="50"/>
                                                 <state key="normal" image="clear"/>
                                                 <connections>
                                                     <action selector="didTapOnClear" destination="mGb-qm-Rd2" eventType="touchUpInside" id="Hg0-bL-7iI"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDI-lB-aHd">
-                                                <rect key="frame" x="48" y="991.33333333333337" width="144" height="38.000000000000114"/>
+                                                <rect key="frame" x="48" y="1010.3333333333335" width="138" height="36"/>
                                                 <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="20"/>
                                                 <state key="normal" title="Report Content"/>
                                                 <connections>
@@ -542,7 +542,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6D-6W-dXg">
-                                        <rect key="frame" x="45" y="1010.3333333333334" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="45" y="1028.3333333333333" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="18"/>
                                         <color key="textColor" name="AppBlue"/>
                                         <nil key="highlightedColor"/>
@@ -594,20 +594,20 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gift Publication" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yS4-EJ-WQW">
-                                                <rect key="frame" x="101.66666666666669" y="30" width="172" height="30.666666666666671"/>
+                                                <rect key="frame" x="105.33333333333333" y="30" width="164.66666666666669" height="28"/>
                                                 <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1AK-cd-f54">
-                                                <rect key="frame" x="23" y="34" width="7" height="22"/>
+                                                <rect key="frame" x="23" y="34" width="14" height="30"/>
                                                 <state key="normal" image="BackArrow"/>
                                                 <connections>
                                                     <action selector="didTapOnBack" destination="Cqn-rU-Gqg" eventType="touchUpInside" id="nsq-gh-xNO"/>
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Soumya Mittal" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aY5-58-H5S" customClass="SDTextField" customModule="ScriptDoor" customModuleProvider="target">
-                                                <rect key="frame" x="23" y="108.66666666666669" width="329" height="50"/>
+                                                <rect key="frame" x="23" y="106" width="329" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="vH7-Oi-ah2"/>
                                                 </constraints>
@@ -638,7 +638,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o3F-ne-lPS" customClass="SDTextField" customModule="ScriptDoor" customModuleProvider="target">
-                                                <rect key="frame" x="23" y="178.66666666666666" width="329" height="50"/>
+                                                <rect key="frame" x="23" y="176" width="329" height="50"/>
                                                 <color key="backgroundColor" name="disableTextField"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="yX1-kL-64m"/>
@@ -659,7 +659,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Add a note" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KGf-3g-vfL">
-                                                <rect key="frame" x="23" y="248.66666666666663" width="329" height="167.33333333333337"/>
+                                                <rect key="frame" x="23" y="246" width="329" height="170"/>
                                                 <color key="backgroundColor" name="disableTextField"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="9h6-bH-kT3"/>
@@ -683,6 +683,9 @@
                                                         <real key="value" value="25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="didTapGift" destination="Cqn-rU-Gqg" eventType="touchUpInside" id="fwy-3W-7RD"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -747,26 +750,26 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Report content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2RH-Qn-RgJ">
-                                                <rect key="frame" x="24" y="35" width="165.66666666666666" height="30.666666666666671"/>
+                                                <rect key="frame" x="24" y="35" width="161" height="34"/>
                                                 <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uZ-dP-KTd">
-                                                <rect key="frame" x="341" y="35" width="16" height="30.666666666666671"/>
+                                                <rect key="frame" x="325" y="35" width="32" height="34"/>
                                                 <state key="normal" image="combinedShape"/>
                                                 <connections>
                                                     <action selector="didTapOnCross" destination="MoI-RP-YX1" eventType="touchUpInside" id="6Ot-1a-Ddd"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Report content #123456" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufj-fa-3YO">
-                                                <rect key="frame" x="24" y="99.666666666666671" width="177" height="20.333333333333329"/>
+                                                <rect key="frame" x="24" y="103" width="174.33333333333334" height="18.666666666666671"/>
                                                 <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why are you reporting this content?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ffq-rK-Xj8">
-                                                <rect key="frame" x="24" y="126.99999999999999" width="259.66666666666669" height="20.333333333333329"/>
+                                                <rect key="frame" x="24.000000000000014" y="128.66666666666666" width="255.33333333333337" height="18.666666666666657"/>
                                                 <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="16"/>
                                                 <color key="textColor" name="LightGray"/>
                                                 <nil key="highlightedColor"/>
@@ -790,7 +793,7 @@
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mateiral Piracy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IES-zZ-tYO">
-                                                                <rect key="frame" x="27.999999999999993" y="0.66666666666665719" width="95.333333333333314" height="18"/>
+                                                                <rect key="frame" x="28" y="1.3333333333333144" width="93" height="16.333333333333332"/>
                                                                 <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="14"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -821,7 +824,7 @@
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQa-Cg-kOJ">
-                                                                <rect key="frame" x="27.999999999999996" y="0.66666666666665719" width="35.666666666666657" height="18"/>
+                                                                <rect key="frame" x="28" y="1.3333333333333144" width="37" height="16.333333333333332"/>
                                                                 <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="14"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -852,7 +855,7 @@
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Promotes Terrorism" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLA-NI-ZlU">
-                                                                <rect key="frame" x="27.999999999999993" y="0.66666666666665719" width="123.33333333333331" height="18"/>
+                                                                <rect key="frame" x="27.999999999999993" y="1.3333333333333144" width="122.33333333333331" height="16.333333333333332"/>
                                                                 <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="14"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -883,7 +886,7 @@
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sexual Content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXq-Ll-DmJ">
-                                                                <rect key="frame" x="27.999999999999993" y="0.66666666666668561" width="96.333333333333314" height="18"/>
+                                                                <rect key="frame" x="27.999999999999993" y="1.3333333333333712" width="96.333333333333314" height="16.333333333333332"/>
                                                                 <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="14"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -914,7 +917,7 @@
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Violent content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7V-Y4-83L">
-                                                                <rect key="frame" x="28" y="0.66666666666668561" width="97" height="18"/>
+                                                                <rect key="frame" x="28.000000000000007" y="1.3333333333333712" width="93.666666666666686" height="16.333333333333332"/>
                                                                 <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="14"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -945,7 +948,7 @@
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hateful content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klG-R0-xcu">
-                                                                <rect key="frame" x="28.000000000000007" y="0.66666666666668561" width="98.666666666666686" height="18"/>
+                                                                <rect key="frame" x="28" y="1.3333333333333712" width="96" height="16.333333333333332"/>
                                                                 <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="14"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -976,7 +979,7 @@
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Harmful content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucz-56-qwG">
-                                                                <rect key="frame" x="28" y="0.66666666666668561" width="103" height="18"/>
+                                                                <rect key="frame" x="28.000000000000007" y="1.3333333333333712" width="100.66666666666669" height="16.333333333333332"/>
                                                                 <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="14"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -1007,7 +1010,7 @@
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Child abuse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRt-ve-wyj">
-                                                                <rect key="frame" x="28.000000000000007" y="0.66666666666668561" width="74.666666666666686" height="18"/>
+                                                                <rect key="frame" x="28.000000000000007" y="1.3333333333333712" width="74.666666666666686" height="16.333333333333332"/>
                                                                 <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="14"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>

@@ -18,7 +18,13 @@ class GiftPublicationNavigator {
     }
     
     // MARK: - Navigations
-    func backToAddToCart() {
+    func backToAddToLanding() {
         viewController.navigationController?.popViewController(animated: true)
+    }
+    
+    func moveToAddToCart() {
+        if let cart = UIStoryboard.cart.getViewController(type: AddToCartViewController.self) {
+            viewController.navigationController?.pushViewController(cart, animated: true)
+        }
     }
 }
