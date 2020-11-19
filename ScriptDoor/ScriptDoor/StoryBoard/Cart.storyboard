@@ -8,14 +8,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Circular Std Bold.ttf">
-            <string>CircularStd-Bold</string>
-        </array>
         <array key="Circular Std Book.ttf">
             <string>CircularStd-Book</string>
         </array>
         <array key="Circular Std Medium.ttf">
             <string>CircularStd-Medium</string>
+        </array>
+        <array key="Circular-Std-Bold.ttf">
+            <string>CircularStd-Bold</string>
         </array>
     </customFonts>
     <scenes>
@@ -295,7 +295,7 @@
     <resources>
         <image name="cart" width="14" height="14"/>
         <namedColor name="AppWhite">
-            <color red="0.94499999284744263" green="0.94499999284744263" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="GrayLine">
             <color red="0.89411764705882357" green="0.91764705882352937" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -8,10 +8,8 @@
 
 import UIKit
 import FSPagerView
-enum NavigationDetail {
-    case cart
-    case gift
-}
+import SJSegmentedScrollView
+
 class LandingViewController: UIViewController {
     
     // MARK: - Outlet
@@ -29,7 +27,7 @@ class LandingViewController: UIViewController {
     var arrayLibrary: [InfoLibrary] = []
     var arrayvideo: [InfoLibrary] = []
     var arrayAudio: [InfoLibrary] = []
-    var navigation: NavigationDetail?
+    let segmentController = SJSegmentedViewController()
     lazy var landingViewNavigator: LandingViewNavigation = LandingViewNavigation(self)
     
     // MARK: - Life Cycle Methods
@@ -122,5 +120,66 @@ extension LandingViewController: FSPagerViewDataSource {
             }
         }
         return FSPagerViewCell()
+    }
+}
+
+// MARK: - Textfield Extension
+extension LandingViewController: UITextFieldDelegate {
+    
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        if let storyboard = self.storyboard {
+            
+            let headerController = storyboard
+                .instantiateViewController(withIdentifier: "HeaderViewController")
+            //EveryThingViewController
+            let everyThingViewController = storyboard
+                .instantiateViewController(withIdentifier: "EveryThingViewController")
+            everyThingViewController.title = "Everything"
+            
+            let publicationViewController = storyboard
+                .instantiateViewController(withIdentifier: "PublicationViewController")
+            publicationViewController.title = "Publications"
+            
+            let videoViewController = storyboard
+                .instantiateViewController(withIdentifier: "VideoViewController")
+            videoViewController.title = "Videos"
+            
+            let audioViewController = storyboard
+                .instantiateViewController(withIdentifier: "AudioViewController")
+            audioViewController.title = "Music"
+            
+            let libraryViewController = storyboard
+                .instantiateViewController(withIdentifier: "LibraryViewController")
+            libraryViewController.title = "Libraries"
+            
+            let usersViewController = storyboard
+                .instantiateViewController(withIdentifier: "UsersViewController")
+            usersViewController.title = "Users"
+            
+            segmentController.delegate = self
+            segmentController.headerViewController = headerController
+            segmentController.segmentControllers = [everyThingViewController,
+                                                    publicationViewController,videoViewController,audioViewController,libraryViewController,usersViewController]
+            segmentController.headerViewHeight = 100.0
+            segmentController.headerViewOffsetHeight = 31.0
+            segmentController.segmentTitleColor = .black
+            segmentController.segmentSelectedTitleColor = .black
+            segmentController.selectedSegmentViewColor = UIColor(named: "LabelBlue") ?? UIColor()
+            segmentController.segmentTitleFont = UIFont(name: "CircularStd-Book", size: 16)!
+            self.navigationController?.pushViewController(segmentController,
+                                                          animated: true)
+            return true
+        }
+        return true
+    }
+}
+
+extension LandingViewController: SJSegmentedViewControllerDelegate {
+    func didMoveToPage(_ controller: UIViewController, segment: SJSegmentTab?, index: Int) {
+        segmentController.segmentTitleFont = UIFont(name: "CircularStd-Book", size: 16)!
+        for item in segmentController.view.subviews.first?.subviews.last?.subviews.first?.subviews ?? []{
+            (item.subviews.first as? UIButton)?.titleLabel?.font =  UIFont(name: "CircularStd-Book", size: 16)!
+        }
+        segment?.titleFont(UIFont(name: "CircularStd-Bold", size: 16)!)
     }
 }

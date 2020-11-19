@@ -7,6 +7,7 @@
 //
 
 import UIKit
+//import SJSegmentedScrollView
 
 class GiftPublicationNavigator {
     
@@ -23,8 +24,12 @@ class GiftPublicationNavigator {
     }
     
     func moveToAddToCart() {
-        if let cart = UIStoryboard.cart.getViewController(type: AddToCartViewController.self) {
-            viewController.navigationController?.pushViewController(cart, animated: true)
+        if let cart = viewController.navigationController?.viewControllers.first(where: {$0.isKind(of: TabbarViewController.self)}) as? TabbarViewController{
+            cart.selectedIndex = 4
+            viewController.navigationController?.popViewController(animated: false)
         }
     }
 }
+
+
+

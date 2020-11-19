@@ -8,11 +8,12 @@
 
 import UIKit
 import FSPagerView
+
 struct LandingSections {
     var title: String
     var arrayLibrary: [InfoLibrary] = []
-    var type: NavigationDetail?
 }
+
 class ViewHorizontalSection: UIView {
     
     // MARK: - Outlets

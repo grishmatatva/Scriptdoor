@@ -1,20 +1,24 @@
 PODS:
   - FSPagerView (0.8.3)
   - IQKeyboardManagerSwift (6.5.5)
+  - SJSegmentedScrollView (1.5.0)
 
 DEPENDENCIES:
   - FSPagerView
   - IQKeyboardManagerSwift
+  - SJSegmentedScrollView (= 1.5.0)
 
 SPEC REPOS:
   trunk:
     - FSPagerView
     - IQKeyboardManagerSwift
+    - SJSegmentedScrollView
 
 SPEC CHECKSUMS:
   FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
   IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  SJSegmentedScrollView: 67ca97389a9c3a409d3b54c88781f031f5091c61
 
-PODFILE CHECKSUM: c12bdb9f7a3a11e2828d222578cb3a20509216c3
+PODFILE CHECKSUM: a2b49e5031e8385a6f3a90a7a5e71c6a6b1e13aa
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.0
