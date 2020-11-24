@@ -25,8 +25,8 @@ class LandingViewController: UIViewController {
     var arrayFeature: [InfoFeature] = []
     var arrayConnection: [InfoConnection] = []
     var arrayLibrary: [InfoLibrary] = []
-    var arrayvideo: [InfoLibrary] = []
-    var arrayAudio: [InfoLibrary] = []
+    var arrayvideo: [InfoVideo] = []
+    var arrayAudio: [InfoAudio] = []
     let segmentController = SJSegmentedViewController()
     lazy var landingViewNavigator: LandingViewNavigation = LandingViewNavigation(self)
     
@@ -35,6 +35,12 @@ class LandingViewController: UIViewController {
         super.viewDidLoad()
         prepareView()
         // Do any additional setup after loading the view.
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        textSearch.isEnabled = false
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        textSearch.isEnabled = true
     }
     
     // MARK: - Helper Method
@@ -59,18 +65,18 @@ class LandingViewController: UIViewController {
         arrayLibrary.append(InfoLibrary(image: UIImage(named: "bg-14") ?? UIImage(), videoImage:  UIImage()))
         arrayLibrary.append(InfoLibrary(image: UIImage(named: "bg-15") ?? UIImage(), videoImage:  UIImage()))
         arrayLibrary.append(InfoLibrary(image: UIImage(named: "bg-16") ?? UIImage(), videoImage:  UIImage()))
-        arrayvideo.append(InfoLibrary(image: UIImage(named: "bg-17") ?? UIImage(), videoImage:  UIImage(named: "videoPlay") ?? UIImage()))
-        arrayvideo.append(InfoLibrary(image: UIImage(named: "bg-18") ?? UIImage(), videoImage:  UIImage(named: "videoPlay") ?? UIImage()))
-        arrayvideo.append(InfoLibrary(image: UIImage(named: "bg-19") ?? UIImage(), videoImage:  UIImage(named: "videoPlay") ?? UIImage()))
-        arrayvideo.append(InfoLibrary(image: UIImage(named: "bg-10") ?? UIImage(), videoImage:  UIImage(named: "videoPlay") ?? UIImage()))
-        arrayAudio.append(InfoLibrary(image: UIImage(named: "bg") ?? UIImage(), videoImage:  UIImage()))
-        arrayAudio.append(InfoLibrary(image: UIImage(named: "bg-4") ?? UIImage(), videoImage:  UIImage()))
-        arrayAudio.append(InfoLibrary(image: UIImage(named: "bg-2") ?? UIImage(), videoImage:  UIImage()))
-        arrayAudio.append(InfoLibrary(image: UIImage(named: "bg-3") ?? UIImage(), videoImage:  UIImage()))
+        arrayvideo.append(InfoVideo(image: UIImage(named: "bg-17") ?? UIImage()))
+        arrayvideo.append(InfoVideo(image: UIImage(named: "bg-18") ?? UIImage()))
+        arrayvideo.append(InfoVideo(image: UIImage(named: "bg-19") ?? UIImage()))
+        arrayvideo.append(InfoVideo(image: UIImage(named: "bg-10") ?? UIImage()))
+        arrayAudio.append(InfoAudio(image: UIImage(named: "bg") ?? UIImage()))
+        arrayAudio.append(InfoAudio(image: UIImage(named: "bg-4") ?? UIImage()))
+        arrayAudio.append(InfoAudio(image: UIImage(named: "bg-2") ?? UIImage()))
+        arrayAudio.append(InfoAudio(image: UIImage(named: "bg-3") ?? UIImage()))
         var landings:[LandingSections] = [LandingSections]()
-        landings.append(LandingSections(title: "Libraries",arrayLibrary: arrayLibrary))
-        landings.append(LandingSections(title: "Videos",arrayLibrary: arrayvideo))
-        landings.append(LandingSections(title: "Audios",arrayLibrary: arrayAudio))
+        landings.append(LandingSections(title: "Libraries",arrayLibrary: arrayLibrary, type: .library))
+        landings.append(LandingSections(title: "Videos",arrayVideo: arrayvideo, type: .video))
+        landings.append(LandingSections(title: "Audios",arrayAudio: arrayAudio, type: .audio))
         
         for item in landings {
             let landingView = ViewHorizontalSection.shared
@@ -127,59 +133,7 @@ extension LandingViewController: FSPagerViewDataSource {
 extension LandingViewController: UITextFieldDelegate {
     
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        if let storyboard = self.storyboard {
-            
-            let headerController = storyboard
-                .instantiateViewController(withIdentifier: "HeaderViewController")
-            //EveryThingViewController
-            let everyThingViewController = storyboard
-                .instantiateViewController(withIdentifier: "EveryThingViewController")
-            everyThingViewController.title = "Everything"
-            
-            let publicationViewController = storyboard
-                .instantiateViewController(withIdentifier: "PublicationViewController")
-            publicationViewController.title = "Publications"
-            
-            let videoViewController = storyboard
-                .instantiateViewController(withIdentifier: "VideoViewController")
-            videoViewController.title = "Videos"
-            
-            let audioViewController = storyboard
-                .instantiateViewController(withIdentifier: "AudioViewController")
-            audioViewController.title = "Music"
-            
-            let libraryViewController = storyboard
-                .instantiateViewController(withIdentifier: "LibraryViewController")
-            libraryViewController.title = "Libraries"
-            
-            let usersViewController = storyboard
-                .instantiateViewController(withIdentifier: "UsersViewController")
-            usersViewController.title = "Users"
-            
-            segmentController.delegate = self
-            segmentController.headerViewController = headerController
-            segmentController.segmentControllers = [everyThingViewController,
-                                                    publicationViewController,videoViewController,audioViewController,libraryViewController,usersViewController]
-            segmentController.headerViewHeight = 100.0
-            segmentController.headerViewOffsetHeight = 31.0
-            segmentController.segmentTitleColor = .black
-            segmentController.segmentSelectedTitleColor = .black
-            segmentController.selectedSegmentViewColor = UIColor(named: "LabelBlue") ?? UIColor()
-            segmentController.segmentTitleFont = UIFont(name: "CircularStd-Book", size: 16)!
-            self.navigationController?.pushViewController(segmentController,
-                                                          animated: true)
-            return true
-        }
-        return true
-    }
-}
-
-extension LandingViewController: SJSegmentedViewControllerDelegate {
-    func didMoveToPage(_ controller: UIViewController, segment: SJSegmentTab?, index: Int) {
-        segmentController.segmentTitleFont = UIFont(name: "CircularStd-Book", size: 16)!
-        for item in segmentController.view.subviews.first?.subviews.last?.subviews.first?.subviews ?? []{
-            (item.subviews.first as? UIButton)?.titleLabel?.font =  UIFont(name: "CircularStd-Book", size: 16)!
-        }
-        segment?.titleFont(UIFont(name: "CircularStd-Bold", size: 16)!)
+        landingViewNavigator.moveToSearch()
+        return false
     }
 }

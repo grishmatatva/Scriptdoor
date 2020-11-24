@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Circular Std Medium.ttf">
+            <string>CircularStd-Medium</string>
+        </array>
+        <array key="CircularStd-Bold.ttf">
+            <string>CircularStd-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AudioCell" customModule="ScriptDoor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="184" height="248"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="184" height="248"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TJ2-N8-aPF">
+                        <rect key="frame" x="0.0" y="0.0" width="184" height="248"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iwA-cy-45P">
+                                <rect key="frame" x="0.0" y="0.0" width="184" height="184"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="184" id="ULn-Vp-kD2"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12.800000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title of a video" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqG-yL-rQv">
+                                <rect key="frame" x="0.0" y="200" width="94.5" height="17"/>
+                                <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="14.399999618530273"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13 May 2019  |  20K buys" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3c-CF-bVQ">
+                                <rect key="frame" x="0.0" y="217" width="145.5" height="15"/>
+                                <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="12.800000190734863"/>
+                                <color key="textColor" name="LightGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fqG-yL-rQv" firstAttribute="leading" secondItem="TJ2-N8-aPF" secondAttribute="leading" id="1TX-Bl-eVk"/>
+                            <constraint firstItem="g3c-CF-bVQ" firstAttribute="leading" secondItem="fqG-yL-rQv" secondAttribute="leading" id="4bS-dr-FAx"/>
+                            <constraint firstAttribute="trailing" secondItem="iwA-cy-45P" secondAttribute="trailing" id="6Uq-Eg-DeW"/>
+                            <constraint firstItem="iwA-cy-45P" firstAttribute="leading" secondItem="TJ2-N8-aPF" secondAttribute="leading" id="DIm-ga-6fm"/>
+                            <constraint firstItem="iwA-cy-45P" firstAttribute="top" secondItem="TJ2-N8-aPF" secondAttribute="top" id="Tf2-Aw-3ZL"/>
+                            <constraint firstItem="g3c-CF-bVQ" firstAttribute="top" secondItem="fqG-yL-rQv" secondAttribute="bottom" id="mjE-An-HfA"/>
+                            <constraint firstItem="fqG-yL-rQv" firstAttribute="top" secondItem="iwA-cy-45P" secondAttribute="bottom" constant="16" id="q6e-j0-c25"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12.800000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="TJ2-N8-aPF" secondAttribute="bottom" id="HgI-pR-7lU"/>
+                <constraint firstItem="TJ2-N8-aPF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="aAr-R3-lfK"/>
+                <constraint firstItem="TJ2-N8-aPF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="awE-k9-TX5"/>
+                <constraint firstAttribute="trailing" secondItem="TJ2-N8-aPF" secondAttribute="trailing" id="bHe-e1-YLJ"/>
+            </constraints>
+            <size key="customSize" width="218" height="171"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="12.800000000000001"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="imageFeature" destination="iwA-cy-45P" id="ymJ-xr-mvR"/>
+            </connections>
+            <point key="canvasLocation" x="253.62318840579712" y="179.12946428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="LightGray">
+            <color red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

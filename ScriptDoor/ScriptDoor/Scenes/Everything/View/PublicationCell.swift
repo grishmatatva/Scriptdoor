@@ -23,5 +23,4 @@ class PublicationCell: FSPagerViewCell {
               imageFeature.image = detailPublication?.image ?? UIImage()
           }
       }
-   
 }

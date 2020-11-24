@@ -11,6 +11,7 @@ import UIKit
 extension UIColor {
     struct AppColors {
         let inActiveTextField = UIColor(named: "disableTextField")
+        let labelBlue = UIColor(named: "LabelBlue")!
     }
     static var appColors : AppColors {
         return AppColors()

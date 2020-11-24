@@ -34,6 +34,9 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYH-da-UUM">
                     <rect key="frame" x="63" y="7" width="90" height="90"/>
                     <state key="normal" image="Cross"/>
+                    <connections>
+                        <action selector="didTapOnDelete" destination="WnM-26-u9C" eventType="touchUpInside" id="tEz-FT-sfw"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="expires on 3 Dec’19" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIZ-Re-hjX">
                     <rect key="frame" x="163" y="42" width="98.5" height="21"/>
@@ -74,7 +77,10 @@
                                 <constraint firstAttribute="height" constant="19" id="HrE-og-Ney"/>
                                 <constraint firstAttribute="width" constant="19" id="YXr-c2-vds"/>
                             </constraints>
-                            <state key="normal" title="Button" image="group4"/>
+                            <state key="normal" title="Button" image="cartMinus"/>
+                            <connections>
+                                <action selector="didTapOnMinues" destination="WnM-26-u9C" eventType="touchUpInside" id="tY6-vA-nFh"/>
+                            </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pyw-SB-sM5">
                             <rect key="frame" x="24" y="0.0" width="19" height="19"/>
@@ -85,6 +91,9 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4p-Z3-R5P">
                             <rect key="frame" x="48" y="0.0" width="19" height="19"/>
                             <state key="normal" image="group"/>
+                            <connections>
+                                <action selector="didTapOnPlush" destination="WnM-26-u9C" eventType="touchUpInside" id="CLI-cL-f8C"/>
+                            </connections>
                         </button>
                     </subviews>
                 </stackView>
@@ -119,6 +128,8 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="labelCartItem" destination="dkx-23-C8c" id="a9D-9W-nGa"/>
+                <outlet property="labelQty" destination="Pyw-SB-sM5" id="NTm-RM-oC4"/>
+                <outlet property="labelTokens" destination="k4H-0m-l6T" id="Vtz-UK-0VE"/>
             </connections>
             <point key="canvasLocation" x="230.43478260869566" y="-204.91071428571428"/>
         </view>
@@ -126,8 +137,8 @@
     <resources>
         <image name="Cross" width="45" height="45"/>
         <image name="bg-14" width="250" height="152"/>
+        <image name="cartMinus" width="19" height="19"/>
         <image name="group" width="19" height="19"/>
-        <image name="group4" width="19" height="19"/>
         <namedColor name="buttonyellow">
             <color red="0.98039215686274506" green="0.76470588235294112" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

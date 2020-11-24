@@ -7,69 +7,62 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Circular-Std-Bold.ttf">
+        <array key="CircularStd-Bold.ttf">
             <string>CircularStd-Bold</string>
         </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Max-TK-g6O" customClass="LibraryCell" customModule="ScriptDoor" customModuleProvider="target">
+        <view clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Max-TK-g6O" customClass="LibraryCell" customModule="ScriptDoor" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="216" height="316"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <view clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qO8-iU-XCd">
+                <view clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qO8-iU-XCd">
                     <rect key="frame" x="0.0" y="0.0" width="216" height="316"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-18" translatesAutoresizingMaskIntoConstraints="NO" id="s76-jc-Rg5">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-18" translatesAutoresizingMaskIntoConstraints="NO" id="s76-jc-Rg5">
                             <rect key="frame" x="0.0" y="0.0" width="216" height="244"/>
                             <color key="backgroundColor" name="AppBlack"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="244" id="UkA-br-wtF"/>
                             </constraints>
                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                    <real key="value" value="12.800000000000001"/>
-                                </userDefinedRuntimeAttribute>
-                            </userDefinedRuntimeAttributes>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Romantic Literature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4A-ca-weV">
-                            <rect key="frame" x="12" y="256" width="192" height="17.5"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Romantic Literature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4A-ca-weV">
+                            <rect key="frame" x="12" y="256" width="192" height="19"/>
                             <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="15"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2M Subscribers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ipa-Fv-71h">
-                            <rect key="frame" x="12" y="276.5" width="192" height="15.5"/>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2M Subscribers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ipa-Fv-71h">
+                            <rect key="frame" x="12" y="278" width="192" height="16.5"/>
                             <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="13"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="videoPlay" translatesAutoresizingMaskIntoConstraints="NO" id="H0p-el-gmV">
-                            <rect key="frame" x="71" y="141" width="74" height="75"/>
+                            <rect key="frame" x="71" y="84.5" width="74" height="75"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="74" id="AHC-Rw-LsK"/>
                                 <constraint firstAttribute="height" constant="75" id="fEg-LD-oPi"/>
                             </constraints>
                         </imageView>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstItem="H0p-el-gmV" firstAttribute="leading" secondItem="qO8-iU-XCd" secondAttribute="leading" constant="71" id="4ZU-qY-9kX"/>
-                        <constraint firstItem="H0p-el-gmV" firstAttribute="top" secondItem="qO8-iU-XCd" secondAttribute="top" constant="141" id="62E-2C-i5X"/>
-                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Ipa-Fv-71h" secondAttribute="bottom" id="AOn-DA-rTK"/>
-                        <constraint firstItem="f4A-ca-weV" firstAttribute="top" secondItem="H0p-el-gmV" secondAttribute="bottom" constant="40" id="BU7-vx-gIB"/>
+                        <constraint firstAttribute="bottom" secondItem="Ipa-Fv-71h" secondAttribute="bottom" constant="21.5" id="8Ak-8c-Pwz"/>
                         <constraint firstItem="f4A-ca-weV" firstAttribute="top" secondItem="s76-jc-Rg5" secondAttribute="bottom" constant="12" id="E0v-AT-mzN"/>
-                        <constraint firstAttribute="trailing" secondItem="H0p-el-gmV" secondAttribute="trailing" constant="71" id="EMq-6h-7Dx"/>
                         <constraint firstAttribute="trailing" secondItem="f4A-ca-weV" secondAttribute="trailing" constant="12" id="Uxp-bu-Jyd"/>
-                        <constraint firstItem="Ipa-Fv-71h" firstAttribute="top" secondItem="f4A-ca-weV" secondAttribute="bottom" constant="3" id="fPn-2Q-qxr"/>
                         <constraint firstItem="s76-jc-Rg5" firstAttribute="top" secondItem="qO8-iU-XCd" secondAttribute="top" id="hMw-MP-49N"/>
+                        <constraint firstItem="H0p-el-gmV" firstAttribute="centerY" secondItem="s76-jc-Rg5" secondAttribute="centerY" id="jwf-lk-M5S"/>
                         <constraint firstItem="Ipa-Fv-71h" firstAttribute="leading" secondItem="qO8-iU-XCd" secondAttribute="leading" constant="12" id="kyj-mu-Hzt"/>
+                        <constraint firstItem="Ipa-Fv-71h" firstAttribute="top" secondItem="f4A-ca-weV" secondAttribute="bottom" constant="3" id="mXO-GQ-J8I"/>
                         <constraint firstAttribute="trailing" secondItem="s76-jc-Rg5" secondAttribute="trailing" id="piB-c5-Z06"/>
                         <constraint firstItem="f4A-ca-weV" firstAttribute="leading" secondItem="qO8-iU-XCd" secondAttribute="leading" constant="12" id="qOY-Tf-aNU"/>
                         <constraint firstAttribute="trailing" secondItem="Ipa-Fv-71h" secondAttribute="trailing" constant="12" id="tNm-GI-ofN"/>
                         <constraint firstItem="s76-jc-Rg5" firstAttribute="leading" secondItem="qO8-iU-XCd" secondAttribute="leading" id="zDQ-Fo-Ya8"/>
+                        <constraint firstItem="H0p-el-gmV" firstAttribute="centerX" secondItem="s76-jc-Rg5" secondAttribute="centerX" id="ze9-lN-xHe"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -87,22 +80,25 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                    <real key="value" value="0.0"/>
+                </userDefinedRuntimeAttribute>
                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                    <real key="value" value="12.800000000000001"/>
+                    <real key="value" value="0.0"/>
                 </userDefinedRuntimeAttribute>
             </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="imageLibrary" destination="s76-jc-Rg5" id="QmN-nG-X1U"/>
                 <outlet property="imgVideo" destination="H0p-el-gmV" id="Aw8-ot-LVk"/>
             </connections>
-            <point key="canvasLocation" x="56.521739130434788" y="148.66071428571428"/>
+            <point key="canvasLocation" x="63.768115942028992" y="148.66071428571428"/>
         </view>
     </objects>
     <resources>
         <image name="bg-18" width="250" height="166.5"/>
         <image name="videoPlay" width="74" height="75"/>
         <namedColor name="AppBlack">
-            <color red="0.10599999874830246" green="0.10999999940395355" blue="0.13699999451637268" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.10588235294117647" green="0.10980392156862745" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

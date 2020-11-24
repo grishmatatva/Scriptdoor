@@ -26,7 +26,7 @@ class OnBoardingViewController: UIViewController {
     
     // MARK: - Helper Methods
     func prepareView()  {
-         tableViewBoard.register(UINib(nibName: "BoardCell", bundle: nil), forCellReuseIdentifier: "cell")
+         tableViewBoard.register(UINib(nibName: "BoardCell", bundle: nil), forCellReuseIdentifier: "BoardCell")
         arrayBoard.append(BoardData(image: UIImage(named: "Content"), title: "Create and Discover Content", subTitle: "Scriptdoor taps into the brains of writers, thinkers"))
         arrayBoard.append(BoardData(image: UIImage(named: "Connection"), title: "Make Connections", subTitle: "Scriptdoor taps into the brains of writers, thinkers"))
         arrayBoard.append(BoardData(image: UIImage(named: "Material"), title: "Buy and Sell Material", subTitle: "Scriptdoor taps into the brains of writers, thinkers"))
@@ -45,7 +45,7 @@ extension OnBoardingViewController: UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if  let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? BoardCell {
+        if  let cell = tableView.getTableViewCell(cellID: BoardCell.self) {
             cell.boardDetail = arrayBoard[indexPath.row]
             return cell
         }

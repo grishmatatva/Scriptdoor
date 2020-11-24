@@ -58,6 +58,9 @@
                                                         <color key="value" name="LabelBlue"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="didTapOnClear" destination="mb4-XN-SCF" eventType="touchUpInside" id="Shl-U8-Vro"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aG-J3-SOd">
                                                 <rect key="frame" x="112.5" y="22" width="24" height="24"/>
@@ -267,6 +270,8 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="cartView" destination="wu2-5U-qeC" id="KhL-Qg-Q7z"/>
+                        <outlet property="labelCartNumber" destination="8aG-J3-SOd" id="Uxj-59-OsU"/>
+                        <outlet property="labelTotal" destination="HfX-cR-xhD" id="i6w-ZW-GAi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XWr-Ct-EeX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

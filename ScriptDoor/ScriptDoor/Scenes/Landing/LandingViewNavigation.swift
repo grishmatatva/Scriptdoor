@@ -22,14 +22,17 @@ class LandingViewNavigation {
             viewController.present(detailVc, animated: true, completion: nil)
         }
     }
-    
     func moveToAddToCart() {
         (viewController.parent as? UITabBarController)?.selectedIndex = 4
     }
-    
     func moveToGift() {
         if let gift = UIStoryboard.detailsTest.getViewController(type: GiftPublicationViewController.self) {
             viewController.navigationController?.pushViewController(gift, animated: true)
+        }
+    }
+    func moveToSearch() {
+        if let searchVc = UIStoryboard.search.getViewController(type: SearchViewController.self) {
+            viewController.navigationController?.pushViewController(searchVc, animated: false)
         }
     }
 }

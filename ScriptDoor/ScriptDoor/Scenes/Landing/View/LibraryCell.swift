@@ -21,8 +21,8 @@ class LibraryCell: FSPagerViewCell {
     // MARK: - Variable
     var detailLibrary: InfoLibrary? {
         didSet {
-            imageLibrary.image = detailLibrary?.image
-            imgVideo.image = detailLibrary?.videoImage
+           // imageLibrary.image = detailLibrary?.image
+           // imgVideo.image = detailLibrary?.videoImage
         }
     }
 }
