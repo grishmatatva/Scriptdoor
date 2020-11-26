@@ -23,16 +23,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2C8AFD4A-2EB8-4CEF-9C9C-E24675FFBD6E"
+            uuid = "709E1DCB-982B-45AF-AF86-FD1AAE287115"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ScriptDoor/Scenes/Users/UsersViewController.swift"
+            filePath = "ScriptDoor/Scenes/Details/DetailsTestimoniolsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "tableView(_:cellForRowAt:)"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "didTapOnAddToCart()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

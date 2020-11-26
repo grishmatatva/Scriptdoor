@@ -14,7 +14,7 @@
         <array key="Circular Std Medium.ttf">
             <string>CircularStd-Medium</string>
         </array>
-        <array key="CircularStd-Bold.ttf">
+        <array key="Circular-Std-Bold.ttf">
             <string>CircularStd-Bold</string>
         </array>
     </customFonts>
@@ -522,20 +522,20 @@
                                                         <rect key="frame" x="0.0" y="891" width="414" height="2000"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See what’s trending" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tw-gh-jIG">
-                                                                <rect key="frame" x="26" y="26" width="176.5" height="1515.5"/>
+                                                                <rect key="frame" x="26" y="26" width="176.5" height="23.5"/>
                                                                 <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVY-Dt-pcr">
-                                                                <rect key="frame" x="26" y="1548.5" width="362" height="45.5"/>
+                                                                <rect key="frame" x="26" y="56.5" width="362" height="45.5"/>
                                                                 <string key="text">Scriptdoor taps into the brains of  writers, thinkers, and storytellers to bring you a variety of content across categories of books, music and videos</string>
                                                                 <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="13"/>
                                                                 <color key="textColor" name="AppGray"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PYh-As-fWc">
-                                                                <rect key="frame" x="0.0" y="1616" width="414" height="0.0"/>
+                                                                <rect key="frame" x="0.0" y="124" width="414" height="0.0"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4af-Oo-zne">
                                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
@@ -547,23 +547,23 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KA3-0W-iK4">
-                                                                <rect key="frame" x="0.0" y="1616" width="414" height="384"/>
+                                                                <rect key="frame" x="0.0" y="124" width="414" height="1876"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See what’s trending" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKI-hJ-OT7">
-                                                                        <rect key="frame" x="24" y="23" width="366" height="23.5"/>
+                                                                        <rect key="frame" x="24" y="23" width="366" height="1515.5"/>
                                                                         <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="20"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2y-Jv-grc">
-                                                                        <rect key="frame" x="24" y="51.5" width="366" height="45.5"/>
+                                                                        <rect key="frame" x="24" y="1543.5" width="366" height="45.5"/>
                                                                         <string key="text">Scriptdoor taps into the brains of  writers, thinkers, and storytellers to bring you a variety of content across categories of books, music and videos</string>
                                                                         <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="13"/>
                                                                         <color key="textColor" name="AppGray"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aur-rF-S4Y">
-                                                                        <rect key="frame" x="0.0" y="117" width="414" height="0.0"/>
+                                                                        <rect key="frame" x="0.0" y="1609" width="414" height="0.0"/>
                                                                         <subviews>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gbg-1H-voa">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
@@ -575,7 +575,7 @@
                                                                         </subviews>
                                                                     </stackView>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EGq-1J-OJC">
-                                                                        <rect key="frame" x="0.0" y="147" width="414" height="237"/>
+                                                                        <rect key="frame" x="0.0" y="1639" width="414" height="237"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Want to Advertise?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJg-iY-daW">
                                                                                 <rect key="frame" x="28" y="34" width="362" height="25.5"/>

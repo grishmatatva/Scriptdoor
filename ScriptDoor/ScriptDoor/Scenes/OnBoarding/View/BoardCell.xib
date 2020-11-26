@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Circular Std Bold.ttf">
+        <array key="CircularStd-Bold.ttf">
             <string>CircularStd-Bold</string>
         </array>
     </customFonts>

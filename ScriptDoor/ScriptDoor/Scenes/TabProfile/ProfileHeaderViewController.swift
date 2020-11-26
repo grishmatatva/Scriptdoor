@@ -10,9 +10,18 @@ import UIKit
 
 class ProfileHeaderViewController: UIViewController {
 
+    // MARK: - Variable
+    lazy var viewNavigation: ProfileHeaderViewNavigation = ProfileHeaderViewNavigation(viewController: self)
+    
+    // MARK: - LifeCycle Method
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    // MARK: - Custom Method
+    @IBAction private func didTapOnAdd() {
+        viewNavigation.moveToAdd()
     }
 }
