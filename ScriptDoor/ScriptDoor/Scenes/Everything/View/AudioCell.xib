@@ -32,20 +32,15 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="184" id="ULn-Vp-kD2"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="12.800000000000001"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title of a video" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqG-yL-rQv">
-                                <rect key="frame" x="0.0" y="200" width="94.5" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Title of a video" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqG-yL-rQv">
+                                <rect key="frame" x="12" y="196" width="160" height="18.5"/>
                                 <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="14.399999618530273"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13 May 2019  |  20K buys" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3c-CF-bVQ">
-                                <rect key="frame" x="0.0" y="217" width="145.5" height="15"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="13 May 2019  |  20K buys" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3c-CF-bVQ">
+                                <rect key="frame" x="12" y="220.5" width="160" height="16.5"/>
                                 <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="12.800000190734863"/>
                                 <color key="textColor" name="LightGray"/>
                                 <nil key="highlightedColor"/>
@@ -53,17 +48,20 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="fqG-yL-rQv" firstAttribute="leading" secondItem="TJ2-N8-aPF" secondAttribute="leading" id="1TX-Bl-eVk"/>
+                            <constraint firstItem="fqG-yL-rQv" firstAttribute="leading" secondItem="TJ2-N8-aPF" secondAttribute="leading" constant="12" id="1TX-Bl-eVk"/>
                             <constraint firstItem="g3c-CF-bVQ" firstAttribute="leading" secondItem="fqG-yL-rQv" secondAttribute="leading" id="4bS-dr-FAx"/>
                             <constraint firstAttribute="trailing" secondItem="iwA-cy-45P" secondAttribute="trailing" id="6Uq-Eg-DeW"/>
                             <constraint firstItem="iwA-cy-45P" firstAttribute="leading" secondItem="TJ2-N8-aPF" secondAttribute="leading" id="DIm-ga-6fm"/>
+                            <constraint firstAttribute="trailing" secondItem="fqG-yL-rQv" secondAttribute="trailing" constant="12" id="Rkv-cd-Cw6"/>
                             <constraint firstItem="iwA-cy-45P" firstAttribute="top" secondItem="TJ2-N8-aPF" secondAttribute="top" id="Tf2-Aw-3ZL"/>
-                            <constraint firstItem="g3c-CF-bVQ" firstAttribute="top" secondItem="fqG-yL-rQv" secondAttribute="bottom" id="mjE-An-HfA"/>
-                            <constraint firstItem="fqG-yL-rQv" firstAttribute="top" secondItem="iwA-cy-45P" secondAttribute="bottom" constant="16" id="q6e-j0-c25"/>
+                            <constraint firstAttribute="bottom" secondItem="g3c-CF-bVQ" secondAttribute="bottom" constant="11" id="U5r-8l-Hgt"/>
+                            <constraint firstItem="g3c-CF-bVQ" firstAttribute="top" secondItem="fqG-yL-rQv" secondAttribute="bottom" constant="6" id="mjE-An-HfA"/>
+                            <constraint firstItem="fqG-yL-rQv" firstAttribute="top" secondItem="iwA-cy-45P" secondAttribute="bottom" constant="12" id="q6e-j0-c25"/>
+                            <constraint firstItem="fqG-yL-rQv" firstAttribute="trailing" secondItem="g3c-CF-bVQ" secondAttribute="trailing" id="wr2-XM-txF"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                <real key="value" value="12.800000000000001"/>
+                                <real key="value" value="0.0"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>

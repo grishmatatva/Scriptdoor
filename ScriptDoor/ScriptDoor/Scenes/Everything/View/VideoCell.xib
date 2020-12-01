@@ -17,34 +17,29 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="VideoCell" customModule="ScriptDoor" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="255" height="205"/>
+            <rect key="frame" x="0.0" y="0.0" width="255" height="225"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="255" height="205"/>
+                <rect key="frame" x="0.0" y="0.0" width="255" height="225"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vGX-KC-72d">
-                        <rect key="frame" x="0.0" y="0.0" width="255" height="205"/>
+                        <rect key="frame" x="0.0" y="0.0" width="255" height="225"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O55-Va-tQ2">
                                 <rect key="frame" x="0.0" y="0.0" width="255" height="152"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="152" id="pys-4V-Ttk"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="12.800000000000001"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title of a video" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vX-d0-chb">
-                                <rect key="frame" x="0.0" y="167" width="99" height="19"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title of a video" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vX-d0-chb">
+                                <rect key="frame" x="12" y="164" width="233" height="18.5"/>
                                 <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="14.399999618530273"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13 May 2019  |  20K buys" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptF-0J-sF5">
-                                <rect key="frame" x="0.0" y="186" width="142" height="16.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13 May 2019  |  20K buys" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptF-0J-sF5">
+                                <rect key="frame" x="12" y="188.5" width="233" height="16.5"/>
                                 <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="12.800000190734863"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -54,11 +49,13 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="O55-Va-tQ2" secondAttribute="trailing" id="ElC-fJ-CJS"/>
                             <constraint firstItem="O55-Va-tQ2" firstAttribute="leading" secondItem="vGX-KC-72d" secondAttribute="leading" id="Fvu-83-6g8"/>
-                            <constraint firstAttribute="bottom" secondItem="ptF-0J-sF5" secondAttribute="bottom" constant="2.5" id="GhU-vH-GWI"/>
-                            <constraint firstItem="ptF-0J-sF5" firstAttribute="top" secondItem="8vX-d0-chb" secondAttribute="bottom" id="ea3-Yt-8ye"/>
-                            <constraint firstItem="ptF-0J-sF5" firstAttribute="leading" secondItem="vGX-KC-72d" secondAttribute="leading" id="fOE-ha-pIn"/>
-                            <constraint firstItem="8vX-d0-chb" firstAttribute="leading" secondItem="vGX-KC-72d" secondAttribute="leading" id="mVr-QV-bLf"/>
-                            <constraint firstItem="8vX-d0-chb" firstAttribute="top" secondItem="O55-Va-tQ2" secondAttribute="bottom" constant="15" id="u2I-km-Dqt"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ptF-0J-sF5" secondAttribute="bottom" constant="15" id="VqN-sp-8PZ"/>
+                            <constraint firstItem="ptF-0J-sF5" firstAttribute="top" secondItem="8vX-d0-chb" secondAttribute="bottom" constant="6" id="ea3-Yt-8ye"/>
+                            <constraint firstAttribute="trailing" secondItem="ptF-0J-sF5" secondAttribute="trailing" constant="10" id="eeO-MZ-3a8"/>
+                            <constraint firstItem="ptF-0J-sF5" firstAttribute="leading" secondItem="vGX-KC-72d" secondAttribute="leading" constant="12" id="fOE-ha-pIn"/>
+                            <constraint firstItem="8vX-d0-chb" firstAttribute="leading" secondItem="vGX-KC-72d" secondAttribute="leading" constant="12" id="mVr-QV-bLf"/>
+                            <constraint firstItem="8vX-d0-chb" firstAttribute="top" secondItem="O55-Va-tQ2" secondAttribute="bottom" constant="12" id="u2I-km-Dqt"/>
+                            <constraint firstItem="ptF-0J-sF5" firstAttribute="trailing" secondItem="8vX-d0-chb" secondAttribute="trailing" id="vSw-2Y-yw0"/>
                             <constraint firstItem="O55-Va-tQ2" firstAttribute="top" secondItem="vGX-KC-72d" secondAttribute="top" id="zrP-i0-WZi"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
@@ -75,7 +72,7 @@
                 <constraint firstItem="vGX-KC-72d" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="VH0-Jm-chd"/>
                 <constraint firstAttribute="trailing" secondItem="vGX-KC-72d" secondAttribute="trailing" id="XrE-6v-HkE"/>
             </constraints>
-            <size key="customSize" width="251" height="210"/>
+            <size key="customSize" width="251" height="230"/>
             <userDefinedRuntimeAttributes>
                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                     <real key="value" value="12.800000000000001"/>
@@ -84,7 +81,7 @@
             <connections>
                 <outlet property="imageFeature" destination="O55-Va-tQ2" id="Wom-KM-sE4"/>
             </connections>
-            <point key="canvasLocation" x="136.95652173913044" y="57.924107142857139"/>
+            <point key="canvasLocation" x="136.95652173913044" y="64.620535714285708"/>
         </collectionViewCell>
     </objects>
 </document>

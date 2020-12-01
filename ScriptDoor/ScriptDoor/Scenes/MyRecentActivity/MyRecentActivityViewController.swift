@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import EzPopup
 
 class MyRecentActivityViewController: UIViewController {
     
     // MARK: - Outlets
     @IBOutlet private weak var recentTableView: UITableView!
+    @IBOutlet private weak var footerView: UIView!
+    
     var arrayRecent: [InfoRecent] = []
     
     // MARK: - Life Cycle Methods
@@ -22,8 +25,9 @@ class MyRecentActivityViewController: UIViewController {
         arrayRecent.append(InfoRecent(recImage: UIImage(named: "bg-4"), recName:"Šimon Kováč" , workName:"Youtuber" ))
         arrayRecent.append(InfoRecent(recImage: UIImage(named: "bg-5"), recName:"Dai Jiang" , workName:"Photographer" ))
         arrayRecent.append(InfoRecent(recImage: UIImage(named: "bg-6"), recName:"Gibby Radki" , workName:"DJ" ))
-        recentTableView.tableFooterView = UIView()
+        recentTableView.tableFooterView = footerView
         recentTableView.reloadData()
+        
         // Do any additional setup after loading the view.
     }
 }
@@ -38,12 +42,35 @@ extension MyRecentActivityViewController: UITableViewDelegate, UITableViewDataSo
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.getTableViewCell(cellID: MyRecentCell.self)
         cell?.detailRecent = arrayRecent[indexPath.row]
+        cell?.didMessageChange = { (value,button) in
+            if value == true {
+                if let contentVC = UIStoryboard.profile.getViewController(type: PopUpViewController.self) {
+                    contentVC.modalPresentationStyle = .popover
+                    contentVC.preferredContentSize = CGSize(width: 110, height: 166)
+                    if let popupVC = contentVC.popoverPresentationController {
+                        popupVC.permittedArrowDirections = UIPopoverArrowDirection(rawValue:0)
+                        popupVC.sourceView = button
+                        popupVC.delegate = self
+                      self.present(contentVC, animated: true)
+                    }
+                }
+                self.recentTableView.reloadData()
+            }
+        }
         return cell ?? UITableViewCell()
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.arrayRecent[indexPath.row].isSelected = !self.arrayRecent[indexPath.row].isSelected
-        recentTableView.reloadData()
+}
+extension MyRecentActivityViewController: UIPopoverPresentationControllerDelegate, UINavigationControllerDelegate {
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .none
     }
-
+    
+    //UIPopoverPresentationControllerDelegate
+    func popoverPresentationControllerDidDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) {
+        
+    }
+    
+    func popoverPresentationControllerShouldDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) -> Bool {
+        return true
+    }
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import EzPopup
 
 struct InfoRecent {
     var recImage: UIImage?
@@ -24,11 +25,21 @@ class MyRecentCell: UITableViewCell {
     @IBOutlet private weak var btnMore: UIButton!
     
     // MARK: - Variable
+    var didMessageChange:((Bool, UIButton) -> Void)?
     var detailRecent: InfoRecent? {
         didSet {
             recentImageView.image = detailRecent?.recImage ?? UIImage()
             labelWork.text = detailRecent?.workName ?? ""
             labelRecent.text = detailRecent?.recName ?? ""
+            btnMore.isSelected = detailRecent?.isSelected ?? false
         }
     }
+    
+    // MARK: - Action Methods
+    @IBAction private func didTapOnMessage(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+        didMessageChange? (sender.isSelected,sender)
+    }
 }
+
+

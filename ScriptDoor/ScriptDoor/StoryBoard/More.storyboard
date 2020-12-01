@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZDs-XD-ldd">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Circular Std Book.ttf">
+            <string>CircularStd-Book</string>
+        </array>
+        <array key="Circular Std Medium.ttf">
+            <string>CircularStd-Medium</string>
+        </array>
+        <array key="CircularStd-Bold.ttf">
+            <string>CircularStd-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--More View Controller-->
+        <scene sceneID="mny-tf-c0v">
+            <objects>
+                <viewController storyboardIdentifier="MoreViewController" id="sEa-SZ-Wba" customClass="MoreViewController" customModule="ScriptDoor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LYg-hO-Tfb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uC4-it-iOU">
+                                <rect key="frame" x="24" y="30" width="55.5" height="28"/>
+                                <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eGg-ol-NWG">
+                                <rect key="frame" x="0.0" y="94.5" width="375" height="523.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="MoreCell" rowHeight="67" id="8Tf-Fc-Vzz" customClass="MoreCell" customModule="ScriptDoor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="67"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8Tf-Fc-Vzz" id="4qj-wZ-R0C">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="67"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4a-Z3-Lx2">
+                                                    <rect key="frame" x="24" y="22.5" width="341" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="Eoa-fp-t0T"/>
+                                                    </constraints>
+                                                    <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <state key="normal" title="WIPOD" image="featherPen">
+                                                        <color key="titleColor" name="AppBlack"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="c4a-Z3-Lx2" secondAttribute="bottom" constant="22.5" id="3tH-st-eDu"/>
+                                                <constraint firstItem="c4a-Z3-Lx2" firstAttribute="top" secondItem="4qj-wZ-R0C" secondAttribute="top" constant="22.5" id="4jU-lL-a5o"/>
+                                                <constraint firstItem="c4a-Z3-Lx2" firstAttribute="leading" secondItem="4qj-wZ-R0C" secondAttribute="leading" constant="24" id="8O4-zb-gys"/>
+                                                <constraint firstAttribute="trailing" secondItem="c4a-Z3-Lx2" secondAttribute="trailing" constant="10" id="c4R-0P-1cI"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="btnMore" destination="c4a-Z3-Lx2" id="KWA-JD-aOS"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="sEa-SZ-Wba" id="AcY-eD-a3l"/>
+                                    <outlet property="delegate" destination="sEa-SZ-Wba" id="IG7-bi-1Fl"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="uU2-Vc-aGw" firstAttribute="bottom" secondItem="eGg-ol-NWG" secondAttribute="bottom" id="50h-Ye-jTN"/>
+                            <constraint firstItem="eGg-ol-NWG" firstAttribute="leading" secondItem="uU2-Vc-aGw" secondAttribute="leading" id="MJr-N0-ETW"/>
+                            <constraint firstItem="uU2-Vc-aGw" firstAttribute="trailing" secondItem="eGg-ol-NWG" secondAttribute="trailing" id="V3d-N5-IPe"/>
+                            <constraint firstItem="uC4-it-iOU" firstAttribute="top" secondItem="LYg-hO-Tfb" secondAttribute="top" constant="30" id="ckD-JM-PMe"/>
+                            <constraint firstItem="eGg-ol-NWG" firstAttribute="top" secondItem="uC4-it-iOU" secondAttribute="bottom" constant="36.5" id="hua-aF-ZQl"/>
+                            <constraint firstItem="uC4-it-iOU" firstAttribute="leading" secondItem="uU2-Vc-aGw" secondAttribute="leading" constant="24" id="oi3-0u-lkw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uU2-Vc-aGw"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CuK-CE-iew"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="moreTableView" destination="eGg-ol-NWG" id="fGa-Qd-Hwc"/>
+                        <outlet property="viewFooter" destination="f51-Mv-kOp" id="nAT-pl-jca"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OEF-c4-HGN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="f51-Mv-kOp">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="442"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoApp" translatesAutoresizingMaskIntoConstraints="NO" id="zC0-Oo-ukH">
+                            <rect key="frame" x="24" y="23" width="149" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="31" id="X4K-rc-TRP"/>
+                                <constraint firstAttribute="width" constant="149" id="ds2-HX-fFt"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nf5-gS-dnj">
+                            <rect key="frame" x="24" y="78" width="65" height="20.5"/>
+                            <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUj-Aq-dCB">
+                            <rect key="frame" x="24" y="104.5" width="316" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="6H9-6d-VJb"/>
+                            </constraints>
+                            <string key="text">ScriptDoor Inc.3031 Tisch Way,
+110 Plaza West, San Jose,California, 95128, USA</string>
+                            <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="14"/>
+                            <color key="textColor" red="0.52156862745098043" green="0.51372549019607838" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SRJ-FB-7be">
+                            <rect key="frame" x="24" y="164.5" width="120" height="124.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resources" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ot1-Bx-3EO">
+                                    <rect key="frame" x="0.0" y="0.0" width="120" height="20.5"/>
+                                    <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZO-6W-3X4">
+                                    <rect key="frame" x="0.0" y="28.5" width="120" height="18"/>
+                                    <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="14"/>
+                                    <color key="textColor" red="0.52156862749999999" green="0.51372549020000002" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SoT-8Z-Y3X">
+                                    <rect key="frame" x="0.0" y="54.5" width="120" height="18"/>
+                                    <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="14"/>
+                                    <color key="textColor" red="0.52156862749999999" green="0.51372549020000002" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Website disclaimer" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="363-sM-cNM">
+                                    <rect key="frame" x="0.0" y="80.5" width="120" height="18"/>
+                                    <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="14"/>
+                                    <color key="textColor" red="0.52156862749999999" green="0.51372549020000002" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAQ" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06S-PL-uM0">
+                                    <rect key="frame" x="0.0" y="106.5" width="120" height="18"/>
+                                    <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="14"/>
+                                    <color key="textColor" red="0.52156862749999999" green="0.51372549020000002" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WSb-PL-wen">
+                            <rect key="frame" x="24" y="309" width="118" height="124.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWR-DA-peX">
+                                    <rect key="frame" x="0.0" y="0.0" width="118" height="20.5"/>
+                                    <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHG-r2-Aek">
+                                    <rect key="frame" x="0.0" y="28.5" width="118" height="18"/>
+                                    <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="14"/>
+                                    <color key="textColor" red="0.52156862749999999" green="0.51372549020000002" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How we work" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Afb-jQ-RQN">
+                                    <rect key="frame" x="0.0" y="54.5" width="118" height="18"/>
+                                    <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="14"/>
+                                    <color key="textColor" red="0.52156862749999999" green="0.51372549020000002" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Multiple Language" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXb-ti-O6B">
+                                    <rect key="frame" x="0.0" y="80.5" width="118" height="18"/>
+                                    <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="14"/>
+                                    <color key="textColor" red="0.52156862749999999" green="0.51372549020000002" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7an-y2-34S">
+                                    <rect key="frame" x="0.0" y="106.5" width="118" height="18"/>
+                                    <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="14"/>
+                                    <color key="textColor" red="0.52156862749999999" green="0.51372549020000002" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.87450980392156863" green="0.94117647058823528" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="zC0-Oo-ukH" firstAttribute="leading" secondItem="NlS-rp-bAs" secondAttribute="leading" constant="24" id="5fn-zx-ICo"/>
+                        <constraint firstItem="nf5-gS-dnj" firstAttribute="top" secondItem="zC0-Oo-ukH" secondAttribute="bottom" constant="24" id="8Jr-qY-KrY"/>
+                        <constraint firstItem="zC0-Oo-ukH" firstAttribute="top" secondItem="NlS-rp-bAs" secondAttribute="top" constant="23" id="9Uw-G1-nDh"/>
+                        <constraint firstItem="WSb-PL-wen" firstAttribute="leading" secondItem="SRJ-FB-7be" secondAttribute="leading" id="A7W-fw-vet"/>
+                        <constraint firstItem="SRJ-FB-7be" firstAttribute="top" secondItem="bUj-Aq-dCB" secondAttribute="bottom" constant="20" id="X5f-GS-tYN"/>
+                        <constraint firstItem="bUj-Aq-dCB" firstAttribute="top" secondItem="nf5-gS-dnj" secondAttribute="bottom" constant="6" id="Y1M-RI-8Ii"/>
+                        <constraint firstItem="WSb-PL-wen" firstAttribute="top" secondItem="SRJ-FB-7be" secondAttribute="bottom" constant="20" id="ZNa-AK-pFe"/>
+                        <constraint firstAttribute="trailing" secondItem="bUj-Aq-dCB" secondAttribute="trailing" constant="35" id="dHu-XM-Erj"/>
+                        <constraint firstItem="bUj-Aq-dCB" firstAttribute="leading" secondItem="nf5-gS-dnj" secondAttribute="leading" id="dwi-UT-6JX"/>
+                        <constraint firstItem="SRJ-FB-7be" firstAttribute="leading" secondItem="bUj-Aq-dCB" secondAttribute="leading" id="eUw-Aa-zrT"/>
+                        <constraint firstItem="nf5-gS-dnj" firstAttribute="leading" secondItem="zC0-Oo-ukH" secondAttribute="leading" id="gRg-Yx-Mmo"/>
+                        <constraint firstItem="NlS-rp-bAs" firstAttribute="bottom" secondItem="WSb-PL-wen" secondAttribute="bottom" constant="8.5" id="uPr-8p-cLa"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="NlS-rp-bAs"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="8307.246376811594" y="868.52678571428567"/>
+        </scene>
+        <!--More-->
+        <scene sceneID="k0d-RM-wCD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="ZDs-XD-ldd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="More" image="More" id="9RS-LI-wdY"/>
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kAj-Eb-u3F">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sEa-SZ-Wba" kind="relationship" relationship="rootViewController" id="8tr-PN-bUc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4u7-gJ-CMc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7400.0000000000009" y="868.52678571428567"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LogoApp" width="149" height="31"/>
+        <image name="More" width="21" height="6"/>
+        <image name="featherPen" width="22" height="22"/>
+        <namedColor name="AppBlack">
+            <color red="0.10588235294117647" green="0.10980392156862745" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

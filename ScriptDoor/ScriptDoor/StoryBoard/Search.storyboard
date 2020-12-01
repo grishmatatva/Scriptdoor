@@ -368,11 +368,11 @@
             <objects>
                 <viewController storyboardIdentifier="HeaderViewController" id="mho-V0-mgM" customClass="HeaderViewController" customModule="ScriptDoor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="htB-la-a2P">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="106"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYi-wp-eDc">
-                                <rect key="frame" x="13" y="51" width="7" height="22"/>
+                                <rect key="frame" x="13" y="51" width="7" height="14"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="7" id="vis-X5-feU"/>
                                 </constraints>
@@ -381,8 +381,8 @@
                                     <action selector="didTapOnBack" destination="mho-V0-mgM" eventType="touchUpInside" id="YZn-4Y-2rA"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TOo-gk-rxB" customClass="SDTextField" customModule="ScriptDoor" customModuleProvider="target">
-                                <rect key="frame" x="35" y="34" width="324" height="56"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search from 500+ material" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TOo-gk-rxB" customClass="SDTextField" customModule="ScriptDoor" customModuleProvider="target">
+                                <rect key="frame" x="27" y="30" width="335" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="CaA-iL-4s8"/>
                                 </constraints>
@@ -390,21 +390,37 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="search"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderBottomWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="28"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" name="LightGray"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="TOo-gk-rxB" firstAttribute="leading" secondItem="yYi-wp-eDc" secondAttribute="trailing" constant="15" id="BaK-ci-rEP"/>
-                            <constraint firstAttribute="trailing" secondItem="TOo-gk-rxB" secondAttribute="trailing" constant="16" id="EdL-Kq-4qb"/>
+                            <constraint firstItem="TOo-gk-rxB" firstAttribute="leading" secondItem="yYi-wp-eDc" secondAttribute="trailing" constant="7" id="BaK-ci-rEP"/>
+                            <constraint firstAttribute="trailing" secondItem="TOo-gk-rxB" secondAttribute="trailing" constant="13" id="EdL-Kq-4qb"/>
                             <constraint firstItem="yYi-wp-eDc" firstAttribute="top" secondItem="JZx-Yn-EoC" secondAttribute="top" constant="7" id="gZO-oQ-GCW"/>
                             <constraint firstItem="TOo-gk-rxB" firstAttribute="centerY" secondItem="yYi-wp-eDc" secondAttribute="centerY" id="hvt-io-iVN"/>
+                            <constraint firstItem="TOo-gk-rxB" firstAttribute="top" secondItem="htB-la-a2P" secondAttribute="top" constant="30" id="i8X-cE-Ofw"/>
                             <constraint firstItem="yYi-wp-eDc" firstAttribute="leading" secondItem="JZx-Yn-EoC" secondAttribute="leading" constant="13" id="zuc-zW-xYS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JZx-Yn-EoC"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="56"/>
+                    <size key="freeformSize" width="375" height="106"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="COX-DZ-5lr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -423,7 +439,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xVa-5A-wQo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6583" y="-1906"/>
+            <point key="canvasLocation" x="6558" y="-1607"/>
         </scene>
         <!--Data Source-->
         <scene sceneID="ec7-t9-xCN">
@@ -704,6 +720,9 @@
         </namedColor>
         <namedColor name="LabelBlue">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightGray">
+            <color red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

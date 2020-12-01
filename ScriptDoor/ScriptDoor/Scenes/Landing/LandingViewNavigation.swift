@@ -23,7 +23,7 @@ class LandingViewNavigation {
         }
     }
     func moveToAddToCart() {
-        (viewController.parent as? UITabBarController)?.selectedIndex = 4
+        (viewController.parent?.parent as? UITabBarController)?.selectedIndex = 4
     }
     func moveToGift() {
         if let gift = UIStoryboard.detailsTest.getViewController(type: GiftPublicationViewController.self) {

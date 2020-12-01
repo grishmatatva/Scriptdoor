@@ -1,9 +1,9 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/FSPagerView" "${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManagerSwift" "${PODS_CONFIGURATION_BUILD_DIR}/SJSegmentedScrollView"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/EzPopup" "${PODS_CONFIGURATION_BUILD_DIR}/FSPagerView" "${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManagerSwift" "${PODS_CONFIGURATION_BUILD_DIR}/QuickLayout" "${PODS_CONFIGURATION_BUILD_DIR}/SJSegmentedScrollView" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftEntryKit"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/FSPagerView/FSPagerView.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SJSegmentedScrollView/SJSegmentedScrollView.framework/Headers"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/EzPopup/EzPopup.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/FSPagerView/FSPagerView.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/QuickLayout/QuickLayout.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SJSegmentedScrollView/SJSegmentedScrollView.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftEntryKit/SwiftEntryKit.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_LDFLAGS = $(inherited) -framework "CoreGraphics" -framework "FSPagerView" -framework "Foundation" -framework "IQKeyboardManagerSwift" -framework "QuartzCore" -framework "SJSegmentedScrollView" -framework "UIKit"
+OTHER_LDFLAGS = $(inherited) -framework "CoreGraphics" -framework "EzPopup" -framework "FSPagerView" -framework "Foundation" -framework "IQKeyboardManagerSwift" -framework "QuartzCore" -framework "QuickLayout" -framework "SJSegmentedScrollView" -framework "SwiftEntryKit" -framework "UIKit"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

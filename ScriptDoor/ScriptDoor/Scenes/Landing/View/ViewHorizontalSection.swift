@@ -26,7 +26,7 @@ class ViewHorizontalSection: UIView {
     // MARK: - Outlets
     @IBOutlet private weak var labelTitle: UILabel!
     @IBOutlet private weak var viewPager: FSPagerView!
-    
+    @IBOutlet private weak var viewPagerHeight: NSLayoutConstraint!
     // MARK: - variables
     var didSelectedDetailsTestimonios: (() -> ())?
     var landing: LandingSections? {
@@ -37,15 +37,20 @@ class ViewHorizontalSection: UIView {
             if landing?.type == SectionType.library {
                 viewPager.register(UINib(nibName: "LibraryCell", bundle: nil), forCellWithReuseIdentifier: "LibraryCell")
                 viewPager.itemSize = CGSize(width: 216, height: 316)
+                viewPagerHeight.constant = 316
             } else if landing?.type == SectionType.audio {
                 viewPager.register(UINib(nibName: "AudioCell", bundle: nil), forCellWithReuseIdentifier: "AudioCell")
-                viewPager.itemSize = CGSize(width: 200, height: 232
-                )
+                viewPager.itemSize = CGSize(width: 200, height: 248)
+                viewPagerHeight.constant = 248
             } else  {
                 viewPager.register(UINib(nibName: "VideoCell", bundle: nil), forCellWithReuseIdentifier: "VideoCell")
-                viewPager.itemSize = CGSize(width: 240, height: 222)
+                viewPager.itemSize = CGSize(width: 240, height: 218)
+                viewPagerHeight.constant = 218
             }
             viewPager.reloadData()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+                self.viewPager.scrollToItem(at: 1, animated: false)
+            }
         }
     }
     

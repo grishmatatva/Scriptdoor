@@ -1,24 +1,36 @@
 PODS:
+  - EzPopup (1.2)
   - FSPagerView (0.8.3)
   - IQKeyboardManagerSwift (6.5.5)
+  - QuickLayout (3.0.0)
   - SJSegmentedScrollView (1.5.0)
+  - SwiftEntryKit (1.2.6):
+    - QuickLayout (= 3.0.0)
 
 DEPENDENCIES:
+  - EzPopup
   - FSPagerView
   - IQKeyboardManagerSwift
   - SJSegmentedScrollView (= 1.5.0)
+  - SwiftEntryKit
 
 SPEC REPOS:
   trunk:
+    - EzPopup
     - FSPagerView
     - IQKeyboardManagerSwift
+    - QuickLayout
     - SJSegmentedScrollView
+    - SwiftEntryKit
 
 SPEC CHECKSUMS:
+  EzPopup: 989ac21992a82ad6d1245c747a78bf3833279ef0
   FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
   IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  QuickLayout: 07b45a72b10083fee3f095990cfed1c1e7b27f0a
   SJSegmentedScrollView: 67ca97389a9c3a409d3b54c88781f031f5091c61
+  SwiftEntryKit: 96a2fa90b2631bbbfac50d18449e9ca3d0635f13
 
-PODFILE CHECKSUM: a2b49e5031e8385a6f3a90a7a5e71c6a6b1e13aa
+PODFILE CHECKSUM: 0481c05bd9785c5ec352b1cdbf37dadf8d5343b2
 
 COCOAPODS: 1.9.0

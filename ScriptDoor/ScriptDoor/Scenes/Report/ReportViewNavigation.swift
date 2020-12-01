@@ -16,6 +16,6 @@ class ReportViewNavigation {
     
     // MARK: - Navigations
     func backToDetail() {
-            viewController.dismiss(animated: true, completion: nil)
+        viewController.dismiss(animated: true, completion: nil)
     }
 }

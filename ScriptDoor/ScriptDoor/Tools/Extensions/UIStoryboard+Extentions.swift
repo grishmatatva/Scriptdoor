@@ -30,6 +30,10 @@ extension UIStoryboard {
         return UIStoryboard(name: "Search", bundle: nil)
     }
     
+    static var profile: UIStoryboard {
+        return UIStoryboard(name: "Profile", bundle: nil)
+    }
+    
     func getViewController<T: UIViewController>(type: T.Type) -> T? {
         let id = String(describing: type)
         return instantiateViewController(withIdentifier: id) as? T

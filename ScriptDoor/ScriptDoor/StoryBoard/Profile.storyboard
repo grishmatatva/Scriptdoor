@@ -663,27 +663,8 @@ them to your connections</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yoe-GM-96s">
-                                <rect key="frame" x="23" y="774" width="368" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="f0H-u8-g5N"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="16"/>
-                                <state key="normal" title="View all Connection Requests"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" name="LabelBlue"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lbp-mQ-GOE">
-                                <rect key="frame" x="0.0" y="44" width="414" height="700"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="MyRecentCell" rowHeight="67" id="xBH-RB-WLR" customClass="MyRecentCell" customModule="ScriptDoor" customModuleProvider="target">
@@ -750,6 +731,9 @@ them to your connections</string>
                                                             <color key="value" name="AppBlack"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="didTapOnMessage:" destination="xBH-RB-WLR" eventType="touchUpInside" id="HKg-tM-fsY"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -783,21 +767,52 @@ them to your connections</string>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="xBF-tz-qkj" firstAttribute="trailing" secondItem="yoe-GM-96s" secondAttribute="trailing" constant="23" id="7f2-YY-KkD"/>
-                            <constraint firstItem="yoe-GM-96s" firstAttribute="leading" secondItem="xBF-tz-qkj" secondAttribute="leading" constant="23" id="Gnk-Bs-x6C"/>
+                            <constraint firstItem="xBF-tz-qkj" firstAttribute="bottom" secondItem="lbp-mQ-GOE" secondAttribute="bottom" id="GNE-YS-eCf"/>
                             <constraint firstItem="lbp-mQ-GOE" firstAttribute="leading" secondItem="xBF-tz-qkj" secondAttribute="leading" id="IFt-wR-yPN"/>
                             <constraint firstItem="xBF-tz-qkj" firstAttribute="trailing" secondItem="lbp-mQ-GOE" secondAttribute="trailing" id="Tur-S4-Pbq"/>
                             <constraint firstItem="lbp-mQ-GOE" firstAttribute="top" secondItem="xBF-tz-qkj" secondAttribute="top" id="UdV-zB-uRX"/>
-                            <constraint firstItem="yoe-GM-96s" firstAttribute="top" secondItem="lbp-mQ-GOE" secondAttribute="bottom" constant="30" id="YCo-qn-tDA"/>
-                            <constraint firstItem="xBF-tz-qkj" firstAttribute="bottom" secondItem="yoe-GM-96s" secondAttribute="bottom" constant="38" id="YlL-nu-Kx2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xBF-tz-qkj"/>
                     </view>
                     <connections>
+                        <outlet property="footerView" destination="ZLg-aU-BUs" id="foE-yT-RbS"/>
                         <outlet property="recentTableView" destination="lbp-mQ-GOE" id="II0-Vw-fSG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6lc-Wz-gMe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="ZLg-aU-BUs">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="118"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yoe-GM-96s">
+                            <rect key="frame" x="23" y="34" width="368" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="f0H-u8-g5N"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="16"/>
+                            <state key="normal" title="View all Connection Requests"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="LabelBlue"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="yoe-GM-96s" firstAttribute="top" secondItem="ZLg-aU-BUs" secondAttribute="top" constant="34" id="MhZ-K9-VLb"/>
+                        <constraint firstItem="GNV-Xr-Rvz" firstAttribute="trailing" secondItem="yoe-GM-96s" secondAttribute="trailing" constant="23" id="WMO-aM-gXd"/>
+                        <constraint firstItem="GNV-Xr-Rvz" firstAttribute="bottom" secondItem="yoe-GM-96s" secondAttribute="bottom" constant="34" id="jFj-Al-8Ns"/>
+                        <constraint firstItem="yoe-GM-96s" firstAttribute="leading" secondItem="GNV-Xr-Rvz" secondAttribute="leading" constant="23" id="wv0-60-BsD"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="GNV-Xr-Rvz"/>
+                </view>
             </objects>
             <point key="canvasLocation" x="7400.0000000000009" y="868.52678571428567"/>
         </scene>
