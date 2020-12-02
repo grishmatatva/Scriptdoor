@@ -7,14 +7,16 @@
 //
 
 import UIKit
+import SwiftEntryKit
 
 class ChatViewController: UIViewController {
-
+    
     // MARK: - Outlets
     @IBOutlet private weak var chatTableView: UITableView!
     
     // MARK: - Variable
     var arrayChat: [InfoChat] = []
+    lazy var viewNavigation: ChatViewNavigation = ChatViewNavigation(self)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,8 +26,23 @@ class ChatViewController: UIViewController {
         arrayChat.append(InfoChat(image: UIImage(named: "bg-3"), name: "Boris Ukhtomsky", mess: "Analysis of foreign experience, as it is commo…"))
         arrayChat.append(InfoChat(image: UIImage(named: "bg-4"), name: "Julian Gruber", mess: "It seems logical that the strategy of providing!"))
         chatTableView.tableFooterView = UIView()
+        
     }
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            let custView =  NotificationView.shared
+            let attributes = EKAttributes()
+            SwiftEntryKit.display(entry: custView, using: attributes)
+        }
+    }
+    
+    // MARK: - Action Methods
+    @IBAction func didTapOnAdd() {
+        viewNavigation.moveToGroup()
+    }
+    
 }
 
 // MARK: - Tableview Extension

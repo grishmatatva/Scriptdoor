@@ -6,8 +6,6 @@
 //  Copyright © 2020 Yuvi's - MAC103. All rights reserved.
 //
 
-import Foundation
-
 import UIKit
 
 final class EmailViewNavigation {

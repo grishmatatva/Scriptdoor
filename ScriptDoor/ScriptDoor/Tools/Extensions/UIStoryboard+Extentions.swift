@@ -34,6 +34,10 @@ extension UIStoryboard {
         return UIStoryboard(name: "Profile", bundle: nil)
     }
     
+    static var chat: UIStoryboard {
+        return UIStoryboard(name: "Chat", bundle: nil)
+    }
+    
     func getViewController<T: UIViewController>(type: T.Type) -> T? {
         let id = String(describing: type)
         return instantiateViewController(withIdentifier: id) as? T

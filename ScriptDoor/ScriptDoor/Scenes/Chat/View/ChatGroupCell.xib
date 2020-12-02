@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Circular Std Book.ttf">
+            <string>CircularStd-Book</string>
+        </array>
+        <array key="Circular Std Medium.ttf">
+            <string>CircularStd-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ChatGroupCell" rowHeight="142" id="rTM-O8-jjE" customClass="ChatGroupCell" customModule="ScriptDoor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="476" height="142"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rTM-O8-jjE" id="vzp-Pb-4dV">
+                <rect key="frame" x="0.0" y="0.0" width="476" height="142"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-12" translatesAutoresizingMaskIntoConstraints="NO" id="0ih-9O-G5F">
+                        <rect key="frame" x="16" y="8" width="38" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="38" id="K5M-q5-84n"/>
+                            <constraint firstAttribute="height" constant="38" id="XZa-zX-SGV"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="19"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patrick Jane" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sls-9d-Ihw">
+                        <rect key="frame" x="67" y="8" width="73.5" height="16.5"/>
+                        <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Writer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6T-Ng-Ui3">
+                        <rect key="frame" x="67" y="26.5" width="35.5" height="15.5"/>
+                        <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="12"/>
+                        <color key="textColor" name="LightGray"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="connected a day ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LOa-MM-Msr">
+                        <rect key="frame" x="67" y="47" width="93.5" height="13"/>
+                        <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="10"/>
+                        <color key="textColor" name="LightGray"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LOa-MM-Msr" firstAttribute="top" secondItem="o6T-Ng-Ui3" secondAttribute="bottom" constant="5" id="0vY-Ly-ckM"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="0ih-9O-G5F" secondAttribute="bottom" constant="8" id="6U3-18-CaD"/>
+                    <constraint firstItem="Sls-9d-Ihw" firstAttribute="leading" secondItem="0ih-9O-G5F" secondAttribute="trailing" constant="13" id="6Vc-hS-6LY"/>
+                    <constraint firstItem="0ih-9O-G5F" firstAttribute="top" secondItem="vzp-Pb-4dV" secondAttribute="top" constant="8" id="78c-8d-LMV"/>
+                    <constraint firstItem="o6T-Ng-Ui3" firstAttribute="top" secondItem="Sls-9d-Ihw" secondAttribute="bottom" constant="2" id="Bi5-h0-ReU"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="LOa-MM-Msr" secondAttribute="bottom" constant="7" id="CPI-PQ-xXi"/>
+                    <constraint firstItem="o6T-Ng-Ui3" firstAttribute="leading" secondItem="Sls-9d-Ihw" secondAttribute="leading" id="RlO-xE-ih3"/>
+                    <constraint firstItem="Sls-9d-Ihw" firstAttribute="top" secondItem="0ih-9O-G5F" secondAttribute="top" id="bft-2u-YfP"/>
+                    <constraint firstItem="LOa-MM-Msr" firstAttribute="leading" secondItem="o6T-Ng-Ui3" secondAttribute="leading" id="dxb-sc-giN"/>
+                    <constraint firstItem="0ih-9O-G5F" firstAttribute="leading" secondItem="vzp-Pb-4dV" secondAttribute="leading" constant="16" id="pMk-SW-owJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="chatImageView" destination="0ih-9O-G5F" id="69t-8N-HDh"/>
+                <outlet property="labelDay" destination="LOa-MM-Msr" id="czb-Gq-Qvx"/>
+                <outlet property="labelName" destination="Sls-9d-Ihw" id="IHf-cJ-GSx"/>
+            </connections>
+            <point key="canvasLocation" x="176.81159420289856" y="241.74107142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bg-12" width="250" height="166.5"/>
+        <namedColor name="LightGray">
+            <color red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

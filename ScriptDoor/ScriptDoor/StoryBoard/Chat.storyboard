@@ -25,7 +25,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1mx-Gr-Eal">
-                                <rect key="frame" x="0.0" y="174" width="414" height="639"/>
+                                <rect key="frame" x="0.0" y="172" width="414" height="641"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="kUs-j3-e89" id="cJo-X0-w8o"/>
@@ -33,13 +33,13 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Chats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8Y-5S-pJH">
-                                <rect key="frame" x="24" y="79" width="97.5" height="28"/>
+                                <rect key="frame" x="24" y="79" width="94.5" height="26"/>
                                 <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter for search…" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ip6-RJ-H6a" customClass="SDTextField" customModule="ScriptDoor" customModuleProvider="target">
-                                <rect key="frame" x="24" y="123" width="308" height="44"/>
+                                <rect key="frame" x="24" y="121" width="284" height="44"/>
                                 <color key="backgroundColor" name="disableTextField"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="n7w-5t-qET"/>
@@ -59,13 +59,16 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yR-Mq-fTZ">
-                                <rect key="frame" x="346" y="123" width="44" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yR-Mq-fTZ">
+                                <rect key="frame" x="322" y="115" width="68" height="68"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="44" id="3Dq-Ps-DjG"/>
-                                    <constraint firstAttribute="height" constant="44" id="kd8-2Q-Zme"/>
+                                    <constraint firstAttribute="width" constant="68" id="3Dq-Ps-DjG"/>
+                                    <constraint firstAttribute="height" constant="68" id="kd8-2Q-Zme"/>
                                 </constraints>
-                                <state key="normal" image="Add"/>
+                                <state key="normal" image="addMember"/>
+                                <connections>
+                                    <action selector="didTapOnAdd" destination="kUs-j3-e89" eventType="touchUpInside" id="Ouj-fN-ndb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -73,8 +76,8 @@
                             <constraint firstItem="5yR-Mq-fTZ" firstAttribute="leading" secondItem="Ip6-RJ-H6a" secondAttribute="trailing" constant="14" id="5rG-7G-q6R"/>
                             <constraint firstItem="Z8Y-5S-pJH" firstAttribute="top" secondItem="Ch5-bl-MYW" secondAttribute="top" constant="35" id="780-1s-dDH"/>
                             <constraint firstItem="Ch5-bl-MYW" firstAttribute="bottom" secondItem="1mx-Gr-Eal" secondAttribute="bottom" id="7wF-j6-7AD"/>
+                            <constraint firstItem="5yR-Mq-fTZ" firstAttribute="top" secondItem="Z8Y-5S-pJH" secondAttribute="bottom" constant="10" id="8zF-f3-ymW"/>
                             <constraint firstItem="1mx-Gr-Eal" firstAttribute="top" secondItem="Ip6-RJ-H6a" secondAttribute="bottom" constant="7" id="Dgk-88-QLu"/>
-                            <constraint firstItem="5yR-Mq-fTZ" firstAttribute="top" secondItem="Ip6-RJ-H6a" secondAttribute="top" id="IJ1-PV-yIL"/>
                             <constraint firstItem="Ip6-RJ-H6a" firstAttribute="top" secondItem="Z8Y-5S-pJH" secondAttribute="bottom" constant="16" id="RNV-3x-OfT"/>
                             <constraint firstItem="Z8Y-5S-pJH" firstAttribute="leading" secondItem="Ch5-bl-MYW" secondAttribute="leading" constant="24" id="Zxd-Xj-JXq"/>
                             <constraint firstItem="1mx-Gr-Eal" firstAttribute="leading" secondItem="Ch5-bl-MYW" secondAttribute="leading" id="dKp-5k-VTO"/>
@@ -114,11 +117,107 @@
             </objects>
             <point key="canvasLocation" x="105.79710144927537" y="164.73214285714286"/>
         </scene>
+        <!--Chats-->
+        <scene sceneID="7pk-ev-XdF">
+            <objects>
+                <viewController storyboardIdentifier="ChatGroupViewController" id="c6L-bD-N3A" customClass="ChatGroupViewController" customModule="ScriptDoor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e65-9Q-227">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="K3d-j3-6fz">
+                                <rect key="frame" x="0.0" y="238" width="414" height="575"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="c6L-bD-N3A" id="AO0-uA-CSd"/>
+                                    <outlet property="delegate" destination="c6L-bD-N3A" id="C0B-Hp-P1C"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Chats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zR3-Ps-2oe">
+                                <rect key="frame" x="24" y="79" width="94.5" height="26"/>
+                                <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter for search…" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tkw-zz-isE" customClass="SDTextField" customModule="ScriptDoor" customModuleProvider="target">
+                                <rect key="frame" x="24" y="121" width="366" height="44"/>
+                                <color key="backgroundColor" name="disableTextField"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Pvl-l6-bem"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="txtSearch"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8ZS-e8-FfZ">
+                                <rect key="frame" x="29" y="190" width="356" height="23"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEW BROADCAST" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSr-h5-ZQM">
+                                        <rect key="frame" x="0.0" y="0.0" width="178" height="23"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="cZy-Pa-iBi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="18"/>
+                                        <color key="textColor" name="LabelBlue"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEW GROUP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVC-Zb-qRW">
+                                        <rect key="frame" x="178" y="0.0" width="178" height="23"/>
+                                        <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="18"/>
+                                        <color key="textColor" name="LabelBlue"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="QT5-tC-Pf3" firstAttribute="bottom" secondItem="K3d-j3-6fz" secondAttribute="bottom" id="E0f-1Y-dt2"/>
+                            <constraint firstItem="zR3-Ps-2oe" firstAttribute="leading" secondItem="QT5-tC-Pf3" secondAttribute="leading" constant="24" id="FQz-zv-v6L"/>
+                            <constraint firstItem="8ZS-e8-FfZ" firstAttribute="top" secondItem="tkw-zz-isE" secondAttribute="bottom" constant="25" id="HKW-IS-2Dv"/>
+                            <constraint firstItem="QT5-tC-Pf3" firstAttribute="trailing" secondItem="K3d-j3-6fz" secondAttribute="trailing" id="HZM-nf-XnF"/>
+                            <constraint firstItem="tkw-zz-isE" firstAttribute="top" secondItem="zR3-Ps-2oe" secondAttribute="bottom" constant="16" id="O6T-Z8-lDY"/>
+                            <constraint firstItem="QT5-tC-Pf3" firstAttribute="trailing" secondItem="tkw-zz-isE" secondAttribute="trailing" constant="24" id="OOv-Fs-Iee"/>
+                            <constraint firstItem="K3d-j3-6fz" firstAttribute="leading" secondItem="QT5-tC-Pf3" secondAttribute="leading" id="buz-A9-Zyc"/>
+                            <constraint firstItem="K3d-j3-6fz" firstAttribute="top" secondItem="8ZS-e8-FfZ" secondAttribute="bottom" constant="25" id="im6-Ba-4Vd"/>
+                            <constraint firstItem="QT5-tC-Pf3" firstAttribute="trailing" secondItem="8ZS-e8-FfZ" secondAttribute="trailing" constant="29" id="jdn-rD-dnN"/>
+                            <constraint firstItem="tkw-zz-isE" firstAttribute="leading" secondItem="zR3-Ps-2oe" secondAttribute="leading" id="jxx-qf-1Jm"/>
+                            <constraint firstItem="8ZS-e8-FfZ" firstAttribute="leading" secondItem="QT5-tC-Pf3" secondAttribute="leading" constant="29" id="pr4-i2-A5N"/>
+                            <constraint firstItem="zR3-Ps-2oe" firstAttribute="top" secondItem="QT5-tC-Pf3" secondAttribute="top" constant="35" id="wAS-xz-uoK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QT5-tC-Pf3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Chats" image="Chat" id="k7L-4u-h5O"/>
+                    <navigationItem key="navigationItem" id="gpD-vI-N4y"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="chatGroupTableView" destination="K3d-j3-6fz" id="dmb-zm-ssn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0mk-UC-8Zg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1660.8695652173915" y="164.73214285714286"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="Add" width="32" height="33"/>
         <image name="Chat" width="14" height="14"/>
+        <image name="addMember" width="68" height="68"/>
         <image name="txtSearch" width="14" height="14"/>
+        <namedColor name="LabelBlue">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="disableTextField">
             <color red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
