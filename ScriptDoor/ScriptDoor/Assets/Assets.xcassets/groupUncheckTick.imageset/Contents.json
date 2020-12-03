@@ -2,18 +2,18 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "addMember.png",
-      "scale" : "1x"
+      "scale" : "1x",
+      "filename" : "groupUncheckTick.png"
     },
     {
+      "filename" : "groupUncheckTick@2x.png",
       "scale" : "2x",
-      "filename" : "addMember@2x.png",
       "idiom" : "universal"
     },
     {
+      "scale" : "3x",
       "idiom" : "universal",
-      "filename" : "addMember@3x.png",
-      "scale" : "3x"
+      "filename" : "groupUncheckTick@3x.png"
     }
   ],
   "info" : {

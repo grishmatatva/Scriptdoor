@@ -87,6 +87,12 @@
 		6B7F73EE25777568006D66E8 /* ChatGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7F73EC25777568006D66E8 /* ChatGroupCell.swift */; };
 		6B7F73EF25777568006D66E8 /* ChatGroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B7F73ED25777568006D66E8 /* ChatGroupCell.xib */; };
 		6B7F73F12577C075006D66E8 /* ChatViewNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7F73F02577C075006D66E8 /* ChatViewNavigation.swift */; };
+		6B7F73F32577D9BF006D66E8 /* ChatStartGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7F73F22577D9BF006D66E8 /* ChatStartGroupViewController.swift */; };
+		6B7F73F52577DB86006D66E8 /* ChatGroupNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7F73F42577DB86006D66E8 /* ChatGroupNavigation.swift */; };
+		6BA0C39D2578C5FD0007FD2B /* ChatStartGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA0C39B2578C5FD0007FD2B /* ChatStartGroupCell.swift */; };
+		6BA0C39E2578C5FD0007FD2B /* ChatStartGroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BA0C39C2578C5FD0007FD2B /* ChatStartGroupCell.xib */; };
+		6BA0C3A1257912680007FD2B /* ChatGroupStartTbCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA0C39F257912680007FD2B /* ChatGroupStartTbCell.swift */; };
+		6BA0C3A2257912680007FD2B /* ChatGroupStartTbCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BA0C3A0257912680007FD2B /* ChatGroupStartTbCell.xib */; };
 		6BACE0392555AFC200CCCC1D /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BACE0382555AFC200CCCC1D /* LibraryViewController.swift */; };
 		6BACE03B2555AFD200CCCC1D /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BACE03A2555AFD200CCCC1D /* VideoViewController.swift */; };
 		6BB20C3C255D0022009953A9 /* Cart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BB20C3B255D0022009953A9 /* Cart.storyboard */; };
@@ -211,6 +217,12 @@
 		6B7F73EC25777568006D66E8 /* ChatGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGroupCell.swift; sourceTree = "<group>"; };
 		6B7F73ED25777568006D66E8 /* ChatGroupCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatGroupCell.xib; sourceTree = "<group>"; };
 		6B7F73F02577C075006D66E8 /* ChatViewNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewNavigation.swift; sourceTree = "<group>"; };
+		6B7F73F22577D9BF006D66E8 /* ChatStartGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatStartGroupViewController.swift; sourceTree = "<group>"; };
+		6B7F73F42577DB86006D66E8 /* ChatGroupNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGroupNavigation.swift; sourceTree = "<group>"; };
+		6BA0C39B2578C5FD0007FD2B /* ChatStartGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatStartGroupCell.swift; sourceTree = "<group>"; };
+		6BA0C39C2578C5FD0007FD2B /* ChatStartGroupCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatStartGroupCell.xib; sourceTree = "<group>"; };
+		6BA0C39F257912680007FD2B /* ChatGroupStartTbCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGroupStartTbCell.swift; sourceTree = "<group>"; };
+		6BA0C3A0257912680007FD2B /* ChatGroupStartTbCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatGroupStartTbCell.xib; sourceTree = "<group>"; };
 		6BACE0382555AFC200CCCC1D /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		6BACE03A2555AFD200CCCC1D /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		6BB20C3B255D0022009953A9 /* Cart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cart.storyboard; sourceTree = "<group>"; };
@@ -758,6 +770,8 @@
 				6BD589A325750AEA00808C5B /* ChatViewController.swift */,
 				6B7F73F02577C075006D66E8 /* ChatViewNavigation.swift */,
 				6B7F73EA25776C49006D66E8 /* ChatGroupViewController.swift */,
+				6B7F73F42577DB86006D66E8 /* ChatGroupNavigation.swift */,
+				6B7F73F22577D9BF006D66E8 /* ChatStartGroupViewController.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -771,6 +785,10 @@
 				6B6605BE25769DB400A55B3A /* NotificationView.xib */,
 				6B7F73EC25777568006D66E8 /* ChatGroupCell.swift */,
 				6B7F73ED25777568006D66E8 /* ChatGroupCell.xib */,
+				6BA0C39B2578C5FD0007FD2B /* ChatStartGroupCell.swift */,
+				6BA0C39C2578C5FD0007FD2B /* ChatStartGroupCell.xib */,
+				6BA0C39F257912680007FD2B /* ChatGroupStartTbCell.swift */,
+				6BA0C3A0257912680007FD2B /* ChatGroupStartTbCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -956,7 +974,9 @@
 				6BD589A125750A9E00808C5B /* Chat.storyboard in Resources */,
 				12512D2D252F425700DD97F1 /* Circular Std Black.ttf in Resources */,
 				12D518BA252D8FDC00289859 /* Authontication.storyboard in Resources */,
+				6BA0C3A2257912680007FD2B /* ChatGroupStartTbCell.xib in Resources */,
 				6B1325F225651F0C0087AD56 /* Search.storyboard in Resources */,
+				6BA0C39E2578C5FD0007FD2B /* ChatStartGroupCell.xib in Resources */,
 				12B72D572541767400B88A1E /* ChoosePlansView.xib in Resources */,
 				6BD589A925750B2300808C5B /* ChatCell.xib in Resources */,
 				6BC838D02566B9250069451A /* PublicationCell.xib in Resources */,
@@ -1032,6 +1052,7 @@
 				12FE679225343BE70073D36E /* DateFormate + extensions.swift in Sources */,
 				6BACE03B2555AFD200CCCC1D /* VideoViewController.swift in Sources */,
 				12512D21252F2C0600DD97F1 /* SDTextField.swift in Sources */,
+				6BA0C3A1257912680007FD2B /* ChatGroupStartTbCell.swift in Sources */,
 				6BACE0392555AFC200CCCC1D /* LibraryViewController.swift in Sources */,
 				12B72D41253DAEFD00B88A1E /* BusinessProfileViewNavigator.swift in Sources */,
 				12D518ED252DE87C00289859 /* UIView+Extensions.swift in Sources */,
@@ -1075,7 +1096,9 @@
 				12512D3C253037DA00DD97F1 /* EmailViewController.swift in Sources */,
 				6BC838BE25667CF20069451A /* HeaderViewController.swift in Sources */,
 				6BFEDAC02563E9B100141761 /* GiftPublicationNavigator.swift in Sources */,
+				6BA0C39D2578C5FD0007FD2B /* ChatStartGroupCell.swift in Sources */,
 				6B67C230256D3F9100517B7D /* MySubscribingViewController.swift in Sources */,
+				6B7F73F32577D9BF006D66E8 /* ChatStartGroupViewController.swift in Sources */,
 				6BF5C41C256992C500808636 /* LibraryTableCell.swift in Sources */,
 				6BD8281F255B052700CC1B7C /* DetailsTestimoniolsViewNavigation.swift in Sources */,
 				6BC838C42566A4D70069451A /* PublicationViewController.swift in Sources */,
@@ -1096,6 +1119,7 @@
 				6B67C224256D228400517B7D /* ProfileHeaderViewController.swift in Sources */,
 				6BD8471725729DB600CE0129 /* MoreViewController.swift in Sources */,
 				6BD589A825750B2300808C5B /* ChatCell.swift in Sources */,
+				6B7F73F52577DB86006D66E8 /* ChatGroupNavigation.swift in Sources */,
 				6B0D2A18256A5B410097018B /* SearchViewController.swift in Sources */,
 				6B32DDE4256FF4FB00889D3E /* PopUpViewController.swift in Sources */,
 				6B53A6E2255C374F00541D4F /* AddToCartViewController.swift in Sources */,

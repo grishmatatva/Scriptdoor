@@ -37,19 +37,19 @@
                         </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patrick Jane" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sls-9d-Ihw">
-                        <rect key="frame" x="67" y="8" width="73.5" height="16.5"/>
+                        <rect key="frame" x="67" y="8" width="72" height="15.5"/>
                         <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Writer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6T-Ng-Ui3">
-                        <rect key="frame" x="67" y="26.5" width="35.5" height="15.5"/>
+                        <rect key="frame" x="67" y="25.5" width="32" height="14"/>
                         <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="12"/>
                         <color key="textColor" name="LightGray"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="connected a day ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LOa-MM-Msr">
-                        <rect key="frame" x="67" y="47" width="93.5" height="13"/>
+                        <rect key="frame" x="67" y="44.5" width="94.5" height="12"/>
                         <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="10"/>
                         <color key="textColor" name="LightGray"/>
                         <nil key="highlightedColor"/>

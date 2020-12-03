@@ -59,13 +59,14 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yR-Mq-fTZ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yR-Mq-fTZ">
                                 <rect key="frame" x="322" y="115" width="68" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="68" id="3Dq-Ps-DjG"/>
                                     <constraint firstAttribute="height" constant="68" id="kd8-2Q-Zme"/>
                                 </constraints>
-                                <state key="normal" image="addMember"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                <state key="normal" image="addingMember"/>
                                 <connections>
                                     <action selector="didTapOnAdd" destination="kUs-j3-e89" eventType="touchUpInside" id="Ouj-fN-ndb"/>
                                 </connections>
@@ -126,7 +127,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="K3d-j3-6fz">
-                                <rect key="frame" x="0.0" y="238" width="414" height="575"/>
+                                <rect key="frame" x="0.0" y="248" width="414" height="565"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="c6L-bD-N3A" id="AO0-uA-CSd"/>
@@ -161,23 +162,21 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8ZS-e8-FfZ">
-                                <rect key="frame" x="29" y="190" width="356" height="23"/>
+                                <rect key="frame" x="29" y="190" width="356" height="33"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEW BROADCAST" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSr-h5-ZQM">
-                                        <rect key="frame" x="0.0" y="0.0" width="178" height="23"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="23" id="cZy-Pa-iBi"/>
-                                        </constraints>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="px4-IA-fHm">
+                                        <rect key="frame" x="0.0" y="0.0" width="178" height="33"/>
                                         <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="18"/>
-                                        <color key="textColor" name="LabelBlue"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEW GROUP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVC-Zb-qRW">
-                                        <rect key="frame" x="178" y="0.0" width="178" height="23"/>
+                                        <state key="normal" title="NEW BROADCAST"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXz-KE-GgS">
+                                        <rect key="frame" x="178" y="0.0" width="178" height="33"/>
                                         <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="18"/>
-                                        <color key="textColor" name="LabelBlue"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <state key="normal" title="NEW GROUP"/>
+                                        <connections>
+                                            <action selector="didTapOnNewGroup" destination="c6L-bD-N3A" eventType="touchUpInside" id="km9-US-VPZ"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -210,14 +209,114 @@
             </objects>
             <point key="canvasLocation" x="1660.8695652173915" y="164.73214285714286"/>
         </scene>
+        <!--Chats-->
+        <scene sceneID="4mV-kh-YyS">
+            <objects>
+                <viewController storyboardIdentifier="ChatStartGroupViewController" id="Wr2-BK-d8k" customClass="ChatStartGroupViewController" customModule="ScriptDoor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aIb-m4-XpV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8vJ-AG-wfR">
+                                <rect key="frame" x="0.0" y="283" width="414" height="530"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Wr2-BK-d8k" id="Pfs-Fw-vmR"/>
+                                    <outlet property="delegate" destination="Wr2-BK-d8k" id="M1Y-0D-2E5"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Chats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ym-8m-QRI">
+                                <rect key="frame" x="24" y="79" width="94.5" height="26"/>
+                                <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter for search…" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="78P-HT-p40" customClass="SDTextField" customModule="ScriptDoor" customModuleProvider="target">
+                                <rect key="frame" x="24" y="121" width="284" height="44"/>
+                                <color key="backgroundColor" name="disableTextField"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="B8A-QJ-H7x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="txtSearch"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyI-xQ-onM">
+                                <rect key="frame" x="322" y="115" width="68" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="48D-f7-K2W"/>
+                                    <constraint firstAttribute="width" constant="68" id="mAh-UV-edJ"/>
+                                </constraints>
+                                <state key="normal" image="arrowAdd"/>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3IJ-oB-Q8S">
+                                <rect key="frame" x="32" y="183" width="350" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="GnS-vA-Lm4"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zSX-Kx-m1k">
+                                    <size key="itemSize" width="55" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Wr2-BK-d8k" id="E1G-lS-9mc"/>
+                                    <outlet property="delegate" destination="Wr2-BK-d8k" id="UmV-ga-O6u"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2Ym-8m-QRI" firstAttribute="top" secondItem="laH-LT-gIm" secondAttribute="top" constant="35" id="7md-KY-1rz"/>
+                            <constraint firstItem="pyI-xQ-onM" firstAttribute="top" secondItem="2Ym-8m-QRI" secondAttribute="bottom" constant="10" id="95h-2n-YTZ"/>
+                            <constraint firstItem="laH-LT-gIm" firstAttribute="trailing" secondItem="3IJ-oB-Q8S" secondAttribute="trailing" constant="32" id="POA-gN-24I"/>
+                            <constraint firstItem="laH-LT-gIm" firstAttribute="bottom" secondItem="8vJ-AG-wfR" secondAttribute="bottom" id="Scn-Nr-JLD"/>
+                            <constraint firstItem="3IJ-oB-Q8S" firstAttribute="leading" secondItem="laH-LT-gIm" secondAttribute="leading" constant="32" id="UpC-9f-0Jo"/>
+                            <constraint firstItem="laH-LT-gIm" firstAttribute="trailing" secondItem="8vJ-AG-wfR" secondAttribute="trailing" id="dvk-yr-LIS"/>
+                            <constraint firstItem="78P-HT-p40" firstAttribute="top" secondItem="2Ym-8m-QRI" secondAttribute="bottom" constant="16" id="eq8-uk-V01"/>
+                            <constraint firstItem="8vJ-AG-wfR" firstAttribute="leading" secondItem="laH-LT-gIm" secondAttribute="leading" id="gld-a2-kAE"/>
+                            <constraint firstItem="2Ym-8m-QRI" firstAttribute="leading" secondItem="laH-LT-gIm" secondAttribute="leading" constant="24" id="idY-li-NRy"/>
+                            <constraint firstItem="78P-HT-p40" firstAttribute="leading" secondItem="2Ym-8m-QRI" secondAttribute="leading" id="kNE-br-PIA"/>
+                            <constraint firstItem="pyI-xQ-onM" firstAttribute="leading" secondItem="78P-HT-p40" secondAttribute="trailing" constant="14" id="kb4-QD-Ggm"/>
+                            <constraint firstItem="laH-LT-gIm" firstAttribute="trailing" secondItem="pyI-xQ-onM" secondAttribute="trailing" constant="24" id="ntS-te-xqm"/>
+                            <constraint firstItem="3IJ-oB-Q8S" firstAttribute="top" secondItem="pyI-xQ-onM" secondAttribute="bottom" id="wer-gL-D3g"/>
+                            <constraint firstItem="8vJ-AG-wfR" firstAttribute="top" secondItem="3IJ-oB-Q8S" secondAttribute="bottom" id="yNM-bJ-pw3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="laH-LT-gIm"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Chats" image="Chat" id="Nt8-jI-SSh"/>
+                    <navigationItem key="navigationItem" id="t89-Rw-wfw"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="chatGroupStartCollection" destination="3IJ-oB-Q8S" id="cSr-WI-8hS"/>
+                        <outlet property="chatGroupStartTableView" destination="8vJ-AG-wfR" id="fHi-ia-AtV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ali-fb-lDo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2318.840579710145" y="164.73214285714286"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Chat" width="14" height="14"/>
-        <image name="addMember" width="68" height="68"/>
+        <image name="addingMember" width="68" height="68"/>
+        <image name="arrowAdd" width="67" height="68"/>
         <image name="txtSearch" width="14" height="14"/>
-        <namedColor name="LabelBlue">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="disableTextField">
             <color red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

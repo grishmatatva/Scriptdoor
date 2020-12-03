@@ -15,6 +15,7 @@ class ChatGroupViewController: UIViewController {
     
     // MARK: - Variable
     var arrayChat: [InfoChatGroup] = []
+    lazy var viewNavigation: ChatGroupNavigation = ChatGroupNavigation(self)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,10 @@ class ChatGroupViewController: UIViewController {
         arrayChat.append(InfoChatGroup(image: UIImage(named: "bg-4"), name: "Julian Gruber", day: "connected two days ago"))
         arrayChat.append(InfoChatGroup(image: UIImage(named: "bg-5"), name: "Kaytlin Ryan Jacob", day: "connected a day ago"))
         chatGroupTableView.tableFooterView = UIView()
+    }
+    
+    @IBAction private func didTapOnNewGroup() {
+        viewNavigation.moveToStartGroup()
     }
 }
 
@@ -40,6 +45,5 @@ extension ChatGroupViewController:  UITableViewDataSource, UITableViewDelegate {
         cell?.detailChat = arrayChat[indexPath.row]
         return cell ?? UITableViewCell()
     }
-    
-    
+   
 }

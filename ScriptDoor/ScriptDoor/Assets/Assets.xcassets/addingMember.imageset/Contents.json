@@ -1,19 +1,19 @@
 {
   "images" : [
     {
+      "filename" : "addingMember.png",
       "idiom" : "universal",
-      "filename" : "addMember.png",
       "scale" : "1x"
     },
     {
       "scale" : "2x",
-      "filename" : "addMember@2x.png",
+      "filename" : "addingMember@2x.png",
       "idiom" : "universal"
     },
     {
+      "scale" : "3x",
       "idiom" : "universal",
-      "filename" : "addMember@3x.png",
-      "scale" : "3x"
+      "filename" : "addingMember@3x.png"
     }
   ],
   "info" : {
