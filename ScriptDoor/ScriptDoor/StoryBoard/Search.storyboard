@@ -624,30 +624,31 @@
                                                                 <color key="textColor" name="AppBlack"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lCD-sm-86A" customClass="FSPagerView" customModule="FSPagerView">
-                                                                <rect key="frame" x="0.0" y="61.5" width="414" height="227.5"/>
-                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="interitemSpacing">
-                                                                        <real key="value" value="20"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                </userDefinedRuntimeAttributes>
+                                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Y9k-9e-1AI">
+                                                                <rect key="frame" x="14" y="61.5" width="400" height="227.5"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7di-Y3-7zp">
+                                                                    <size key="itemSize" width="50" height="50"/>
+                                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                </collectionViewFlowLayout>
+                                                                <cells/>
                                                                 <connections>
-                                                                    <outlet property="dataSource" destination="6dC-zT-1VE" id="MX8-kz-wSR"/>
-                                                                    <outlet property="delegate" destination="6dC-zT-1VE" id="Xoz-eq-Cdp"/>
+                                                                    <outlet property="dataSource" destination="6dC-zT-1VE" id="uoA-fF-UJz"/>
                                                                 </connections>
-                                                            </view>
+                                                            </collectionView>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="trailing" secondItem="bwm-N8-89Q" secondAttribute="trailing" constant="20" id="301-Bd-UHI"/>
-                                                            <constraint firstAttribute="trailing" secondItem="lCD-sm-86A" secondAttribute="trailing" id="5cZ-EC-RCx"/>
+                                                            <constraint firstItem="Y9k-9e-1AI" firstAttribute="top" secondItem="bwm-N8-89Q" secondAttribute="bottom" constant="15" id="3Sx-Oz-UKw"/>
+                                                            <constraint firstItem="Y9k-9e-1AI" firstAttribute="leading" secondItem="y3l-vV-Ibi" secondAttribute="leading" constant="14" id="Did-YK-V4w"/>
                                                             <constraint firstItem="bwm-N8-89Q" firstAttribute="top" secondItem="y3l-vV-Ibi" secondAttribute="top" constant="20" id="NPj-rK-dBV"/>
-                                                            <constraint firstItem="lCD-sm-86A" firstAttribute="top" secondItem="bwm-N8-89Q" secondAttribute="bottom" constant="15" id="UuF-Ka-tOz"/>
                                                             <constraint firstAttribute="height" constant="329" id="cL9-EP-xzZ"/>
-                                                            <constraint firstAttribute="bottom" secondItem="lCD-sm-86A" secondAttribute="bottom" constant="40" id="eSz-Xn-kn3"/>
                                                             <constraint firstItem="bwm-N8-89Q" firstAttribute="leading" secondItem="y3l-vV-Ibi" secondAttribute="leading" constant="20" id="ec7-ez-Olt"/>
-                                                            <constraint firstItem="lCD-sm-86A" firstAttribute="leading" secondItem="y3l-vV-Ibi" secondAttribute="leading" id="fmb-rO-sbr"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Y9k-9e-1AI" secondAttribute="bottom" constant="40" id="gQ4-XA-kfO"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Y9k-9e-1AI" secondAttribute="trailing" id="iJ3-Y2-Ip4"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -703,7 +704,7 @@
                         <outlet property="viewLibrary" destination="VQW-Jr-8z8" id="PWm-c1-110"/>
                         <outlet property="viewMusic" destination="AAa-GL-OcV" id="K9A-9I-mXa"/>
                         <outlet property="viewPublication" destination="mTg-U3-vVB" id="rRL-jC-a0e"/>
-                        <outlet property="viewUsers" destination="lCD-sm-86A" id="AHA-WX-y9P"/>
+                        <outlet property="viewUsers" destination="Y9k-9e-1AI" id="7bI-VT-WSz"/>
                         <outlet property="viewVideo" destination="uCr-B8-bWv" id="Ifo-r8-p4e"/>
                     </connections>
                 </viewController>

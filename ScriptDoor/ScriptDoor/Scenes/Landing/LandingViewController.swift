@@ -17,7 +17,7 @@ class LandingViewController: UIViewController {
     @IBOutlet private weak var viewConfirmProfile: UIView!
     @IBOutlet private weak var viewGotNewIdea: UIView!
     @IBOutlet private weak var viewFeatureVideos: FSPagerView!
-    @IBOutlet private weak var viewConnectionsPager: FSPagerView!
+    @IBOutlet private weak var viewConnectionsPager: UICollectionView!
     @IBOutlet private weak var stackViewLandings: UIStackView!
     @IBOutlet private weak var stackViewPlans: UIStackView!
     
@@ -47,9 +47,13 @@ class LandingViewController: UIViewController {
     private func prepareView() {
         viewFeatureVideos.dataSource = self
         viewFeatureVideos.register(UINib(nibName: "FeaturedVideoCell", bundle: nil), forCellWithReuseIdentifier: "featuredCell")
-        viewConnectionsPager.register(UINib(nibName: "ConnectionsCell", bundle: nil), forCellWithReuseIdentifier: "connectionsCell")
+        viewConnectionsPager.register(UINib(nibName: "ConnectionsCell", bundle: nil), forCellWithReuseIdentifier: "cell")
         viewFeatureVideos.itemSize = CGSize(width: view.frame.size.width - 80, height: 172)
-        viewConnectionsPager.itemSize = CGSize(width: 201, height: 229)
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.itemSize = CGSize(width: 201, height: 229)
+        layout.minimumLineSpacing = 10
+        viewConnectionsPager.collectionViewLayout = layout
         viewFeatureVideos.reloadData()
         arrayFeature.append(InfoFeature(image: UIImage(named: "bg") ?? UIImage()))
         arrayFeature.append(InfoFeature(image: UIImage(named: "bg-4") ?? UIImage()))
@@ -114,21 +118,29 @@ extension LandingViewController: FSPagerViewDataSource {
     }
     
     func pagerView(_ pagerView: FSPagerView, cellForItemAt index: Int) -> FSPagerViewCell {
-        if pagerView == viewConnectionsPager {
-            if let cell = pagerView.dequeueReusableCell(withReuseIdentifier: "connectionsCell", at: index) as? ConnectionsCell {
-                cell.detailConnection = arrayConnection[index]
-                return cell
-            }
-        } else {
-            if let cell = pagerView.dequeueReusableCell(withReuseIdentifier: "featuredCell", at: index) as? FeaturedVideoCell {
-                cell.detailFeature = arrayFeature[index]
-                return cell
-            }
+        if let cell = pagerView.dequeueReusableCell(withReuseIdentifier: "featuredCell", at: index) as? FeaturedVideoCell {
+            cell.detailFeature = arrayFeature[index]
+            return cell
         }
         return FSPagerViewCell()
     }
 }
-
+extension LandingViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return arrayConnection.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? ConnectionsCell{
+            cell.detailConnection = arrayConnection[indexPath.row]
+            cell.cellType = .landing
+            return cell
+        }
+        return UICollectionViewCell()
+    }
+    
+    
+}
 // MARK: - Textfield Extension
 extension LandingViewController: UITextFieldDelegate {
     

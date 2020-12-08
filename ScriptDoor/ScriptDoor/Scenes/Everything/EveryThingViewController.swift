@@ -16,7 +16,7 @@ class EveryThingViewController: UIViewController {
     @IBOutlet private weak var viewVideo: FSPagerView!
     @IBOutlet private weak var viewMusic: FSPagerView!
     @IBOutlet private weak var viewLibrary: FSPagerView!
-    @IBOutlet private weak var viewUsers: FSPagerView!
+    @IBOutlet private weak var viewUsers: UICollectionView!
     
     // MARK: - Variables
     var arrayPublication: [InfoPublication] = []
@@ -38,8 +38,12 @@ class EveryThingViewController: UIViewController {
         viewVideo.register(UINib(nibName: "VideoCell", bundle: nil), forCellWithReuseIdentifier: "videoCell")
         viewMusic.register(UINib(nibName: "AudioCell", bundle: nil), forCellWithReuseIdentifier: "audioCell")
         viewLibrary.register(UINib(nibName: "LibraryCell", bundle: nil), forCellWithReuseIdentifier: "libraryCell")
-        viewUsers.register(UINib(nibName: "ConnectionsCell", bundle: nil), forCellWithReuseIdentifier: "connectionsCell")
-        viewUsers.itemSize = CGSize(width: 201, height: 229)
+        viewUsers.register(UINib(nibName: "ConnectionsCell", bundle: nil), forCellWithReuseIdentifier: "cell")
+        let layout  = UICollectionViewFlowLayout()
+        layout.itemSize = CGSize(width: 201, height: 229)
+        layout.scrollDirection = .horizontal
+        layout.minimumLineSpacing = 20
+        viewUsers.collectionViewLayout = layout
         viewPublication.itemSize = CGSize(width: 216, height: 301)
         viewVideo.itemSize = CGSize(width: 225, height: 205)
         viewMusic.itemSize = CGSize(width: 184, height: 248)
@@ -76,8 +80,6 @@ extension EveryThingViewController: FSPagerViewDataSource {
     func numberOfItems(in pagerView: FSPagerView) -> Int {
         if pagerView == viewPublication {
             return arrayPublication.count
-        } else if pagerView == viewUsers {
-            return arrayUser.count
         } else if pagerView == viewVideo {
             return arrayVideo.count
         } else if pagerView == viewMusic{
@@ -88,12 +90,7 @@ extension EveryThingViewController: FSPagerViewDataSource {
     }
     
     func pagerView(_ pagerView: FSPagerView, cellForItemAt index: Int) -> FSPagerViewCell {
-        if pagerView == viewUsers {
-            if let cell = pagerView.dequeueReusableCell(withReuseIdentifier: "connectionsCell", at: index) as? ConnectionsCell {
-                cell.detailConnection = arrayUser[index]
-                return cell
-            }
-        } else if pagerView == viewPublication {
+        if pagerView == viewPublication {
             if let cell = pagerView.dequeueReusableCell(withReuseIdentifier: "publicationCell", at: index) as? PublicationCell {
                 cell.detailPublication = arrayPublication[index]
                 return cell
@@ -116,4 +113,20 @@ extension EveryThingViewController: FSPagerViewDataSource {
         }
         return FSPagerViewCell()
     }
+}
+extension EveryThingViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return arrayUser.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? ConnectionsCell{
+            cell.detailConnection = arrayUser[indexPath.row]
+            cell.cellType = .search
+            return cell
+        }
+        return UICollectionViewCell()
+    }
+    
+    
 }

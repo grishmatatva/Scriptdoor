@@ -9,6 +9,7 @@
 import UIKit
 
 struct InfoGroupChat {
+    var id: Int
     var image: UIImage?
     var name: String
     var day: String

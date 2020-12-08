@@ -37,19 +37,19 @@
                             </userDefinedRuntimeAttributes>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kaytlin Ryan Jacob" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgc-7L-n35">
-                            <rect key="frame" x="10" y="124" width="181" height="18"/>
+                            <rect key="frame" x="10" y="124" width="181" height="16.5"/>
                             <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="14"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Writer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4r-by-Pfw">
-                            <rect key="frame" x="10" y="147" width="181" height="15.5"/>
+                            <rect key="frame" x="10" y="145.5" width="181" height="14"/>
                             <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="12"/>
                             <color key="textColor" name="LightGray"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMJ-EJ-iSP">
-                            <rect key="frame" x="49" y="167.5" width="103" height="31.5"/>
+                            <rect key="frame" x="49" y="164.5" width="103" height="31.5"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="31.5" id="aVW-Xd-qxx"/>
@@ -103,6 +103,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="imageFeature" destination="GwU-dl-iKi" id="Hty-lB-dLS"/>
+                <outlet property="viewBackground" destination="tMy-uM-TAA" id="KR0-Nh-mC4"/>
             </connections>
             <point key="canvasLocation" x="-121.0144927536232" y="-737.27678571428567"/>
         </view>

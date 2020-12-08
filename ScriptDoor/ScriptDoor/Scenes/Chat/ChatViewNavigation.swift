@@ -16,8 +16,14 @@ final class  ChatViewNavigation {
     
     // MARK: - Navigations
     func moveToGroup() {
-        if let signUpVc = UIStoryboard.chat.getViewController(type: ChatGroupViewController.self ) {
-            viewController.navigationController?.pushViewController(signUpVc, animated: true)
+        if let groupChatVc = UIStoryboard.chat.getViewController(type: ChatGroupViewController.self ) {
+            viewController.navigationController?.pushViewController(groupChatVc, animated: true)
+        }
+    }
+    
+    func moveToChat() {
+        if let messageVc = UIStoryboard.chat.getViewController(type: MessageViewController.self ) {
+            viewController.navigationController?.pushViewController(messageVc, animated: true)
         }
     }
 }

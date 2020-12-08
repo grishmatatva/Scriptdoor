@@ -63,7 +63,7 @@
                         <state key="normal" image="groupUncheckTick"/>
                         <state key="selected" image="CheckBox"/>
                         <connections>
-                            <action selector="didTapOnbtnCheck:" destination="YwS-By-izd" eventType="touchUpInside" id="9xs-EE-kXG"/>
+                            <action selector="didTapOnbtnCheck:" destination="YwS-By-izd" eventType="touchUpInside" id="Nq0-lX-bWg"/>
                         </connections>
                     </button>
                 </subviews>
@@ -83,7 +83,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="btnCheckBox" destination="3Ks-m4-lty" id="9Nc-T9-tb4"/>
+                <outlet property="btnCheckBox" destination="3Ks-m4-lty" id="cam-PY-lem"/>
                 <outlet property="chatImageView" destination="K2Q-8m-uzi" id="xzM-dN-8vm"/>
                 <outlet property="labelDay" destination="1hM-rg-CnR" id="Jbt-2q-04I"/>
                 <outlet property="labelName" destination="Xfi-Mk-jaZ" id="2ij-AH-jMw"/>

@@ -89,7 +89,7 @@
             </objects>
             <point key="canvasLocation" x="1911" y="-1757"/>
         </scene>
-        <!--Data Source-->
+        <!--Landing View Controller-->
         <scene sceneID="yC9-q1-bbY">
             <objects>
                 <viewController storyboardIdentifier="LandingViewController" id="V3x-MP-Us4" customClass="LandingViewController" customModule="ScriptDoor" customModuleProvider="target" sceneMemberID="viewController">
@@ -471,49 +471,51 @@
                                                                 <color key="textColor" name="AppBlack"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LPS-F4-rEk" customClass="FSPagerView" customModule="FSPagerView">
-                                                                <rect key="frame" x="0.0" y="58.5" width="414" height="230.5"/>
+                                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Iie-E1-Qpm">
+                                                                <rect key="frame" x="15" y="58.5" width="399" height="255.5"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="interitemSpacing">
-                                                                        <real key="value" value="20"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                </userDefinedRuntimeAttributes>
+                                                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="R4o-KW-wBj">
+                                                                    <size key="itemSize" width="50" height="50"/>
+                                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                </collectionViewFlowLayout>
+                                                                <cells/>
                                                                 <connections>
-                                                                    <outlet property="dataSource" destination="V3x-MP-Us4" id="eLC-y5-H5d"/>
+                                                                    <outlet property="dataSource" destination="V3x-MP-Us4" id="MQ6-M0-1wS"/>
                                                                 </connections>
-                                                            </view>
+                                                            </collectionView>
                                                         </subviews>
                                                         <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
-                                                            <constraint firstItem="LPS-F4-rEk" firstAttribute="leading" secondItem="74G-du-nmo" secondAttribute="leading" id="0fN-5n-rpx"/>
                                                             <constraint firstAttribute="trailing" secondItem="WgT-ue-yDK" secondAttribute="trailing" constant="20" id="2h7-R4-kWF"/>
-                                                            <constraint firstAttribute="bottom" secondItem="LPS-F4-rEk" secondAttribute="bottom" constant="40" id="GYV-mC-PP2"/>
                                                             <constraint firstAttribute="height" constant="329" id="OIB-pF-bmB"/>
                                                             <constraint firstItem="WgT-ue-yDK" firstAttribute="leading" secondItem="74G-du-nmo" secondAttribute="leading" constant="20" id="QzB-pU-49g"/>
-                                                            <constraint firstAttribute="trailing" secondItem="LPS-F4-rEk" secondAttribute="trailing" id="UFA-Ry-dfS"/>
-                                                            <constraint firstItem="LPS-F4-rEk" firstAttribute="top" secondItem="WgT-ue-yDK" secondAttribute="bottom" constant="15" id="kag-lb-fEr"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Iie-E1-Qpm" secondAttribute="trailing" id="g3x-H6-9WH"/>
+                                                            <constraint firstItem="Iie-E1-Qpm" firstAttribute="leading" secondItem="74G-du-nmo" secondAttribute="leading" constant="15" id="vGm-Iw-Cx3"/>
+                                                            <constraint firstItem="Iie-E1-Qpm" firstAttribute="top" secondItem="WgT-ue-yDK" secondAttribute="bottom" constant="15" id="wI4-gU-qk1"/>
                                                             <constraint firstItem="WgT-ue-yDK" firstAttribute="top" secondItem="74G-du-nmo" secondAttribute="top" constant="20" id="xkt-I8-DCe"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Iie-E1-Qpm" secondAttribute="bottom" constant="15" id="yqv-m0-hMZ"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AC5-Fq-MXZ">
                                                         <rect key="frame" x="0.0" y="891" width="414" height="2000"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See what’s trending" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tw-gh-jIG">
-                                                                <rect key="frame" x="26" y="26" width="176.5" height="23.5"/>
+                                                                <rect key="frame" x="26" y="26" width="176.5" height="1515.5"/>
                                                                 <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVY-Dt-pcr">
-                                                                <rect key="frame" x="26" y="56.5" width="362" height="45.5"/>
+                                                                <rect key="frame" x="26" y="1548.5" width="362" height="45.5"/>
                                                                 <string key="text">Scriptdoor taps into the brains of  writers, thinkers, and storytellers to bring you a variety of content across categories of books, music and videos</string>
                                                                 <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="13"/>
                                                                 <color key="textColor" name="AppGray"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PYh-As-fWc">
-                                                                <rect key="frame" x="0.0" y="124" width="414" height="0.0"/>
+                                                                <rect key="frame" x="0.0" y="1616" width="414" height="0.0"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4af-Oo-zne">
                                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
@@ -525,23 +527,23 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KA3-0W-iK4">
-                                                                <rect key="frame" x="0.0" y="124" width="414" height="1876"/>
+                                                                <rect key="frame" x="0.0" y="1616" width="414" height="384"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See what’s trending" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKI-hJ-OT7">
-                                                                        <rect key="frame" x="24" y="23" width="366" height="1515.5"/>
+                                                                        <rect key="frame" x="24" y="23" width="366" height="23.5"/>
                                                                         <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="20"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2y-Jv-grc">
-                                                                        <rect key="frame" x="24" y="1543.5" width="366" height="45.5"/>
+                                                                        <rect key="frame" x="24" y="51.5" width="366" height="45.5"/>
                                                                         <string key="text">Scriptdoor taps into the brains of  writers, thinkers, and storytellers to bring you a variety of content across categories of books, music and videos</string>
                                                                         <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="13"/>
                                                                         <color key="textColor" name="AppGray"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aur-rF-S4Y">
-                                                                        <rect key="frame" x="0.0" y="1609" width="414" height="0.0"/>
+                                                                        <rect key="frame" x="0.0" y="117" width="414" height="0.0"/>
                                                                         <subviews>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gbg-1H-voa">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
@@ -553,7 +555,7 @@
                                                                         </subviews>
                                                                     </stackView>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EGq-1J-OJC">
-                                                                        <rect key="frame" x="0.0" y="1639" width="414" height="237"/>
+                                                                        <rect key="frame" x="0.0" y="147" width="414" height="237"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Want to Advertise?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJg-iY-daW">
                                                                                 <rect key="frame" x="28" y="34" width="362" height="25.5"/>
@@ -691,7 +693,7 @@
                         <outlet property="stackViewPlans" destination="aur-rF-S4Y" id="Bie-91-7dp"/>
                         <outlet property="textSearch" destination="AAU-lr-SqJ" id="ZoY-Hp-Eoe"/>
                         <outlet property="viewConfirmProfile" destination="919-kH-Kq8" id="0tg-ra-yjW"/>
-                        <outlet property="viewConnectionsPager" destination="LPS-F4-rEk" id="OVe-9w-9ex"/>
+                        <outlet property="viewConnectionsPager" destination="Iie-E1-Qpm" id="5Fd-kB-xoC"/>
                         <outlet property="viewFeatureVideos" destination="m0P-xh-HxX" id="2Md-l6-HMg"/>
                         <outlet property="viewGotNewIdea" destination="55w-zJ-8RT" id="iJY-cY-RJz"/>
                     </connections>

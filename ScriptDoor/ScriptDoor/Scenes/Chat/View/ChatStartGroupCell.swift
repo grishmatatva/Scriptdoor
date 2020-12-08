@@ -8,22 +8,25 @@
 
 import UIKit
 
-struct InfoStartGroup {
-    var image: UIImage?
-    var name: String
-}
-
 class ChatStartGroupCell: UICollectionViewCell {
     
     // MARK: - Outlets
     @IBOutlet private weak var groupProfileImage: UIImageView!
     @IBOutlet private weak var groupProName: UILabel!
+    @IBOutlet private weak var btnCancel: UIButton!
     
     // MARK: - Variable
-    var detailStartGroup: InfoStartGroup? {
+    var didTakeCancel: ((Int) -> Void)?
+    var detailStartGroup: InfoGroupChat? {
         didSet {
             groupProfileImage.image = detailStartGroup?.image ?? UIImage()
             groupProName.text = detailStartGroup?.name ?? ""
+            btnCancel.isSelected = detailStartGroup?.isSelected ?? false
         }
+    }
+    
+    @IBAction func didTapOnCancel(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+        didTakeCancel?(detailStartGroup?.id ?? 0)
     }
 }

@@ -12,17 +12,31 @@ import FSPagerView
 struct InfoConnection {
     var image: UIImage
 }
-
-class ConnectionsCell: FSPagerViewCell {
+enum ConnectionCellType {
+    case landing
+    case search
+    
+    var backColor: UIColor {
+        switch self {
+        case .landing: return .white
+        case .search: return UIColor.appColors.white243_243_243
+        }
+    }
+}
+class ConnectionsCell: UICollectionViewCell {
     
     // MARK: - Outlets
        @IBOutlet private weak var imageFeature: UIImageView!
-       
+       @IBOutlet private weak var viewBackground: UIView!
        // MARK: - Variable
        var detailConnection: InfoConnection? {
            didSet {
                imageFeature.image = detailConnection?.image ?? UIImage()
            }
        }
-    
+    var cellType: ConnectionCellType?{
+        didSet {
+            viewBackground.backgroundColor = cellType?.backColor
+        }
+    }
 }

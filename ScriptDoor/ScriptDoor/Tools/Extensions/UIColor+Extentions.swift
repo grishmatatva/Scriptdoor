@@ -12,6 +12,11 @@ extension UIColor {
     struct AppColors {
         let inActiveTextField = UIColor(named: "disableTextField")
         let labelBlue = UIColor(named: "LabelBlue")!
+        let appWhiteProfile = UIColor(named: "AppWhiteProfile")!
+        let white243_243_243 = UIColor(named: "243_243_243")!
+        let lightGray = UIColor(named: "LightGray")!
+        let appBlack = UIColor(named: "AppBlack")!
+        
     }
     static var appColors : AppColors {
         return AppColors()

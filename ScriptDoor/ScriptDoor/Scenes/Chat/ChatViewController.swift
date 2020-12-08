@@ -58,4 +58,8 @@ extension ChatViewController:  UITableViewDataSource, UITableViewDelegate {
         return cell ?? UITableViewCell()
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewNavigation.moveToChat()
+    }
+    
 }

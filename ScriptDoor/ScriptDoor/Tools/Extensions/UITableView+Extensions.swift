@@ -14,7 +14,9 @@ extension UITableView {
         let cellIdenfier = String(describing: cellID.self)
         if let cell = self.dequeueReusableCell(withIdentifier: cellIdenfier) as? T{
             return cell
+        } else {
+            register(UINib(nibName: cellIdenfier, bundle: nil), forCellReuseIdentifier: cellIdenfier)
+            return dequeueReusableCell(withIdentifier: cellIdenfier) as? T
         }
-        return nil
     }
 }

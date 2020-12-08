@@ -49,6 +49,9 @@
                                     <constraint firstAttribute="width" constant="22" id="ruM-Jg-ju0"/>
                                 </constraints>
                                 <state key="normal" image="addMember"/>
+                                <connections>
+                                    <action selector="didTapOnCancel:" destination="gTV-IL-0wX" eventType="touchUpInside" id="i8O-vN-OIO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -74,6 +77,7 @@
             </constraints>
             <size key="customSize" width="62" height="75"/>
             <connections>
+                <outlet property="btnCancel" destination="bK3-1m-ehj" id="hQa-9n-uJW"/>
                 <outlet property="groupProName" destination="VPh-dQ-7Gd" id="O1U-f4-2TX"/>
                 <outlet property="groupProfileImage" destination="sbI-qo-gkH" id="Vbx-b6-sDz"/>
             </connections>
