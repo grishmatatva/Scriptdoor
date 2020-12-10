@@ -16,6 +16,7 @@ class MyRecentActivityViewController: UIViewController {
     @IBOutlet private weak var footerView: UIView!
     
     var arrayRecent: [InfoRecent] = []
+    lazy var viewNavigation: MyRecentActivityViewNavigation = MyRecentActivityViewNavigation(viewController: self)
     
     // MARK: - Life Cycle Methods
     override func viewDidLoad() {
@@ -29,6 +30,10 @@ class MyRecentActivityViewController: UIViewController {
         recentTableView.reloadData()
         
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction private func didTapOnViewRequest() {
+        viewNavigation.moveToRequest()
     }
 }
 

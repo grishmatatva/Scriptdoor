@@ -16,6 +16,7 @@ class MoreViewController: UIViewController {
     
     // MARK: - Variable
     var arrayMore: [InfoMore] = []
+    private lazy var viewNavigator: MoreViewNavigator = MoreViewNavigator(self)
     
     // MARK: - LifeCycle Method
     override func viewDidLoad() {
@@ -49,5 +50,11 @@ extension MoreViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.getTableViewCell(cellID: MoreCell.self)
         cell?.detailMore = arrayMore[indexPath.row]
         return cell ?? UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let tab = MoreTabsNavigator(rawValue: indexPath.row) {
+            viewNavigator.moveTo(tab: tab)
+        }
     }
 }

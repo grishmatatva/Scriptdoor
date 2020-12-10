@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Circular Std Medium.ttf">
+            <string>CircularStd-Medium</string>
+        </array>
+        <array key="CircularStd-Bold.ttf">
+            <string>CircularStd-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="glB-XB-633" customClass="WipodPublicationCell" customModule="ScriptDoor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="397" height="565"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="noq-mL-E9N">
+                <rect key="frame" x="0.0" y="0.0" width="397" height="565"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FZ5-fd-ckC">
+                        <rect key="frame" x="0.0" y="0.0" width="397" height="171"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="171" id="3ZX-na-VSz"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Vrr-bR-Z4S">
+                        <rect key="frame" x="0.0" y="181" width="397" height="36"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title of a publication" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUq-tg-Or2">
+                                <rect key="frame" x="0.0" y="0.0" width="397" height="17"/>
+                                <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="14.399999618530273"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13 May 2019  |  20K buys" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucU-Kx-TzD">
+                                <rect key="frame" x="0.0" y="21" width="397" height="15"/>
+                                <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="12.800000190734863"/>
+                                <color key="textColor" name="AppGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Vrr-bR-Z4S" firstAttribute="leading" secondItem="noq-mL-E9N" secondAttribute="leading" id="NUk-Nf-saA"/>
+                    <constraint firstItem="Vrr-bR-Z4S" firstAttribute="top" secondItem="FZ5-fd-ckC" secondAttribute="bottom" constant="10" id="cq9-58-RYS"/>
+                    <constraint firstItem="FZ5-fd-ckC" firstAttribute="top" secondItem="noq-mL-E9N" secondAttribute="top" id="eYY-kj-Qhb"/>
+                    <constraint firstItem="FZ5-fd-ckC" firstAttribute="leading" secondItem="noq-mL-E9N" secondAttribute="leading" id="i4u-Lx-qCd"/>
+                    <constraint firstAttribute="trailing" secondItem="FZ5-fd-ckC" secondAttribute="trailing" id="iJr-nD-vSX"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Vrr-bR-Z4S" secondAttribute="bottom" id="nHi-6j-37i"/>
+                    <constraint firstAttribute="trailing" secondItem="Vrr-bR-Z4S" secondAttribute="trailing" id="vRv-eh-iB7"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="397" height="565"/>
+            <connections>
+                <outlet property="imageFeature" destination="FZ5-fd-ckC" id="pKm-N2-lrw"/>
+            </connections>
+            <point key="canvasLocation" x="289.13043478260875" y="128.23660714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AppGray">
+            <color red="0.35294117647058826" green="0.35294117647058826" blue="0.35294117647058826" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

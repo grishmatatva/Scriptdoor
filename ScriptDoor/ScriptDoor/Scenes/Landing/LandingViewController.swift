@@ -125,6 +125,7 @@ extension LandingViewController: FSPagerViewDataSource {
         return FSPagerViewCell()
     }
 }
+
 extension LandingViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return arrayConnection.count
@@ -139,8 +140,8 @@ extension LandingViewController: UICollectionViewDataSource {
         return UICollectionViewCell()
     }
     
-    
 }
+
 // MARK: - Textfield Extension
 extension LandingViewController: UITextFieldDelegate {
     

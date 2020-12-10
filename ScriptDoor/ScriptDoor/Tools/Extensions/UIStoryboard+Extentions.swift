@@ -29,11 +29,16 @@ extension UIStoryboard {
     static var search: UIStoryboard {
         return UIStoryboard(name: "Search", bundle: nil)
     }
-    
+    static var wallet: UIStoryboard {
+        return UIStoryboard(name: "Wallet", bundle: nil)
+    }
     static var profile: UIStoryboard {
         return UIStoryboard(name: "Profile", bundle: nil)
     }
     
+    static var more: UIStoryboard {
+        return UIStoryboard(name: "More", bundle: nil)
+    }
     static var chat: UIStoryboard {
         return UIStoryboard(name: "Chat", bundle: nil)
     }
