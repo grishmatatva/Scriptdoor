@@ -90,13 +90,13 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4e-A5-ZMd">
-                                <rect key="frame" x="24" y="26" width="98.5" height="26"/>
+                                <rect key="frame" x="24" y="40" width="98.5" height="26"/>
                                 <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AxJ-U6-t9f">
-                                <rect key="frame" x="341" y="26" width="62" height="15"/>
+                                <rect key="frame" x="341" y="40" width="62" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="62" id="59Y-r4-g6c"/>
                                     <constraint firstAttribute="height" constant="15" id="Zc7-XA-y34"/>
@@ -110,9 +110,12 @@
                                         <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapOnEditProfile" destination="4IZ-sv-cbc" eventType="touchUpInside" id="uqn-Ex-tGg"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Edit" translatesAutoresizingMaskIntoConstraints="NO" id="gjH-5k-Wyk">
-                                <rect key="frame" x="368" y="104" width="30" height="30"/>
+                                <rect key="frame" x="368" y="88" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Ooi-97-jRb"/>
                                     <constraint firstAttribute="width" constant="30" id="dAG-TE-MJk"/>
@@ -392,7 +395,7 @@ process in every task.
                             <constraint firstItem="t4e-A5-ZMd" firstAttribute="leading" secondItem="Pgd-fQ-9Vi" secondAttribute="leading" constant="24" id="26e-mh-Evd"/>
                             <constraint firstItem="Pgd-fQ-9Vi" firstAttribute="bottom" secondItem="enn-bG-2JA" secondAttribute="bottom" constant="69" id="2Ld-A6-GHg"/>
                             <constraint firstAttribute="trailing" secondItem="gjH-5k-Wyk" secondAttribute="trailing" constant="16" id="3Ce-Rn-fZi"/>
-                            <constraint firstItem="gjH-5k-Wyk" firstAttribute="top" secondItem="AxJ-U6-t9f" secondAttribute="bottom" constant="63" id="9Jk-Jp-Dek"/>
+                            <constraint firstItem="gjH-5k-Wyk" firstAttribute="top" secondItem="AxJ-U6-t9f" secondAttribute="bottom" constant="33" id="9Jk-Jp-Dek"/>
                             <constraint firstItem="CMe-vR-wMS" firstAttribute="leading" secondItem="Pgd-fQ-9Vi" secondAttribute="leading" id="BC4-ai-AUD"/>
                             <constraint firstItem="KYl-5p-6fb" firstAttribute="centerX" secondItem="Pgd-fQ-9Vi" secondAttribute="centerX" id="FOX-or-mmN"/>
                             <constraint firstItem="WkI-ja-Gg0" firstAttribute="top" secondItem="dVd-po-H7r" secondAttribute="bottom" constant="3" id="HF6-lb-cvS"/>
@@ -409,7 +412,7 @@ process in every task.
                             <constraint firstItem="enn-bG-2JA" firstAttribute="centerX" secondItem="Pgd-fQ-9Vi" secondAttribute="centerX" id="ewg-x6-Abh"/>
                             <constraint firstItem="24Y-Pz-zr8" firstAttribute="top" secondItem="jD5-Ag-e4M" secondAttribute="bottom" constant="7" id="frE-Sa-o6V"/>
                             <constraint firstItem="WkI-ja-Gg0" firstAttribute="centerX" secondItem="dVd-po-H7r" secondAttribute="centerX" id="h6F-I0-lyI"/>
-                            <constraint firstItem="t4e-A5-ZMd" firstAttribute="top" secondItem="fsX-5S-cNq" secondAttribute="top" constant="26" id="hIt-Sc-4ek"/>
+                            <constraint firstItem="t4e-A5-ZMd" firstAttribute="top" secondItem="fsX-5S-cNq" secondAttribute="top" constant="40" id="hIt-Sc-4ek"/>
                             <constraint firstItem="KYl-5p-6fb" firstAttribute="top" secondItem="24Y-Pz-zr8" secondAttribute="bottom" constant="8" id="lOx-16-lQa"/>
                             <constraint firstItem="dVd-po-H7r" firstAttribute="top" secondItem="9Y4-jM-hRm" secondAttribute="bottom" constant="16" id="peM-Yz-3Ii"/>
                             <constraint firstItem="enn-bG-2JA" firstAttribute="top" secondItem="KYl-5p-6fb" secondAttribute="bottom" constant="34" id="qS8-nU-1Te"/>
@@ -1148,10 +1151,10 @@ them to your connections</string>
             </objects>
             <point key="canvasLocation" x="7976.811594202899" y="868.52678571428567"/>
         </scene>
-        <!--Profile View Controller-->
+        <!--Edit Profile View Controller-->
         <scene sceneID="yGK-hQ-MAp">
             <objects>
-                <viewController storyboardIdentifier="ProfileViewController" id="4no-y0-i3f" customClass="ProfileViewController" customModule="ScriptDoor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EditProfileViewController" id="4no-y0-i3f" customClass="EditProfileViewController" customModule="ScriptDoor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nfl-3l-eRE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1160,17 +1163,17 @@ them to your connections</string>
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F5H-Hu-KBW">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="640.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="822"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPL-a9-ATc">
-                                                <rect key="frame" x="80" y="532" width="254" height="50"/>
+                                                <rect key="frame" x="117" y="702" width="180" height="50"/>
                                                 <color key="backgroundColor" name="AppBlue"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="3ps-e4-2Al"/>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="254" id="BF5-9S-asn"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="BF5-9S-asn"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="16"/>
-                                                <state key="normal" title="Next">
+                                                <state key="normal" title="Save">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -1178,11 +1181,8 @@ them to your connections</string>
                                                         <real key="value" value="25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="didTapOnNext" destination="4no-y0-i3f" eventType="touchUpInside" id="frc-a5-F5o"/>
-                                                </connections>
                                             </button>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select your role" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jzj-uS-fLc" customClass="SDTextField" customModule="ScriptDoor" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Profile Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jzj-uS-fLc" customClass="SDTextField" customModule="ScriptDoor" customModuleProvider="target">
                                                 <rect key="frame" x="48" y="268" width="318" height="44"/>
                                                 <color key="backgroundColor" name="disableTextField"/>
                                                 <constraints>
@@ -1195,30 +1195,19 @@ them to your connections</string>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="22"/>
                                                     </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="ManFancy"/>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
                                                         <real key="value" value="10"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
                                                         <real key="value" value="10"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="profile"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <outlet property="delegate" destination="4no-y0-i3f" id="SjC-FI-R3n"/>
+                                                    <outlet property="delegate" destination="4no-y0-i3f" id="I0b-fh-rAY"/>
                                                 </connections>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yng-2j-daB">
-                                                <rect key="frame" x="48" y="268" width="318" height="44"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
-                                                <state key="normal" image="DropDown"/>
-                                                <connections>
-                                                    <action selector="didTapOnButtonSelectYourRoll:" destination="4no-y0-i3f" eventType="touchUpInside" id="ZGx-bs-Gka"/>
-                                                </connections>
-                                            </button>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X4z-CK-shA" customClass="SDTextField" customModule="ScriptDoor" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Bio" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X4z-CK-shA" customClass="SDTextField" customModule="ScriptDoor" customModuleProvider="target">
                                                 <rect key="frame" x="48" y="380" width="318" height="44"/>
                                                 <color key="backgroundColor" name="disableTextField"/>
                                                 <constraints>
@@ -1231,12 +1220,9 @@ them to your connections</string>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="22"/>
                                                     </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="Map"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="status"/>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
                                                         <real key="value" value="10"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
                                                         <real key="value" value="10"/>
@@ -1246,7 +1232,7 @@ them to your connections</string>
                                                     <outlet property="delegate" destination="4no-y0-i3f" id="GUv-o5-zyA"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Profile Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T3e-Ih-gm9" customClass="SDTextField" customModule="ScriptDoor" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Birthdate" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T3e-Ih-gm9" customClass="SDTextField" customModule="ScriptDoor" customModuleProvider="target">
                                                 <rect key="frame" x="48" y="436" width="318" height="44"/>
                                                 <color key="backgroundColor" name="disableTextField"/>
                                                 <constraints>
@@ -1258,12 +1244,9 @@ them to your connections</string>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="22"/>
                                                     </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="ManFancy"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="Cake"/>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
                                                         <real key="value" value="10"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
                                                         <real key="value" value="10"/>
@@ -1273,7 +1256,7 @@ them to your connections</string>
                                                     <outlet property="delegate" destination="4no-y0-i3f" id="ugL-w2-7yq"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Date of birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uQo-3B-2cT" customClass="SDTextField" customModule="ScriptDoor" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Writer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uQo-3B-2cT" customClass="SDTextField" customModule="ScriptDoor" customModuleProvider="target">
                                                 <rect key="frame" x="48" y="324" width="318" height="44"/>
                                                 <color key="backgroundColor" name="disableTextField"/>
                                                 <constraints>
@@ -1285,15 +1268,12 @@ them to your connections</string>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="22"/>
                                                     </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="Cake"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="ManFancy"/>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
                                                         <real key="value" value="10"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="leftPaddingAfterImage">
                                                         <real key="value" value="10"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
                                                         <real key="value" value="10"/>
@@ -1303,23 +1283,36 @@ them to your connections</string>
                                                     <outlet property="delegate" destination="4no-y0-i3f" id="5e9-dQ-N5V"/>
                                                 </connections>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMg-x3-n2K">
-                                                <rect key="frame" x="321" y="398" width="59" height="0.0"/>
-                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" image="eye">
-                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <state key="selected" image="eyelock"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T04-S9-WZo">
-                                                <rect key="frame" x="48" y="436" width="318" height="44"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
-                                                <state key="normal" image="DropDown"/>
-                                                <state key="selected" image="DropDown"/>
+                                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Map" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9wL-j9-8Hx" customClass="SDTextField" customModule="ScriptDoor" customModuleProvider="target">
+                                                <rect key="frame" x="48" y="492" width="318" height="44"/>
+                                                <color key="backgroundColor" name="disableTextField"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="AzV-30-i5w"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="22"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="Map"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPaddingAfterImage">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="didTapOnButtonYourType:" destination="4no-y0-i3f" eventType="touchUpInside" id="HDo-F8-P0A"/>
+                                                    <outlet property="delegate" destination="4no-y0-i3f" id="DQn-Ux-Yr2"/>
                                                 </connections>
-                                            </button>
+                                            </textField>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="path6Copy" translatesAutoresizingMaskIntoConstraints="NO" id="0iG-if-XKB">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="246"/>
+                                            </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FTJ-0i-HQe">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="246"/>
                                                 <subviews>
@@ -1331,7 +1324,7 @@ them to your connections</string>
                                                         </constraints>
                                                         <state key="normal" image="whiteBack"/>
                                                         <connections>
-                                                            <action selector="didTapOnBack" destination="4no-y0-i3f" eventType="touchUpInside" id="qgn-PQ-B3W"/>
+                                                            <action selector="didTapOnBack" destination="4no-y0-i3f" eventType="touchUpInside" id="7CQ-BA-Nf9"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faQ-uD-sWI">
@@ -1368,12 +1361,9 @@ them to your connections</string>
                                                                 <real key="value" value="14"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="addImageButtonWithSender:" destination="4no-y0-i3f" eventType="touchUpInside" id="thw-b9-FDX"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.31764705882352939" green="0.6705882352941176" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="qd8-OA-P4B" firstAttribute="top" secondItem="Obs-cC-Obt" secondAttribute="bottom" constant="14" id="5G9-b1-pqw"/>
                                                     <constraint firstItem="tuK-KL-jyf" firstAttribute="top" secondItem="faQ-uD-sWI" secondAttribute="bottom" constant="97.5" id="BZS-Mj-D86"/>
@@ -1389,56 +1379,125 @@ them to your connections</string>
                                                     <constraint firstItem="tuK-KL-jyf" firstAttribute="trailing" secondItem="Obs-cC-Obt" secondAttribute="trailing" id="x6a-Ty-ytt"/>
                                                     <constraint firstItem="tuK-KL-jyf" firstAttribute="leading" secondItem="Obs-cC-Obt" secondAttribute="trailing" constant="-28" id="y67-7l-p1w"/>
                                                 </constraints>
+                                            </view>
+                                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6np-b8-Ci9" customClass="SDTextField" customModule="ScriptDoor" customModuleProvider="target">
+                                                <rect key="frame" x="48" y="548" width="318" height="44"/>
+                                                <color key="backgroundColor" name="disableTextField"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="dh0-9W-aAc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="123"/>
+                                                        <real key="value" value="22"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="PHNo"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="4no-y0-i3f" id="jjL-Db-uQY"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ProfileType" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mS9-fs-5fr" customClass="SDTextField" customModule="ScriptDoor" customModuleProvider="target">
+                                                <rect key="frame" x="48" y="604" width="318" height="44"/>
+                                                <color key="backgroundColor" name="disableTextField"/>
+                                                <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="22"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="ManFancy"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPaddingAfterImage">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                                        <real key="value" value="10"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
-                                            </view>
+                                                <connections>
+                                                    <outlet property="delegate" destination="4no-y0-i3f" id="akj-cl-cdC"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0u-5R-YnX">
+                                                <rect key="frame" x="48" y="324" width="318" height="44"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                                <state key="normal" image="DropDown">
+                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <state key="selected" image="eyelock"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTN-U2-MmW">
+                                                <rect key="frame" x="48" y="604" width="318" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="d1f-jN-QEo"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                                <state key="normal" image="DropDown"/>
+                                                <state key="selected" image="DropDown"/>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="uMg-x3-n2K" secondAttribute="trailing" constant="34" id="4zP-8A-WJ2"/>
                                             <constraint firstItem="FTJ-0i-HQe" firstAttribute="top" secondItem="F5H-Hu-KBW" secondAttribute="top" id="6i3-VG-qE3"/>
                                             <constraint firstAttribute="trailing" secondItem="Jzj-uS-fLc" secondAttribute="trailing" constant="48" id="7KK-0k-GOR"/>
                                             <constraint firstItem="X4z-CK-shA" firstAttribute="top" secondItem="uQo-3B-2cT" secondAttribute="bottom" constant="12" id="7cb-qD-UjS"/>
-                                            <constraint firstAttribute="bottom" secondItem="vPL-a9-ATc" secondAttribute="bottom" constant="58.5" id="8t1-xs-k8V"/>
+                                            <constraint firstItem="mTN-U2-MmW" firstAttribute="bottom" secondItem="mS9-fs-5fr" secondAttribute="bottom" id="84d-4w-Goq"/>
                                             <constraint firstItem="X4z-CK-shA" firstAttribute="trailing" secondItem="uQo-3B-2cT" secondAttribute="trailing" id="CF8-DN-Bsr"/>
-                                            <constraint firstItem="T3e-Ih-gm9" firstAttribute="top" secondItem="uMg-x3-n2K" secondAttribute="bottom" constant="38" id="HZz-wK-7n2"/>
-                                            <constraint firstItem="Yng-2j-daB" firstAttribute="leading" secondItem="Jzj-uS-fLc" secondAttribute="leading" id="HmC-m3-9Va"/>
-                                            <constraint firstItem="Yng-2j-daB" firstAttribute="top" secondItem="Jzj-uS-fLc" secondAttribute="top" id="Kj4-OI-PCD"/>
-                                            <constraint firstItem="Yng-2j-daB" firstAttribute="centerY" secondItem="Jzj-uS-fLc" secondAttribute="centerY" id="LTD-hB-PqI"/>
-                                            <constraint firstItem="Yng-2j-daB" firstAttribute="bottom" secondItem="Jzj-uS-fLc" secondAttribute="bottom" id="N1M-WC-hOR"/>
+                                            <constraint firstItem="9wL-j9-8Hx" firstAttribute="trailing" secondItem="T3e-Ih-gm9" secondAttribute="trailing" id="Ir0-vC-vl1"/>
                                             <constraint firstItem="uQo-3B-2cT" firstAttribute="leading" secondItem="Jzj-uS-fLc" secondAttribute="leading" id="O8e-sW-O9f"/>
-                                            <constraint firstItem="T04-S9-WZo" firstAttribute="leading" secondItem="T3e-Ih-gm9" secondAttribute="leading" id="Obx-tM-5DE"/>
                                             <constraint firstItem="Jzj-uS-fLc" firstAttribute="top" secondItem="FTJ-0i-HQe" secondAttribute="bottom" constant="22" id="OnH-kL-Dg3"/>
+                                            <constraint firstItem="9wL-j9-8Hx" firstAttribute="leading" secondItem="T3e-Ih-gm9" secondAttribute="leading" id="QBg-Se-SQ1"/>
+                                            <constraint firstItem="mS9-fs-5fr" firstAttribute="top" secondItem="6np-b8-Ci9" secondAttribute="bottom" constant="12" id="QMa-Sh-L6A"/>
+                                            <constraint firstItem="6np-b8-Ci9" firstAttribute="leading" secondItem="9wL-j9-8Hx" secondAttribute="leading" id="RZ4-AU-FaD"/>
                                             <constraint firstItem="T3e-Ih-gm9" firstAttribute="top" secondItem="X4z-CK-shA" secondAttribute="bottom" constant="12" id="S4U-3A-TvR"/>
-                                            <constraint firstItem="Yng-2j-daB" firstAttribute="trailing" secondItem="Jzj-uS-fLc" secondAttribute="trailing" id="TTM-ok-vQj"/>
+                                            <constraint firstItem="h0u-5R-YnX" firstAttribute="bottom" secondItem="uQo-3B-2cT" secondAttribute="bottom" id="TYJ-gN-N1G"/>
                                             <constraint firstItem="vPL-a9-ATc" firstAttribute="centerX" secondItem="F5H-Hu-KBW" secondAttribute="centerX" id="TfM-5o-NNo"/>
+                                            <constraint firstItem="mTN-U2-MmW" firstAttribute="leading" secondItem="mS9-fs-5fr" secondAttribute="leading" id="TgW-BN-xGa"/>
+                                            <constraint firstItem="h0u-5R-YnX" firstAttribute="leading" secondItem="uQo-3B-2cT" secondAttribute="leading" id="WLZ-D5-XKo"/>
+                                            <constraint firstItem="FTJ-0i-HQe" firstAttribute="bottom" secondItem="0iG-if-XKB" secondAttribute="bottom" id="YNB-kr-ZdB"/>
+                                            <constraint firstItem="9wL-j9-8Hx" firstAttribute="top" secondItem="T3e-Ih-gm9" secondAttribute="bottom" constant="12" id="Yjf-Xq-QoK"/>
+                                            <constraint firstItem="vPL-a9-ATc" firstAttribute="top" secondItem="mTN-U2-MmW" secondAttribute="bottom" constant="54" id="Yls-3j-kFI"/>
+                                            <constraint firstItem="6np-b8-Ci9" firstAttribute="trailing" secondItem="9wL-j9-8Hx" secondAttribute="trailing" id="ZOG-oM-ZnP"/>
+                                            <constraint firstItem="FTJ-0i-HQe" firstAttribute="trailing" secondItem="0iG-if-XKB" secondAttribute="trailing" id="aFV-gx-bS1"/>
+                                            <constraint firstItem="FTJ-0i-HQe" firstAttribute="leading" secondItem="0iG-if-XKB" secondAttribute="leading" id="aaS-Dl-SnH"/>
+                                            <constraint firstItem="mS9-fs-5fr" firstAttribute="trailing" secondItem="6np-b8-Ci9" secondAttribute="trailing" id="bLR-vg-Baj"/>
                                             <constraint firstItem="FTJ-0i-HQe" firstAttribute="leading" secondItem="F5H-Hu-KBW" secondAttribute="leading" id="bQr-e9-P2I"/>
-                                            <constraint firstItem="Yng-2j-daB" firstAttribute="width" secondItem="Jzj-uS-fLc" secondAttribute="width" id="cGj-km-nXC"/>
-                                            <constraint firstItem="T04-S9-WZo" firstAttribute="bottom" secondItem="T3e-Ih-gm9" secondAttribute="bottom" id="cmF-FF-mZs"/>
                                             <constraint firstItem="T3e-Ih-gm9" firstAttribute="trailing" secondItem="X4z-CK-shA" secondAttribute="trailing" id="cxe-YD-jTh"/>
-                                            <constraint firstItem="T04-S9-WZo" firstAttribute="top" secondItem="T3e-Ih-gm9" secondAttribute="top" id="gUd-pK-eXb"/>
-                                            <constraint firstItem="uMg-x3-n2K" firstAttribute="top" secondItem="uQo-3B-2cT" secondAttribute="bottom" constant="30" id="jGz-Lh-oqq"/>
-                                            <constraint firstItem="T04-S9-WZo" firstAttribute="trailing" secondItem="T3e-Ih-gm9" secondAttribute="trailing" id="jNc-xU-74P"/>
+                                            <constraint firstItem="6np-b8-Ci9" firstAttribute="top" secondItem="9wL-j9-8Hx" secondAttribute="bottom" constant="12" id="dln-Na-VW8"/>
+                                            <constraint firstItem="h0u-5R-YnX" firstAttribute="trailing" secondItem="uQo-3B-2cT" secondAttribute="trailing" id="dtD-1a-BJD"/>
+                                            <constraint firstItem="FTJ-0i-HQe" firstAttribute="width" secondItem="0iG-if-XKB" secondAttribute="width" id="gvP-Dh-Tan"/>
+                                            <constraint firstItem="mS9-fs-5fr" firstAttribute="leading" secondItem="6np-b8-Ci9" secondAttribute="leading" id="i5O-7z-8bd"/>
+                                            <constraint firstItem="h0u-5R-YnX" firstAttribute="top" secondItem="uQo-3B-2cT" secondAttribute="top" id="i7Q-tf-VO8"/>
+                                            <constraint firstItem="mTN-U2-MmW" firstAttribute="trailing" secondItem="mS9-fs-5fr" secondAttribute="trailing" id="k8Q-Mb-rPq"/>
                                             <constraint firstAttribute="trailing" secondItem="FTJ-0i-HQe" secondAttribute="trailing" id="kQ3-Kz-AJo"/>
                                             <constraint firstItem="uQo-3B-2cT" firstAttribute="top" secondItem="Jzj-uS-fLc" secondAttribute="bottom" constant="12" id="lRE-0B-A8d"/>
                                             <constraint firstItem="T3e-Ih-gm9" firstAttribute="leading" secondItem="X4z-CK-shA" secondAttribute="leading" id="lg2-Ci-06i"/>
-                                            <constraint firstItem="vPL-a9-ATc" firstAttribute="top" secondItem="T3e-Ih-gm9" secondAttribute="bottom" constant="52" id="m2A-nT-Uv1"/>
-                                            <constraint firstItem="Yng-2j-daB" firstAttribute="height" secondItem="Jzj-uS-fLc" secondAttribute="height" id="mV3-cC-F43"/>
                                             <constraint firstItem="Jzj-uS-fLc" firstAttribute="leading" secondItem="F5H-Hu-KBW" secondAttribute="leading" constant="48" id="oAn-Oe-Ooh"/>
                                             <constraint firstItem="uQo-3B-2cT" firstAttribute="trailing" secondItem="Jzj-uS-fLc" secondAttribute="trailing" id="oHQ-f6-ajf"/>
-                                            <constraint firstItem="uMg-x3-n2K" firstAttribute="leading" secondItem="X4z-CK-shA" secondAttribute="trailing" constant="-45" id="q8i-Fi-atP"/>
+                                            <constraint firstItem="FTJ-0i-HQe" firstAttribute="height" secondItem="0iG-if-XKB" secondAttribute="height" id="paL-ZC-HCY"/>
+                                            <constraint firstItem="mTN-U2-MmW" firstAttribute="top" secondItem="mS9-fs-5fr" secondAttribute="top" id="sec-Yy-HPU"/>
+                                            <constraint firstItem="FTJ-0i-HQe" firstAttribute="top" secondItem="0iG-if-XKB" secondAttribute="top" id="vI4-wg-Y79"/>
                                             <constraint firstItem="X4z-CK-shA" firstAttribute="leading" secondItem="uQo-3B-2cT" secondAttribute="leading" id="wv3-Da-tmM"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="F5H-Hu-KBW" firstAttribute="height" secondItem="Pht-DX-1L8" secondAttribute="height" multiplier="0.917411" id="6P4-cT-mxf"/>
                                     <constraint firstItem="F5H-Hu-KBW" firstAttribute="leading" secondItem="Pht-DX-1L8" secondAttribute="leading" id="GBe-Cx-UrP"/>
                                     <constraint firstItem="F5H-Hu-KBW" firstAttribute="top" secondItem="Pht-DX-1L8" secondAttribute="top" id="Smp-fA-Fbn"/>
                                     <constraint firstAttribute="trailing" secondItem="F5H-Hu-KBW" secondAttribute="trailing" id="TWE-2x-12P"/>
-                                    <constraint firstAttribute="bottom" secondItem="F5H-Hu-KBW" secondAttribute="bottom" id="qvE-vg-tET"/>
+                                    <constraint firstAttribute="bottom" secondItem="F5H-Hu-KBW" secondAttribute="bottom" constant="316" id="gCT-hd-Q5v"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -1453,17 +1512,10 @@ them to your connections</string>
                         <viewLayoutGuide key="safeArea" id="Jis-hT-oZO"/>
                     </view>
                     <navigationItem key="navigationItem" id="VKz-gJ-aiq"/>
-                    <connections>
-                        <outlet property="imageProfile" destination="Obs-cC-Obt" id="Xyw-C0-fQE"/>
-                        <outlet property="textDateOfBirth" destination="uQo-3B-2cT" id="IK3-Fd-YJw"/>
-                        <outlet property="textSelectYourRole" destination="Jzj-uS-fLc" id="kcR-Zb-kNV"/>
-                        <outlet property="textYourCity" destination="X4z-CK-shA" id="wP3-UM-c3H"/>
-                        <outlet property="textYourType" destination="T3e-Ih-gm9" id="ZNJ-8n-PRj"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dp4-vD-hmM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8768.115942028986" y="487.5"/>
+            <point key="canvasLocation" x="8705.7971014492759" y="775.44642857142856"/>
         </scene>
     </scenes>
     <resources>
@@ -1473,6 +1525,7 @@ them to your connections</string>
         <image name="Image" width="123" height="123"/>
         <image name="ManFancy" width="11" height="14"/>
         <image name="Map" width="11" height="11"/>
+        <image name="PHNo" width="13" height="13"/>
         <image name="ProfileTab" width="13" height="15"/>
         <image name="addPlus" width="35" height="35"/>
         <image name="bg-12" width="250" height="166.5"/>
@@ -1480,10 +1533,12 @@ them to your connections</string>
         <image name="briefcase" width="12" height="12"/>
         <image name="combinedShape" width="16" height="17"/>
         <image name="connImage" width="283" height="188"/>
-        <image name="eye" width="17" height="13"/>
         <image name="eyelock" width="17" height="17"/>
         <image name="location" width="9" height="12"/>
         <image name="messag" width="18" height="5"/>
+        <image name="path6Copy" width="375" height="245"/>
+        <image name="profile" width="14" height="14"/>
+        <image name="status" width="14" height="14"/>
         <image name="whiteBack" width="8" height="15"/>
         <namedColor name="AppBlack">
             <color red="0.10588235294117647" green="0.10980392156862745" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

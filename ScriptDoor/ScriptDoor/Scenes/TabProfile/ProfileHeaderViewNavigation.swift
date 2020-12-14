@@ -23,4 +23,10 @@ class ProfileHeaderViewNavigation {
             viewController.navigationController?.pushViewController(explore, animated: true)
         }
     }
+    
+    func moveToEditProfile() {
+        if let explore = UIStoryboard.profile.getViewController(type: EditProfileViewController.self) {
+            viewController.navigationController?.pushViewController(explore, animated: true)
+        }
+    }
 }

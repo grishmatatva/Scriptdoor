@@ -9,6 +9,11 @@
 import UIKit
 struct PlanDetails {
     var type : String
+    var price: String = ""
+    var token: String = ""
+    var matirial: String = ""
+    var space: String = ""
+    var templets: String = ""
 }
 
 class ChoosePlansView: UIView {

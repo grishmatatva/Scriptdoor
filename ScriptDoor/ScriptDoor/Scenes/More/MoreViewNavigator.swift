@@ -2,7 +2,7 @@
 //  MoreViewNavigator.swift
 //  ScriptDoor
 //
-//  Created by pcq196 on 09/12/20.
+//  Created by PCQ187 on 09/12/20.
 //  Copyright © 2020 Yuvi's - MAC103. All rights reserved.
 //
 
@@ -18,6 +18,7 @@ enum MoreTabsNavigator: Int{
     case wallet = 6
     case settings = 7
 }
+
 final class MoreViewNavigator {
     var viewController: MoreViewController
     init(_ controller: MoreViewController) { viewController = controller }
@@ -31,6 +32,15 @@ final class MoreViewNavigator {
         case .wallet:
             if let walletVc = UIStoryboard.wallet.getViewController(type: WalletViewController.self) {
                 viewController.navigationController?.pushViewController(walletVc, animated: true)
+            }
+        case .subscriptionPlans:
+            if let subscriptionPlanVc = UIStoryboard.wallet.getViewController(type: SubscriptionViewController.self) {
+                viewController.navigationController?.pushViewController(subscriptionPlanVc, animated: true)
+            }
+        case .settings:
+            if let settingsVc = UIStoryboard.settings.getViewController(type: SettingsViewController
+                .self) {
+                viewController.navigationController?.pushViewController(settingsVc, animated: true)
             }
         default:
             break

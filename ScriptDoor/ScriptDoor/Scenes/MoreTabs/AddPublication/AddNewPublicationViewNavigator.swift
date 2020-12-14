@@ -2,7 +2,7 @@
 //  AddNewPublicationViewNavigator.swift
 //  ScriptDoor
 //
-//  Created by pcq196 on 09/12/20.
+//  Created by PCQ187 on 09/12/20.
 //  Copyright © 2020 Yuvi's - MAC103. All rights reserved.
 //
 

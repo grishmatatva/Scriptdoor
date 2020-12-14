@@ -2,7 +2,7 @@
 //  AddNewMaterialViewController.swift
 //  ScriptDoor
 //
-//  Created by pcq196 on 09/12/20.
+//  Created by PCQ187 on 09/12/20.
 //  Copyright © 2020 Yuvi's - MAC103. All rights reserved.
 //
 
@@ -23,15 +23,5 @@ class AddNewMaterialViewController: UIViewController {
     @IBAction private func didTapOnPublication() {
         viewNavigator.moveToNewPublication()
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

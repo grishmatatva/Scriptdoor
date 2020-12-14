@@ -16,14 +16,14 @@ class BusinessProfileViewNavigator {
         self.viewController = viewController
     }
     
-     // MARK: - Navigation Method
+    // MARK: - Navigation Method
     func moveToExplore() {
-        if let explore = UIStoryboard.landing.getViewController(type: LandingViewController.self) {
+        if let explore = UIStoryboard.landing.getViewController(type: TabbarViewController.self) {
             viewController.navigationController?.pushViewController(explore, animated: true)
         }
     }
     
     func backToInterest() {
-            viewController.navigationController?.popViewController(animated: true)
+        viewController.navigationController?.popViewController(animated: true)
     }
 }

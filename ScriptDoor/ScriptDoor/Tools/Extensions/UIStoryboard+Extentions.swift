@@ -42,6 +42,9 @@ extension UIStoryboard {
     static var chat: UIStoryboard {
         return UIStoryboard(name: "Chat", bundle: nil)
     }
+    static var settings: UIStoryboard {
+        return UIStoryboard(name: "Settings", bundle: nil)
+    }
     
     func getViewController<T: UIViewController>(type: T.Type) -> T? {
         let id = String(describing: type)
@@ -50,7 +53,7 @@ extension UIStoryboard {
 }
 
 extension UINavigationController {
-
+    
     func popToViewController(viewController: AnyClass, animation: Bool = true) {
         for vcrl in self.viewControllers {
             if vcrl.isKind(of: viewController) {
@@ -75,11 +78,11 @@ extension UINavigationController {
     }
     
     private func addTransition(transitionType type: CATransitionType = .fade, duration: CFTimeInterval = 0.3) {
-          let transition = CATransition()
-          transition.duration = duration
-          transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
-          transition.subtype = .fromRight
-          transition.type = type
-          self.view.layer.add(transition, forKey: nil)
-      }
+        let transition = CATransition()
+        transition.duration = duration
+        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
+        transition.subtype = .fromRight
+        transition.type = type
+        self.view.layer.add(transition, forKey: nil)
+    }
 }

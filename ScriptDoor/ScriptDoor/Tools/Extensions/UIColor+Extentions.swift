@@ -16,6 +16,7 @@ extension UIColor {
         let white243_243_243 = UIColor(named: "243_243_243")!
         let lightGray = UIColor(named: "LightGray")!
         let appBlack = UIColor(named: "AppBlack")!
+        let yellow243_212_142 = UIColor(named: "243_212_142")!
         
     }
     static var appColors : AppColors {

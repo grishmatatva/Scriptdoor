@@ -69,6 +69,7 @@
 		6B2EF94B25558B0900E3E0A0 /* LandingViewNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2EF94A25558B0900E3E0A0 /* LandingViewNavigation.swift */; };
 		6B2EF94E25558B6E00E3E0A0 /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2EF94D25558B6E00E3E0A0 /* AudioViewController.swift */; };
 		6B32DDE4256FF4FB00889D3E /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B32DDE3256FF4FB00889D3E /* PopUpViewController.swift */; };
+		6B38B4C325876D4A00E42F1A /* SettingViewNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B38B4C225876D4A00E42F1A /* SettingViewNavigator.swift */; };
 		6B53A6DD255BF30200541D4F /* TabbarViewNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B53A6DC255BF30200541D4F /* TabbarViewNavigation.swift */; };
 		6B53A6DF255BF34100541D4F /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B53A6DE255BF34100541D4F /* TabbarViewController.swift */; };
 		6B53A6E2255C374F00541D4F /* AddToCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B53A6E1255C374F00541D4F /* AddToCartViewController.swift */; };
@@ -90,35 +91,32 @@
 		6B7F73F32577D9BF006D66E8 /* ChatStartGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7F73F22577D9BF006D66E8 /* ChatStartGroupViewController.swift */; };
 		6B7F73F52577DB86006D66E8 /* ChatGroupNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7F73F42577DB86006D66E8 /* ChatGroupNavigation.swift */; };
 		6B9C9E3625822D0A00FFF13F /* Wallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B9C9E3525822D0A00FFF13F /* Wallet.storyboard */; };
-		6B9C9E5D2582371A00FFF13F /* CreatePublicationViewNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9C9E442582371A00FFF13F /* CreatePublicationViewNavigator.swift */; };
-		6B9C9E5E2582371A00FFF13F /* CreatePublicationTemplateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9C9E462582371A00FFF13F /* CreatePublicationTemplateCell.swift */; };
-		6B9C9E5F2582371A00FFF13F /* CreatePublicationTemplateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B9C9E472582371A00FFF13F /* CreatePublicationTemplateCell.xib */; };
-		6B9C9E602582371A00FFF13F /* CreatePublicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9C9E482582371A00FFF13F /* CreatePublicationViewController.swift */; };
-		6B9C9E612582371A00FFF13F /* WipodViewNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9C9E4A2582371A00FFF13F /* WipodViewNavigator.swift */; };
-		6B9C9E622582371A00FFF13F /* WipodPublicationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9C9E4C2582371A00FFF13F /* WipodPublicationCell.swift */; };
-		6B9C9E632582371A00FFF13F /* WipodCollabrationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B9C9E4D2582371A00FFF13F /* WipodCollabrationCell.xib */; };
-		6B9C9E642582371A00FFF13F /* WipodCollabrationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9C9E4E2582371A00FFF13F /* WipodCollabrationCell.swift */; };
-		6B9C9E652582371A00FFF13F /* WipodPublicationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B9C9E4F2582371A00FFF13F /* WipodPublicationCell.xib */; };
-		6B9C9E662582371A00FFF13F /* WipodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9C9E502582371A00FFF13F /* WipodViewController.swift */; };
-		6B9C9E672582371A00FFF13F /* AddNewMaterialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9C9E522582371A00FFF13F /* AddNewMaterialViewController.swift */; };
-		6B9C9E682582371A00FFF13F /* AddNewMaterialViewNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9C9E532582371A00FFF13F /* AddNewMaterialViewNavigator.swift */; };
-		6B9C9E692582371A00FFF13F /* UploadPublicationNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9C9E552582371A00FFF13F /* UploadPublicationNavigator.swift */; };
-		6B9C9E6A2582371A00FFF13F /* UploadPublicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9C9E562582371A00FFF13F /* UploadPublicationViewController.swift */; };
-		6B9C9E6B2582371A00FFF13F /* UploadPublicationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9C9E582582371A00FFF13F /* UploadPublicationCell.swift */; };
-		6B9C9E6C2582371A00FFF13F /* UploadPublicationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B9C9E592582371A00FFF13F /* UploadPublicationCell.xib */; };
-		6B9C9E6D2582371A00FFF13F /* AddNewPublicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9C9E5B2582371A00FFF13F /* AddNewPublicationViewController.swift */; };
-		6B9C9E6E2582371A00FFF13F /* AddNewPublicationViewNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9C9E5C2582371A00FFF13F /* AddNewPublicationViewNavigator.swift */; };
 		6B9C9E70258240B400FFF13F /* MoreViewNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9C9E6F258240B400FFF13F /* MoreViewNavigator.swift */; };
-		6B9C9E7E2582492400FFF13F /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9C9E752582492400FFF13F /* WalletViewController.swift */; };
-		6B9C9E7F2582492400FFF13F /* WalletOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9C9E772582492400FFF13F /* WalletOptionsViewController.swift */; };
-		6B9C9E802582492400FFF13F /* TransactionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B9C9E7A2582492400FFF13F /* TransactionCell.xib */; };
-		6B9C9E812582492400FFF13F /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9C9E7B2582492400FFF13F /* TransactionCell.swift */; };
-		6B9C9E822582492400FFF13F /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9C9E7C2582492400FFF13F /* TransactionViewController.swift */; };
-		6B9C9E832582492400FFF13F /* WalletViewNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9C9E7D2582492400FFF13F /* WalletViewNavigator.swift */; };
 		6BA0C39D2578C5FD0007FD2B /* ChatStartGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA0C39B2578C5FD0007FD2B /* ChatStartGroupCell.swift */; };
 		6BA0C39E2578C5FD0007FD2B /* ChatStartGroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BA0C39C2578C5FD0007FD2B /* ChatStartGroupCell.xib */; };
 		6BA0C3A1257912680007FD2B /* ChatGroupStartTbCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA0C39F257912680007FD2B /* ChatGroupStartTbCell.swift */; };
 		6BA0C3A2257912680007FD2B /* ChatGroupStartTbCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BA0C3A0257912680007FD2B /* ChatGroupStartTbCell.xib */; };
+		6BA717B42583645900256C19 /* CreatePublicationViewNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA717972583645900256C19 /* CreatePublicationViewNavigator.swift */; };
+		6BA717B52583645900256C19 /* CreatePublicationTemplateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA717992583645900256C19 /* CreatePublicationTemplateCell.swift */; };
+		6BA717B62583645900256C19 /* CreatePublicationTemplateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BA7179A2583645900256C19 /* CreatePublicationTemplateCell.xib */; };
+		6BA717B72583645900256C19 /* CreatePublicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA7179B2583645900256C19 /* CreatePublicationViewController.swift */; };
+		6BA717B82583645900256C19 /* WipodViewNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA7179D2583645900256C19 /* WipodViewNavigator.swift */; };
+		6BA717B92583645900256C19 /* WipodPublicationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA7179F2583645900256C19 /* WipodPublicationCell.swift */; };
+		6BA717BA2583645900256C19 /* WipodCollabrationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BA717A02583645900256C19 /* WipodCollabrationCell.xib */; };
+		6BA717BB2583645900256C19 /* WipodCollabrationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA717A12583645900256C19 /* WipodCollabrationCell.swift */; };
+		6BA717BC2583645900256C19 /* WipodPublicationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BA717A22583645900256C19 /* WipodPublicationCell.xib */; };
+		6BA717BD2583645900256C19 /* WipodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA717A32583645900256C19 /* WipodViewController.swift */; };
+		6BA717BE2583645900256C19 /* SubscriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BA717A52583645900256C19 /* SubscriptionCell.xib */; };
+		6BA717BF2583645900256C19 /* SubscriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA717A62583645900256C19 /* SubscriptionCell.swift */; };
+		6BA717C02583645900256C19 /* SubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA717A72583645900256C19 /* SubscriptionViewController.swift */; };
+		6BA717C12583645900256C19 /* AddNewMaterialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA717A92583645900256C19 /* AddNewMaterialViewController.swift */; };
+		6BA717C22583645900256C19 /* AddNewMaterialViewNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA717AA2583645900256C19 /* AddNewMaterialViewNavigator.swift */; };
+		6BA717C32583645900256C19 /* UploadPublicationNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA717AC2583645900256C19 /* UploadPublicationNavigator.swift */; };
+		6BA717C42583645900256C19 /* UploadPublicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA717AD2583645900256C19 /* UploadPublicationViewController.swift */; };
+		6BA717C52583645900256C19 /* UploadPublicationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA717AF2583645900256C19 /* UploadPublicationCell.swift */; };
+		6BA717C62583645900256C19 /* UploadPublicationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BA717B02583645900256C19 /* UploadPublicationCell.xib */; };
+		6BA717C72583645900256C19 /* AddNewPublicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA717B22583645900256C19 /* AddNewPublicationViewController.swift */; };
+		6BA717C82583645900256C19 /* AddNewPublicationViewNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA717B32583645900256C19 /* AddNewPublicationViewNavigator.swift */; };
 		6BACE0392555AFC200CCCC1D /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BACE0382555AFC200CCCC1D /* LibraryViewController.swift */; };
 		6BACE03B2555AFD200CCCC1D /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BACE03A2555AFD200CCCC1D /* VideoViewController.swift */; };
 		6BB20C3C255D0022009953A9 /* Cart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BB20C3B255D0022009953A9 /* Cart.storyboard */; };
@@ -153,6 +151,29 @@
 		6BD8471425729CB100CE0129 /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BD8471325729CB100CE0129 /* More.storyboard */; };
 		6BD8471725729DB600CE0129 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD8471625729DB600CE0129 /* MoreViewController.swift */; };
 		6BD8471B2572A6DD00CE0129 /* MoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD847192572A6DD00CE0129 /* MoreCell.swift */; };
+		6BE324BA25836EFA003CD5ED /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE324B125836EFA003CD5ED /* WalletViewController.swift */; };
+		6BE324BB25836EFA003CD5ED /* WalletOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE324B325836EFA003CD5ED /* WalletOptionsViewController.swift */; };
+		6BE324BC25836EFA003CD5ED /* TransactionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BE324B625836EFA003CD5ED /* TransactionCell.xib */; };
+		6BE324BD25836EFA003CD5ED /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE324B725836EFA003CD5ED /* TransactionCell.swift */; };
+		6BE324BE25836EFA003CD5ED /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE324B825836EFA003CD5ED /* TransactionViewController.swift */; };
+		6BE324BF25836EFA003CD5ED /* WalletViewNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE324B925836EFA003CD5ED /* WalletViewNavigator.swift */; };
+		6BE324C125839B10003CD5ED /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BE324C025839B10003CD5ED /* Settings.storyboard */; };
+		6BE324D32583A44F003CD5ED /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE324C42583A44F003CD5ED /* PhoneNumber.swift */; };
+		6BE324D42583A44F003CD5ED /* SettingsType2View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BE324C52583A44F003CD5ED /* SettingsType2View.xib */; };
+		6BE324D52583A44F003CD5ED /* SettingsType3View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BE324C62583A44F003CD5ED /* SettingsType3View.xib */; };
+		6BE324D62583A44F003CD5ED /* SettingsType1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE324C72583A44F003CD5ED /* SettingsType1View.swift */; };
+		6BE324D72583A44F003CD5ED /* SDStorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE324C82583A44F003CD5ED /* SDStorageView.swift */; };
+		6BE324D82583A44F003CD5ED /* SettingsType1View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BE324C92583A44F003CD5ED /* SettingsType1View.xib */; };
+		6BE324D92583A44F003CD5ED /* SettingsType5View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BE324CA2583A44F003CD5ED /* SettingsType5View.xib */; };
+		6BE324DA2583A44F003CD5ED /* SettingsType2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE324CB2583A44F003CD5ED /* SettingsType2View.swift */; };
+		6BE324DB2583A44F003CD5ED /* SettingsType4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE324CC2583A44F003CD5ED /* SettingsType4View.swift */; };
+		6BE324DC2583A44F003CD5ED /* PhoneNumber.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BE324CD2583A44F003CD5ED /* PhoneNumber.xib */; };
+		6BE324DD2583A44F003CD5ED /* SettingsType4View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BE324CE2583A44F003CD5ED /* SettingsType4View.xib */; };
+		6BE324DE2583A44F003CD5ED /* SettingsType3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE324CF2583A44F003CD5ED /* SettingsType3View.swift */; };
+		6BE324DF2583A44F003CD5ED /* SDStorageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BE324D02583A44F003CD5ED /* SDStorageView.xib */; };
+		6BE324E02583A44F003CD5ED /* SettingsType5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE324D12583A44F003CD5ED /* SettingsType5View.swift */; };
+		6BE324E12583A44F003CD5ED /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE324D22583A44F003CD5ED /* SettingsViewController.swift */; };
+		6BE324E42583ABBD003CD5ED /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE324E32583ABBD003CD5ED /* EditProfileViewController.swift */; };
 		6BEC2027257E47BB003B2E98 /* ChatStartGroupNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEC2026257E47BB003B2E98 /* ChatStartGroupNavigation.swift */; };
 		6BEC2029257E48D4003B2E98 /* ChatDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEC2028257E48D4003B2E98 /* ChatDetailViewController.swift */; };
 		6BEC202B257E699E003B2E98 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEC202A257E699E003B2E98 /* MessageViewController.swift */; };
@@ -238,6 +259,7 @@
 		6B2EF94A25558B0900E3E0A0 /* LandingViewNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewNavigation.swift; sourceTree = "<group>"; };
 		6B2EF94D25558B6E00E3E0A0 /* AudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
 		6B32DDE3256FF4FB00889D3E /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		6B38B4C225876D4A00E42F1A /* SettingViewNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewNavigator.swift; sourceTree = "<group>"; };
 		6B53A6DC255BF30200541D4F /* TabbarViewNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewNavigation.swift; sourceTree = "<group>"; };
 		6B53A6DE255BF34100541D4F /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		6B53A6E1255C374F00541D4F /* AddToCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCartViewController.swift; sourceTree = "<group>"; };
@@ -259,35 +281,32 @@
 		6B7F73F22577D9BF006D66E8 /* ChatStartGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatStartGroupViewController.swift; sourceTree = "<group>"; };
 		6B7F73F42577DB86006D66E8 /* ChatGroupNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGroupNavigation.swift; sourceTree = "<group>"; };
 		6B9C9E3525822D0A00FFF13F /* Wallet.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Wallet.storyboard; sourceTree = "<group>"; };
-		6B9C9E442582371A00FFF13F /* CreatePublicationViewNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePublicationViewNavigator.swift; sourceTree = "<group>"; };
-		6B9C9E462582371A00FFF13F /* CreatePublicationTemplateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePublicationTemplateCell.swift; sourceTree = "<group>"; };
-		6B9C9E472582371A00FFF13F /* CreatePublicationTemplateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreatePublicationTemplateCell.xib; sourceTree = "<group>"; };
-		6B9C9E482582371A00FFF13F /* CreatePublicationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePublicationViewController.swift; sourceTree = "<group>"; };
-		6B9C9E4A2582371A00FFF13F /* WipodViewNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WipodViewNavigator.swift; sourceTree = "<group>"; };
-		6B9C9E4C2582371A00FFF13F /* WipodPublicationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WipodPublicationCell.swift; sourceTree = "<group>"; };
-		6B9C9E4D2582371A00FFF13F /* WipodCollabrationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WipodCollabrationCell.xib; sourceTree = "<group>"; };
-		6B9C9E4E2582371A00FFF13F /* WipodCollabrationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WipodCollabrationCell.swift; sourceTree = "<group>"; };
-		6B9C9E4F2582371A00FFF13F /* WipodPublicationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WipodPublicationCell.xib; sourceTree = "<group>"; };
-		6B9C9E502582371A00FFF13F /* WipodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WipodViewController.swift; sourceTree = "<group>"; };
-		6B9C9E522582371A00FFF13F /* AddNewMaterialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewMaterialViewController.swift; sourceTree = "<group>"; };
-		6B9C9E532582371A00FFF13F /* AddNewMaterialViewNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewMaterialViewNavigator.swift; sourceTree = "<group>"; };
-		6B9C9E552582371A00FFF13F /* UploadPublicationNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadPublicationNavigator.swift; sourceTree = "<group>"; };
-		6B9C9E562582371A00FFF13F /* UploadPublicationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadPublicationViewController.swift; sourceTree = "<group>"; };
-		6B9C9E582582371A00FFF13F /* UploadPublicationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadPublicationCell.swift; sourceTree = "<group>"; };
-		6B9C9E592582371A00FFF13F /* UploadPublicationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UploadPublicationCell.xib; sourceTree = "<group>"; };
-		6B9C9E5B2582371A00FFF13F /* AddNewPublicationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewPublicationViewController.swift; sourceTree = "<group>"; };
-		6B9C9E5C2582371A00FFF13F /* AddNewPublicationViewNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewPublicationViewNavigator.swift; sourceTree = "<group>"; };
 		6B9C9E6F258240B400FFF13F /* MoreViewNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewNavigator.swift; sourceTree = "<group>"; };
-		6B9C9E752582492400FFF13F /* WalletViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
-		6B9C9E772582492400FFF13F /* WalletOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletOptionsViewController.swift; sourceTree = "<group>"; };
-		6B9C9E7A2582492400FFF13F /* TransactionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransactionCell.xib; sourceTree = "<group>"; };
-		6B9C9E7B2582492400FFF13F /* TransactionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
-		6B9C9E7C2582492400FFF13F /* TransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
-		6B9C9E7D2582492400FFF13F /* WalletViewNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletViewNavigator.swift; sourceTree = "<group>"; };
 		6BA0C39B2578C5FD0007FD2B /* ChatStartGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatStartGroupCell.swift; sourceTree = "<group>"; };
 		6BA0C39C2578C5FD0007FD2B /* ChatStartGroupCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatStartGroupCell.xib; sourceTree = "<group>"; };
 		6BA0C39F257912680007FD2B /* ChatGroupStartTbCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGroupStartTbCell.swift; sourceTree = "<group>"; };
 		6BA0C3A0257912680007FD2B /* ChatGroupStartTbCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatGroupStartTbCell.xib; sourceTree = "<group>"; };
+		6BA717972583645900256C19 /* CreatePublicationViewNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePublicationViewNavigator.swift; sourceTree = "<group>"; };
+		6BA717992583645900256C19 /* CreatePublicationTemplateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePublicationTemplateCell.swift; sourceTree = "<group>"; };
+		6BA7179A2583645900256C19 /* CreatePublicationTemplateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreatePublicationTemplateCell.xib; sourceTree = "<group>"; };
+		6BA7179B2583645900256C19 /* CreatePublicationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePublicationViewController.swift; sourceTree = "<group>"; };
+		6BA7179D2583645900256C19 /* WipodViewNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WipodViewNavigator.swift; sourceTree = "<group>"; };
+		6BA7179F2583645900256C19 /* WipodPublicationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WipodPublicationCell.swift; sourceTree = "<group>"; };
+		6BA717A02583645900256C19 /* WipodCollabrationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WipodCollabrationCell.xib; sourceTree = "<group>"; };
+		6BA717A12583645900256C19 /* WipodCollabrationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WipodCollabrationCell.swift; sourceTree = "<group>"; };
+		6BA717A22583645900256C19 /* WipodPublicationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WipodPublicationCell.xib; sourceTree = "<group>"; };
+		6BA717A32583645900256C19 /* WipodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WipodViewController.swift; sourceTree = "<group>"; };
+		6BA717A52583645900256C19 /* SubscriptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubscriptionCell.xib; sourceTree = "<group>"; };
+		6BA717A62583645900256C19 /* SubscriptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionCell.swift; sourceTree = "<group>"; };
+		6BA717A72583645900256C19 /* SubscriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionViewController.swift; sourceTree = "<group>"; };
+		6BA717A92583645900256C19 /* AddNewMaterialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewMaterialViewController.swift; sourceTree = "<group>"; };
+		6BA717AA2583645900256C19 /* AddNewMaterialViewNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewMaterialViewNavigator.swift; sourceTree = "<group>"; };
+		6BA717AC2583645900256C19 /* UploadPublicationNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadPublicationNavigator.swift; sourceTree = "<group>"; };
+		6BA717AD2583645900256C19 /* UploadPublicationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadPublicationViewController.swift; sourceTree = "<group>"; };
+		6BA717AF2583645900256C19 /* UploadPublicationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadPublicationCell.swift; sourceTree = "<group>"; };
+		6BA717B02583645900256C19 /* UploadPublicationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UploadPublicationCell.xib; sourceTree = "<group>"; };
+		6BA717B22583645900256C19 /* AddNewPublicationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewPublicationViewController.swift; sourceTree = "<group>"; };
+		6BA717B32583645900256C19 /* AddNewPublicationViewNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewPublicationViewNavigator.swift; sourceTree = "<group>"; };
 		6BACE0382555AFC200CCCC1D /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		6BACE03A2555AFD200CCCC1D /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		6BB20C3B255D0022009953A9 /* Cart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cart.storyboard; sourceTree = "<group>"; };
@@ -321,6 +340,29 @@
 		6BD8471325729CB100CE0129 /* More.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
 		6BD8471625729DB600CE0129 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		6BD847192572A6DD00CE0129 /* MoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreCell.swift; sourceTree = "<group>"; };
+		6BE324B125836EFA003CD5ED /* WalletViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		6BE324B325836EFA003CD5ED /* WalletOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletOptionsViewController.swift; sourceTree = "<group>"; };
+		6BE324B625836EFA003CD5ED /* TransactionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransactionCell.xib; sourceTree = "<group>"; };
+		6BE324B725836EFA003CD5ED /* TransactionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
+		6BE324B825836EFA003CD5ED /* TransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
+		6BE324B925836EFA003CD5ED /* WalletViewNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletViewNavigator.swift; sourceTree = "<group>"; };
+		6BE324C025839B10003CD5ED /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		6BE324C42583A44F003CD5ED /* PhoneNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumber.swift; sourceTree = "<group>"; };
+		6BE324C52583A44F003CD5ED /* SettingsType2View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsType2View.xib; sourceTree = "<group>"; };
+		6BE324C62583A44F003CD5ED /* SettingsType3View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsType3View.xib; sourceTree = "<group>"; };
+		6BE324C72583A44F003CD5ED /* SettingsType1View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsType1View.swift; sourceTree = "<group>"; };
+		6BE324C82583A44F003CD5ED /* SDStorageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDStorageView.swift; sourceTree = "<group>"; };
+		6BE324C92583A44F003CD5ED /* SettingsType1View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsType1View.xib; sourceTree = "<group>"; };
+		6BE324CA2583A44F003CD5ED /* SettingsType5View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsType5View.xib; sourceTree = "<group>"; };
+		6BE324CB2583A44F003CD5ED /* SettingsType2View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsType2View.swift; sourceTree = "<group>"; };
+		6BE324CC2583A44F003CD5ED /* SettingsType4View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsType4View.swift; sourceTree = "<group>"; };
+		6BE324CD2583A44F003CD5ED /* PhoneNumber.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhoneNumber.xib; sourceTree = "<group>"; };
+		6BE324CE2583A44F003CD5ED /* SettingsType4View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsType4View.xib; sourceTree = "<group>"; };
+		6BE324CF2583A44F003CD5ED /* SettingsType3View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsType3View.swift; sourceTree = "<group>"; };
+		6BE324D02583A44F003CD5ED /* SDStorageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDStorageView.xib; sourceTree = "<group>"; };
+		6BE324D12583A44F003CD5ED /* SettingsType5View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsType5View.swift; sourceTree = "<group>"; };
+		6BE324D22583A44F003CD5ED /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		6BE324E32583ABBD003CD5ED /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		6BEC2026257E47BB003B2E98 /* ChatStartGroupNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatStartGroupNavigation.swift; sourceTree = "<group>"; };
 		6BEC2028257E48D4003B2E98 /* ChatDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailViewController.swift; sourceTree = "<group>"; };
 		6BEC202A257E699E003B2E98 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
@@ -499,6 +541,7 @@
 				6BD8471325729CB100CE0129 /* More.storyboard */,
 				6BD589A025750A9E00808C5B /* Chat.storyboard */,
 				6B9C9E3525822D0A00FFF13F /* Wallet.storyboard */,
+				6BE324C025839B10003CD5ED /* Settings.storyboard */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -506,8 +549,9 @@
 		12D518E4252DE75B00289859 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				6B9C9E742582492400FFF13F /* Wallet */,
-				6B9C9E422582371A00FFF13F /* MoreTabs */,
+				6BE324E22583AB8A003CD5ED /* EditProfile */,
+				6BE324B025836EFA003CD5ED /* Wallet */,
+				6BA717952583645900256C19 /* MoreTabs */,
 				6BF2E5F02581045800BC0509 /* Profile Request */,
 				6BD589A225750AC300808C5B /* Chat */,
 				6BD8471525729DA200CE0129 /* More */,
@@ -790,131 +834,105 @@
 			path = MySubscribing;
 			sourceTree = "<group>";
 		};
-		6B9C9E422582371A00FFF13F /* MoreTabs */ = {
+		6BA717952583645900256C19 /* MoreTabs */ = {
 			isa = PBXGroup;
 			children = (
-				6B9C9E432582371A00FFF13F /* CreatePublication */,
-				6B9C9E492582371A00FFF13F /* Wipod */,
-				6B9C9E512582371A00FFF13F /* AddNewMaterial */,
-				6B9C9E542582371A00FFF13F /* UploadPublication */,
-				6B9C9E5A2582371A00FFF13F /* AddPublication */,
+				6BE324C22583A44F003CD5ED /* Settings */,
+				6BA717962583645900256C19 /* CreatePublication */,
+				6BA7179C2583645900256C19 /* Wipod */,
+				6BA717A42583645900256C19 /* Subscription */,
+				6BA717A82583645900256C19 /* AddNewMaterial */,
+				6BA717AB2583645900256C19 /* UploadPublication */,
+				6BA717B12583645900256C19 /* AddPublication */,
 			);
 			path = MoreTabs;
 			sourceTree = "<group>";
 		};
-		6B9C9E432582371A00FFF13F /* CreatePublication */ = {
+		6BA717962583645900256C19 /* CreatePublication */ = {
 			isa = PBXGroup;
 			children = (
-				6B9C9E442582371A00FFF13F /* CreatePublicationViewNavigator.swift */,
-				6B9C9E452582371A00FFF13F /* View */,
-				6B9C9E482582371A00FFF13F /* CreatePublicationViewController.swift */,
+				6BA717972583645900256C19 /* CreatePublicationViewNavigator.swift */,
+				6BA717982583645900256C19 /* View */,
+				6BA7179B2583645900256C19 /* CreatePublicationViewController.swift */,
 			);
 			path = CreatePublication;
 			sourceTree = "<group>";
 		};
-		6B9C9E452582371A00FFF13F /* View */ = {
+		6BA717982583645900256C19 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				6B9C9E462582371A00FFF13F /* CreatePublicationTemplateCell.swift */,
-				6B9C9E472582371A00FFF13F /* CreatePublicationTemplateCell.xib */,
+				6BA717992583645900256C19 /* CreatePublicationTemplateCell.swift */,
+				6BA7179A2583645900256C19 /* CreatePublicationTemplateCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		6B9C9E492582371A00FFF13F /* Wipod */ = {
+		6BA7179C2583645900256C19 /* Wipod */ = {
 			isa = PBXGroup;
 			children = (
-				6B9C9E4A2582371A00FFF13F /* WipodViewNavigator.swift */,
-				6B9C9E4B2582371A00FFF13F /* View */,
-				6B9C9E502582371A00FFF13F /* WipodViewController.swift */,
+				6BA7179D2583645900256C19 /* WipodViewNavigator.swift */,
+				6BA7179E2583645900256C19 /* View */,
+				6BA717A32583645900256C19 /* WipodViewController.swift */,
 			);
 			path = Wipod;
 			sourceTree = "<group>";
 		};
-		6B9C9E4B2582371A00FFF13F /* View */ = {
+		6BA7179E2583645900256C19 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				6B9C9E4C2582371A00FFF13F /* WipodPublicationCell.swift */,
-				6B9C9E4D2582371A00FFF13F /* WipodCollabrationCell.xib */,
-				6B9C9E4E2582371A00FFF13F /* WipodCollabrationCell.swift */,
-				6B9C9E4F2582371A00FFF13F /* WipodPublicationCell.xib */,
+				6BA7179F2583645900256C19 /* WipodPublicationCell.swift */,
+				6BA717A02583645900256C19 /* WipodCollabrationCell.xib */,
+				6BA717A12583645900256C19 /* WipodCollabrationCell.swift */,
+				6BA717A22583645900256C19 /* WipodPublicationCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		6B9C9E512582371A00FFF13F /* AddNewMaterial */ = {
+		6BA717A42583645900256C19 /* Subscription */ = {
 			isa = PBXGroup;
 			children = (
-				6B9C9E522582371A00FFF13F /* AddNewMaterialViewController.swift */,
-				6B9C9E532582371A00FFF13F /* AddNewMaterialViewNavigator.swift */,
+				6BA717A52583645900256C19 /* SubscriptionCell.xib */,
+				6BA717A62583645900256C19 /* SubscriptionCell.swift */,
+				6BA717A72583645900256C19 /* SubscriptionViewController.swift */,
+			);
+			path = Subscription;
+			sourceTree = "<group>";
+		};
+		6BA717A82583645900256C19 /* AddNewMaterial */ = {
+			isa = PBXGroup;
+			children = (
+				6BA717A92583645900256C19 /* AddNewMaterialViewController.swift */,
+				6BA717AA2583645900256C19 /* AddNewMaterialViewNavigator.swift */,
 			);
 			path = AddNewMaterial;
 			sourceTree = "<group>";
 		};
-		6B9C9E542582371A00FFF13F /* UploadPublication */ = {
+		6BA717AB2583645900256C19 /* UploadPublication */ = {
 			isa = PBXGroup;
 			children = (
-				6B9C9E552582371A00FFF13F /* UploadPublicationNavigator.swift */,
-				6B9C9E562582371A00FFF13F /* UploadPublicationViewController.swift */,
-				6B9C9E572582371A00FFF13F /* View */,
+				6BA717AC2583645900256C19 /* UploadPublicationNavigator.swift */,
+				6BA717AD2583645900256C19 /* UploadPublicationViewController.swift */,
+				6BA717AE2583645900256C19 /* View */,
 			);
 			path = UploadPublication;
 			sourceTree = "<group>";
 		};
-		6B9C9E572582371A00FFF13F /* View */ = {
+		6BA717AE2583645900256C19 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				6B9C9E582582371A00FFF13F /* UploadPublicationCell.swift */,
-				6B9C9E592582371A00FFF13F /* UploadPublicationCell.xib */,
+				6BA717AF2583645900256C19 /* UploadPublicationCell.swift */,
+				6BA717B02583645900256C19 /* UploadPublicationCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		6B9C9E5A2582371A00FFF13F /* AddPublication */ = {
+		6BA717B12583645900256C19 /* AddPublication */ = {
 			isa = PBXGroup;
 			children = (
-				6B9C9E5B2582371A00FFF13F /* AddNewPublicationViewController.swift */,
-				6B9C9E5C2582371A00FFF13F /* AddNewPublicationViewNavigator.swift */,
+				6BA717B22583645900256C19 /* AddNewPublicationViewController.swift */,
+				6BA717B32583645900256C19 /* AddNewPublicationViewNavigator.swift */,
 			);
 			path = AddPublication;
-			sourceTree = "<group>";
-		};
-		6B9C9E742582492400FFF13F /* Wallet */ = {
-			isa = PBXGroup;
-			children = (
-				6B9C9E752582492400FFF13F /* WalletViewController.swift */,
-				6B9C9E762582492400FFF13F /* WalletOptions */,
-				6B9C9E782582492400FFF13F /* Transactions */,
-				6B9C9E7D2582492400FFF13F /* WalletViewNavigator.swift */,
-			);
-			name = Wallet;
-			path = "../../../../../../Downloads/ScriptDoor 3/ScriptDoor/Scenes/Wallet";
-			sourceTree = "<group>";
-		};
-		6B9C9E762582492400FFF13F /* WalletOptions */ = {
-			isa = PBXGroup;
-			children = (
-				6B9C9E772582492400FFF13F /* WalletOptionsViewController.swift */,
-			);
-			path = WalletOptions;
-			sourceTree = "<group>";
-		};
-		6B9C9E782582492400FFF13F /* Transactions */ = {
-			isa = PBXGroup;
-			children = (
-				6B9C9E792582492400FFF13F /* View */,
-				6B9C9E7C2582492400FFF13F /* TransactionViewController.swift */,
-			);
-			path = Transactions;
-			sourceTree = "<group>";
-		};
-		6B9C9E792582492400FFF13F /* View */ = {
-			isa = PBXGroup;
-			children = (
-				6B9C9E7A2582492400FFF13F /* TransactionCell.xib */,
-				6B9C9E7B2582492400FFF13F /* TransactionCell.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		6BACE0362555AF9900CCCC1D /* Video */ = {
@@ -1048,6 +1066,82 @@
 				6BD847192572A6DD00CE0129 /* MoreCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		6BE324B025836EFA003CD5ED /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				6BE324B125836EFA003CD5ED /* WalletViewController.swift */,
+				6BE324B225836EFA003CD5ED /* WalletOptions */,
+				6BE324B425836EFA003CD5ED /* Transactions */,
+				6BE324B925836EFA003CD5ED /* WalletViewNavigator.swift */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		6BE324B225836EFA003CD5ED /* WalletOptions */ = {
+			isa = PBXGroup;
+			children = (
+				6BE324B325836EFA003CD5ED /* WalletOptionsViewController.swift */,
+			);
+			path = WalletOptions;
+			sourceTree = "<group>";
+		};
+		6BE324B425836EFA003CD5ED /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				6BE324B525836EFA003CD5ED /* View */,
+				6BE324B825836EFA003CD5ED /* TransactionViewController.swift */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		6BE324B525836EFA003CD5ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BE324B625836EFA003CD5ED /* TransactionCell.xib */,
+				6BE324B725836EFA003CD5ED /* TransactionCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6BE324C22583A44F003CD5ED /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				6BE324C32583A44F003CD5ED /* View */,
+				6BE324D22583A44F003CD5ED /* SettingsViewController.swift */,
+				6B38B4C225876D4A00E42F1A /* SettingViewNavigator.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		6BE324C32583A44F003CD5ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BE324C42583A44F003CD5ED /* PhoneNumber.swift */,
+				6BE324C52583A44F003CD5ED /* SettingsType2View.xib */,
+				6BE324C62583A44F003CD5ED /* SettingsType3View.xib */,
+				6BE324C72583A44F003CD5ED /* SettingsType1View.swift */,
+				6BE324C82583A44F003CD5ED /* SDStorageView.swift */,
+				6BE324C92583A44F003CD5ED /* SettingsType1View.xib */,
+				6BE324CA2583A44F003CD5ED /* SettingsType5View.xib */,
+				6BE324CB2583A44F003CD5ED /* SettingsType2View.swift */,
+				6BE324CC2583A44F003CD5ED /* SettingsType4View.swift */,
+				6BE324CD2583A44F003CD5ED /* PhoneNumber.xib */,
+				6BE324CE2583A44F003CD5ED /* SettingsType4View.xib */,
+				6BE324CF2583A44F003CD5ED /* SettingsType3View.swift */,
+				6BE324D02583A44F003CD5ED /* SDStorageView.xib */,
+				6BE324D12583A44F003CD5ED /* SettingsType5View.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6BE324E22583AB8A003CD5ED /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				6BE324E32583ABBD003CD5ED /* EditProfileViewController.swift */,
+			);
+			path = EditProfile;
 			sourceTree = "<group>";
 		};
 		6BF2E5F02581045800BC0509 /* Profile Request */ = {
@@ -1192,13 +1286,18 @@
 				6BD8176F257F311400B3C1B1 /* ReceiverMessageCell.xib in Resources */,
 				6BD8281C255B039D00CC1B7C /* RelatedBooksCell.xib in Resources */,
 				6BB20C41255D6118009953A9 /* CartView.xib in Resources */,
+				6BA717BE2583645900256C19 /* SubscriptionCell.xib in Resources */,
 				6BFECD72256972A00093FC3A /* MusicCollCell.xib in Resources */,
+				6BE324DC2583A44F003CD5ED /* PhoneNumber.xib in Resources */,
 				6B7F73EF25777568006D66E8 /* ChatGroupCell.xib in Resources */,
 				6BD8176B257F2E6100B3C1B1 /* SenderMessageCell.xib in Resources */,
 				12FE679625345B680073D36E /* SDPicker.xib in Resources */,
 				12D518D9252DE33E00289859 /* CircularStd-Bold.ttf in Resources */,
-				6B9C9E652582371A00FFF13F /* WipodPublicationCell.xib in Resources */,
+				6BA717BC2583645900256C19 /* WipodPublicationCell.xib in Resources */,
+				6BE324D42583A44F003CD5ED /* SettingsType2View.xib in Resources */,
 				12DCA127253887B400FE9931 /* Interates.json in Resources */,
+				6BE324DF2583A44F003CD5ED /* SDStorageView.xib in Resources */,
+				6BE324D92583A44F003CD5ED /* SettingsType5View.xib in Resources */,
 				12D51903252F134500289859 /* Circular Std Medium.ttf in Resources */,
 				6B6605BF25769DB400A55B3A /* NotificationView.xib in Resources */,
 				12512D2B252F41D400DD97F1 /* Circular-Std-Bold.ttf in Resources */,
@@ -1206,11 +1305,15 @@
 				6B9C9E3625822D0A00FFF13F /* Wallet.storyboard in Resources */,
 				12DCA12E253D5B0D00FE9931 /* Landing.storyboard in Resources */,
 				6BB20C3C255D0022009953A9 /* Cart.storyboard in Resources */,
+				6BE324BC25836EFA003CD5ED /* TransactionCell.xib in Resources */,
 				12D518BF252D8FE000289859 /* Assets.xcassets in Resources */,
+				6BE324D82583A44F003CD5ED /* SettingsType1View.xib in Resources */,
 				12B72D542541767400B88A1E /* ViewHorizontalSection.xib in Resources */,
-				6B9C9E632582371A00FFF13F /* WipodCollabrationCell.xib in Resources */,
+				6BE324DD2583A44F003CD5ED /* SettingsType4View.xib in Resources */,
+				6BA717BA2583645900256C19 /* WipodCollabrationCell.xib in Resources */,
 				6BFECD6E2568FFE90093FC3A /* PublicationCollectionCell.xib in Resources */,
 				12512D23252F37CF00DD97F1 /* Circular Std Book.ttf in Resources */,
+				6BE324C125839B10003CD5ED /* Settings.storyboard in Resources */,
 				12D518CC252D9EA500289859 /* BoardCell.xib in Resources */,
 				12B72D552541767400B88A1E /* FeaturedVideoCell.xib in Resources */,
 				6BD82815255AF0E900CC1B7C /* DetailTestimoials.storyboard in Resources */,
@@ -1223,14 +1326,14 @@
 				12B72D572541767400B88A1E /* ChoosePlansView.xib in Resources */,
 				6BD589A925750B2300808C5B /* ChatCell.xib in Resources */,
 				6BC838D02566B9250069451A /* PublicationCell.xib in Resources */,
-				6B9C9E802582492400FFF13F /* TransactionCell.xib in Resources */,
-				6B9C9E6C2582371A00FFF13F /* UploadPublicationCell.xib in Resources */,
 				6BD3C7D62567ADE20021DAD4 /* VideoCell.xib in Resources */,
+				6BA717C62583645900256C19 /* UploadPublicationCell.xib in Resources */,
 				6BD3C7DA2567CECD0021DAD4 /* AudioCell.xib in Resources */,
 				12B72D562541767400B88A1E /* ConnectionsCell.xib in Resources */,
-				6B9C9E5F2582371A00FFF13F /* CreatePublicationTemplateCell.xib in Resources */,
+				6BA717B62583645900256C19 /* CreatePublicationTemplateCell.xib in Resources */,
 				6B67C21F256D1C6F00517B7D /* Profile.storyboard in Resources */,
 				6BD8471425729CB100CE0129 /* More.storyboard in Resources */,
+				6BE324D52583A44F003CD5ED /* SettingsType3View.xib in Resources */,
 				12B72D582541767400B88A1E /* LibraryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1284,33 +1387,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BA717B92583645900256C19 /* WipodPublicationCell.swift in Sources */,
 				6B73EFF7256FE5020019D1FE /* ProfileHeaderViewNavigation.swift in Sources */,
 				12512D39252F66D100DD97F1 /* Alertable.swift in Sources */,
 				12DCA129253893A100FE9931 /* InterestNavigation.swift in Sources */,
 				12512D25252F39A600DD97F1 /* OnBoardingViewNavigator.swift in Sources */,
+				6B38B4C325876D4A00E42F1A /* SettingViewNavigator.swift in Sources */,
+				6BA717C32583645900256C19 /* UploadPublicationNavigator.swift in Sources */,
+				6BE324DA2583A44F003CD5ED /* SettingsType2View.swift in Sources */,
+				6BE324BF25836EFA003CD5ED /* WalletViewNavigator.swift in Sources */,
 				6BD81771257FB59000B3C1B1 /* ChatDetailNavigation.swift in Sources */,
 				12B72D512541767400B88A1E /* ConnectionsCell.swift in Sources */,
 				6B67C222256D1E0400517B7D /* TabProfileViewController.swift in Sources */,
+				6BA717C22583645900256C19 /* AddNewMaterialViewNavigator.swift in Sources */,
 				6B7F73F12577C075006D66E8 /* ChatViewNavigation.swift in Sources */,
 				673B60EB25319F6600716E13 /* ProfileViewController.swift in Sources */,
 				6BD3C7D52567ADE20021DAD4 /* VideoCell.swift in Sources */,
+				6BA717BB2583645900256C19 /* WipodCollabrationCell.swift in Sources */,
+				6BA717C12583645900256C19 /* AddNewMaterialViewController.swift in Sources */,
 				12512D2F252F43E200DD97F1 /* WelcomeViewNavigator.swift in Sources */,
-				6B9C9E612582371A00FFF13F /* WipodViewNavigator.swift in Sources */,
 				12B72D592541767400B88A1E /* ViewHorizontalSection.swift in Sources */,
-				6B9C9E832582492400FFF13F /* WalletViewNavigator.swift in Sources */,
-				6B9C9E6E2582371A00FFF13F /* AddNewPublicationViewNavigator.swift in Sources */,
+				6BA717BF2583645900256C19 /* SubscriptionCell.swift in Sources */,
 				12FE679225343BE70073D36E /* DateFormate + extensions.swift in Sources */,
 				6BACE03B2555AFD200CCCC1D /* VideoViewController.swift in Sources */,
-				6B9C9E7F2582492400FFF13F /* WalletOptionsViewController.swift in Sources */,
 				6BF2E5F22581049800BC0509 /* ProfileRequestViewController.swift in Sources */,
-				6B9C9E5E2582371A00FFF13F /* CreatePublicationTemplateCell.swift in Sources */,
 				12512D21252F2C0600DD97F1 /* SDTextField.swift in Sources */,
 				6BA0C3A1257912680007FD2B /* ChatGroupStartTbCell.swift in Sources */,
 				6BACE0392555AFC200CCCC1D /* LibraryViewController.swift in Sources */,
 				12B72D41253DAEFD00B88A1E /* BusinessProfileViewNavigator.swift in Sources */,
+				6BE324DE2583A44F003CD5ED /* SettingsType3View.swift in Sources */,
 				12D518ED252DE87C00289859 /* UIView+Extensions.swift in Sources */,
-				6B9C9E662582371A00FFF13F /* WipodViewController.swift in Sources */,
-				6B9C9E642582371A00FFF13F /* WipodCollabrationCell.swift in Sources */,
 				6BEC2027257E47BB003B2E98 /* ChatStartGroupNavigation.swift in Sources */,
 				6B2EF94B25558B0900E3E0A0 /* LandingViewNavigation.swift in Sources */,
 				6B53A6E4255C377400541D4F /* AddToCartViewNavigation.swift in Sources */,
@@ -1321,30 +1427,30 @@
 				6BD8471B2572A6DD00CE0129 /* MoreCell.swift in Sources */,
 				6BC838C72566A50D0069451A /* UsersViewController.swift in Sources */,
 				6B67C22A256D3E8B00517B7D /* MyRecentActivityViewController.swift in Sources */,
-				6B9C9E602582371A00FFF13F /* CreatePublicationViewController.swift in Sources */,
 				6BEC202B257E699E003B2E98 /* MessageViewController.swift in Sources */,
 				12B72D39253D98F900B88A1E /* SaveAsAnViewNavigation.swift in Sources */,
 				6BD589A425750AEA00808C5B /* ChatViewController.swift in Sources */,
 				6BD8176E257F311400B3C1B1 /* ReceiverMessageCell.swift in Sources */,
 				6BF51E9C256EBEEB005C0C97 /* MyRecentCell.swift in Sources */,
 				6BFEDABE2563E98C00141761 /* GiftPublicationViewController.swift in Sources */,
+				6BA717B82583645900256C19 /* WipodViewNavigator.swift in Sources */,
+				6BA717C82583645900256C19 /* AddNewPublicationViewNavigator.swift in Sources */,
 				6B0095D6256CC45200719E11 /* UITableView+Extensions.swift in Sources */,
 				12512D27252F3A8100DD97F1 /* UIStoryboard+Extentions.swift in Sources */,
 				12D518F3252EEF8E00289859 /* SignUpAsAnViewController.swift in Sources */,
 				6BB20C3F255D6071009953A9 /* CartView.swift in Sources */,
 				12512D34252F647900DD97F1 /* Validation.swift in Sources */,
-				6B9C9E5D2582371A00FFF13F /* CreatePublicationViewNavigator.swift in Sources */,
 				6BF2E6002581131700BC0509 /* ProfileRequestViewNavigation.swift in Sources */,
+				6BE324E02583A44F003CD5ED /* SettingsType5View.swift in Sources */,
 				12B72D44253F172800B88A1E /* IntrestCell.swift in Sources */,
 				6BFEDAC52564439F00141761 /* ReportViewNavigation.swift in Sources */,
 				6B53A6DF255BF34100541D4F /* TabbarViewController.swift in Sources */,
 				6BF2E5FC25810D3600BC0509 /* RequestCell.swift in Sources */,
 				12D518CB252D9EA500289859 /* BoardCell.swift in Sources */,
+				6BE324BE25836EFA003CD5ED /* TransactionViewController.swift in Sources */,
 				6B67C22E256D3F7100517B7D /* MySubscribersViewController.swift in Sources */,
 				12DCA1222538340800FE9931 /* SignInNavigation.swift in Sources */,
 				6BFECD6D2568FFE90093FC3A /* PublicationCollectionCell.swift in Sources */,
-				6B9C9E692582371A00FFF13F /* UploadPublicationNavigator.swift in Sources */,
-				6B9C9E6A2582371A00FFF13F /* UploadPublicationViewController.swift in Sources */,
 				12D518BD252D8FDC00289859 /* ScriptDoor.xcdatamodeld in Sources */,
 				12B72D522541767400B88A1E /* FeaturedVideoCell.swift in Sources */,
 				12B72D3F253DABE100B88A1E /* ProfileViewNavigation.swift in Sources */,
@@ -1355,28 +1461,42 @@
 				12B72D3D253DA9AE00B88A1E /* LandingViewController.swift in Sources */,
 				12B72D532541767400B88A1E /* LibraryCell.swift in Sources */,
 				12512D29252F3D8F00DD97F1 /* SignUpNavigation.swift in Sources */,
+				6BA717C02583645900256C19 /* SubscriptionViewController.swift in Sources */,
 				6B2EF94E25558B6E00E3E0A0 /* AudioViewController.swift in Sources */,
+				6BE324BD25836EFA003CD5ED /* TransactionCell.swift in Sources */,
+				6BE324D62583A44F003CD5ED /* SettingsType1View.swift in Sources */,
 				6BD83F08256B6DDB0040D811 /* SDFonts.swift in Sources */,
+				6BE324E42583ABBD003CD5ED /* EditProfileViewController.swift in Sources */,
 				6BD8281D255B039D00CC1B7C /* RelatedBooksCell.swift in Sources */,
+				6BA717C52583645900256C19 /* UploadPublicationCell.swift in Sources */,
 				12D518B7252D8FDC00289859 /* OnBoardingViewController.swift in Sources */,
 				12512D3C253037DA00DD97F1 /* EmailViewController.swift in Sources */,
+				6BA717BD2583645900256C19 /* WipodViewController.swift in Sources */,
 				6BC838BE25667CF20069451A /* HeaderViewController.swift in Sources */,
 				6BFEDAC02563E9B100141761 /* GiftPublicationNavigator.swift in Sources */,
 				6BD8176A257F2E6100B3C1B1 /* SenderMessageCell.swift in Sources */,
 				6BA0C39D2578C5FD0007FD2B /* ChatStartGroupCell.swift in Sources */,
 				6B67C230256D3F9100517B7D /* MySubscribingViewController.swift in Sources */,
-				6B9C9E6D2582371A00FFF13F /* AddNewPublicationViewController.swift in Sources */,
 				6B7F73F32577D9BF006D66E8 /* ChatStartGroupViewController.swift in Sources */,
+				6BA717C42583645900256C19 /* UploadPublicationViewController.swift in Sources */,
+				6BA717C72583645900256C19 /* AddNewPublicationViewController.swift in Sources */,
+				6BE324D32583A44F003CD5ED /* PhoneNumber.swift in Sources */,
 				6BF5C41C256992C500808636 /* LibraryTableCell.swift in Sources */,
 				6BD8281F255B052700CC1B7C /* DetailsTestimoniolsViewNavigation.swift in Sources */,
 				6BC838C42566A4D70069451A /* PublicationViewController.swift in Sources */,
 				12DCA12C2539C74D00FE9931 /* BusinessProfileViewController.swift in Sources */,
+				6BE324D72583A44F003CD5ED /* SDStorageView.swift in Sources */,
 				6BD83F0B256B721A0040D811 /* UIColor+Extentions.swift in Sources */,
 				6BD8281B255B039D00CC1B7C /* DetailsTestimoniolsViewController.swift in Sources */,
 				6B6605BD2576829F00A55B3A /* NotificationView.swift in Sources */,
+				6BE324DB2583A44F003CD5ED /* SettingsType4View.swift in Sources */,
 				6B1325F5256531350087AD56 /* EveryThingViewController.swift in Sources */,
+				6BE324BB25836EFA003CD5ED /* WalletOptionsViewController.swift in Sources */,
+				6BA717B52583645900256C19 /* CreatePublicationTemplateCell.swift in Sources */,
 				6BD3C7D92567CECD0021DAD4 /* AudioCell.swift in Sources */,
 				6BEC2029257E48D4003B2E98 /* ChatDetailViewController.swift in Sources */,
+				6BE324BA25836EFA003CD5ED /* WalletViewController.swift in Sources */,
+				6BA717B42583645900256C19 /* CreatePublicationViewNavigator.swift in Sources */,
 				12512D36252F64C500DD97F1 /* String+Extensions.swift in Sources */,
 				12D518B3252D8FDC00289859 /* AppDelegate.swift in Sources */,
 				6BC838CF2566B9250069451A /* PublicationCell.swift in Sources */,
@@ -1384,23 +1504,18 @@
 				6BFECD71256972A00093FC3A /* MusicCollCell.swift in Sources */,
 				12B72D502541767400B88A1E /* ChoosePlansView.swift in Sources */,
 				12D518F6252EF08400289859 /* SignUpViewController.swift in Sources */,
-				6B9C9E6B2582371A00FFF13F /* UploadPublicationCell.swift in Sources */,
-				6B9C9E7E2582492400FFF13F /* WalletViewController.swift in Sources */,
 				6B7F73EE25777568006D66E8 /* ChatGroupCell.swift in Sources */,
-				6B9C9E682582371A00FFF13F /* AddNewMaterialViewNavigator.swift in Sources */,
 				6B67C224256D228400517B7D /* ProfileHeaderViewController.swift in Sources */,
 				6BD8471725729DB600CE0129 /* MoreViewController.swift in Sources */,
 				6BD589A825750B2300808C5B /* ChatCell.swift in Sources */,
+				6BE324E12583A44F003CD5ED /* SettingsViewController.swift in Sources */,
 				6B7F73F52577DB86006D66E8 /* ChatGroupNavigation.swift in Sources */,
 				6B0D2A18256A5B410097018B /* SearchViewController.swift in Sources */,
-				6B9C9E622582371A00FFF13F /* WipodPublicationCell.swift in Sources */,
-				6B9C9E672582371A00FFF13F /* AddNewMaterialViewController.swift in Sources */,
 				6B32DDE4256FF4FB00889D3E /* PopUpViewController.swift in Sources */,
 				6B53A6E2255C374F00541D4F /* AddToCartViewController.swift in Sources */,
+				6BA717B72583645900256C19 /* CreatePublicationViewController.swift in Sources */,
 				12D518B5252D8FDC00289859 /* SceneDelegate.swift in Sources */,
-				6B9C9E812582492400FFF13F /* TransactionCell.swift in Sources */,
 				6BFEDAC325643C3A00141761 /* ReportViewController.swift in Sources */,
-				6B9C9E822582492400FFF13F /* TransactionViewController.swift in Sources */,
 				6BF2E5FE25810FCA00BC0509 /* MyRecentActivityViewNavigation.swift in Sources */,
 				12D518F0252E074400289859 /* WelcomeViewController.swift in Sources */,
 			);

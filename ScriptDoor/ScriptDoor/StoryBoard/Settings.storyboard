@@ -57,6 +57,9 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
                                 <state key="normal" image="BackArrow"/>
+                                <connections>
+                                    <action selector="didTapOnSettings" destination="bzW-cJ-9Rk" eventType="touchUpInside" id="NZs-Gg-Prj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

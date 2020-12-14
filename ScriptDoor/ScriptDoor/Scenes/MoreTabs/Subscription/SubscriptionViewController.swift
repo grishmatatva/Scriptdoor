@@ -2,7 +2,7 @@
 //  SubscriptionViewController.swift
 //  ScriptDoor
 //
-//  Created by pcq196 on 10/12/20.
+//  Created by PCQ187 on 10/12/20.
 //  Copyright © 2020 Yuvi's - MAC103. All rights reserved.
 //
 

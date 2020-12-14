@@ -33,8 +33,8 @@ extension SignInNavigation {
     }
     
     func moveToExplore() {
-        if let signUp = UIStoryboard.landing.getViewController(type: LandingViewController.self) {
-            viewController.navigationController?.pushViewController(signUp, animated: true)
+        if let explore = UIStoryboard.landing.getViewController(type: TabbarViewController.self) {
+            viewController.navigationController?.pushViewController(explore, animated: true)
         }
     }
 }
